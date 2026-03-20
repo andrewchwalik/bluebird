@@ -1,6 +1,9 @@
 :root {
   --paper: #f6e2c7;
   --paper-deep: #efd2a8;
+  --kraft: #b8864d;
+  --kraft-deep: #8e6337;
+  --kraft-fiber: rgba(104, 71, 37, 0.12);
   --surface: #fffaf4;
   --surface-strong: #fffefb;
   --ink: #2f1d17;
@@ -16,13 +19,22 @@
   font-weight: 400;
   color: var(--ink);
   background:
-    linear-gradient(180deg, rgba(255, 246, 233, 0.78), rgba(244, 222, 191, 0.96)),
+    radial-gradient(circle at top left, rgba(255, 236, 199, 0.34), transparent 24%),
+    radial-gradient(circle at 85% 18%, rgba(255, 228, 170, 0.18), transparent 20%),
+    linear-gradient(180deg, #c7975a 0%, #b1814b 45%, #9c6d3f 100%),
     repeating-linear-gradient(
-      90deg,
-      rgba(163, 118, 66, 0.04) 0,
-      rgba(163, 118, 66, 0.04) 1px,
+      0deg,
+      rgba(255, 243, 216, 0.05) 0,
+      rgba(255, 243, 216, 0.05) 1px,
       transparent 1px,
-      transparent 72px
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      18deg,
+      var(--kraft-fiber) 0,
+      var(--kraft-fiber) 1px,
+      transparent 1px,
+      transparent 9px
     );
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,6 +54,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: transparent;
 }
 
 body::before {
@@ -49,8 +62,16 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.38), transparent 18%),
-    radial-gradient(circle at 80% 70%, rgba(249, 133, 23, 0.08), transparent 16%);
+    radial-gradient(circle at 18% 10%, rgba(255, 248, 231, 0.22), transparent 16%),
+    radial-gradient(circle at 78% 78%, rgba(120, 73, 31, 0.16), transparent 18%),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 244, 219, 0.04) 0,
+      rgba(255, 244, 219, 0.04) 2px,
+      transparent 2px,
+      transparent 14px
+    );
+  opacity: 0.95;
   pointer-events: none;
 }
 
