@@ -12,7 +12,6 @@
 
 .hero-card {
   padding: 1.25rem;
-  border-radius: 2rem;
   background:
     radial-gradient(circle at top left, rgba(255, 168, 0, 0.12), transparent 20%),
     linear-gradient(135deg, #2a1a16 0%, #3c241d 60%, #241410 100%);
