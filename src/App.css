@@ -1,17 +1,7 @@
 .page-shell {
   position: relative;
-  width: min(1440px, calc(100% - clamp(0.5rem, 1vw, 0.9rem)));
-  margin: clamp(0.25rem, 0.75vw, 0.6rem) auto;
-}
-
-.page-shell::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(circle at top left, rgba(255, 247, 228, 0.24), transparent 24%),
-    radial-gradient(circle at bottom right, rgba(104, 65, 31, 0.14), transparent 24%);
-  pointer-events: none;
+  width: 100%;
+  margin: 0;
 }
 
 .hero-card,
