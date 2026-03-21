@@ -238,7 +238,7 @@
   position: absolute;
   inset: -1rem;
   border-radius: 19rem 19rem 2.25rem 2.25rem;
-  border: 2px dotted rgba(242, 140, 40, 0.9);
+  border: 2px dotted rgba(255, 255, 255, 0.9);
   opacity: 0.9;
   pointer-events: none;
 }
