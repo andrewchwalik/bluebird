@@ -64,18 +64,18 @@ function App() {
           </div>
 
           <a className="button button-primary" href="#visit">
-            Order Ahead
+            Order Online
           </a>
         </nav>
 
         <section className="hero-grid" id="home">
           <div className="hero-copy">
-            <p className="eyebrow">Neighborhood sandwich counter</p>
-            <h1>Big comfort, bright flavor, and lunch worth leaving the desk for.</h1>
+            <h1>Vibes, Views, &amp; Good Food</h1>
             <p className="hero-text">
-              Bluebird is built around toasted sandwiches, scratch-made spreads, and
-              a warm cafe atmosphere inspired by the cozy, high-contrast look of your
-              reference design.
+              Bluebird is a small sandwich shop in the Lakeside Chautauqua community,
+              located right on the shores of Lake Erie. We serve handcrafted paninis,
+              crisp salads, made-to-order subs, and fresh smoothies - all served in
+              the coolest restaurant on the peninsula.
             </p>
 
             <div className="hero-actions">
