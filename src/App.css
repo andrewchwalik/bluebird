@@ -26,9 +26,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4.2rem;
-  height: 7rem;
-  background: url('./assets/torn-edge.svg') center bottom / 100% 100% no-repeat;
+  bottom: -4.9rem;
+  height: clamp(4.5rem, 9vw, 7.2rem);
+  background: url('../img/torn-paper-transition.png') center bottom / 100% 100% no-repeat;
   pointer-events: none;
   z-index: 1;
 }
