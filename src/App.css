@@ -222,6 +222,7 @@
   bottom: -9.5rem;
   width: min(44.6875rem, 150%);
   height: 29.375rem;
+  max-width: none;
   object-fit: contain;
   filter: drop-shadow(0 1.2rem 1.5rem rgba(38, 18, 10, 0.24));
   z-index: 2;
