@@ -7,6 +7,9 @@
 .hero-card,
 .section {
   position: relative;
+}
+
+.section {
   overflow: hidden;
 }
 
@@ -21,11 +24,17 @@
 .hero-card::after {
   content: '';
   position: absolute;
-  inset: auto 0 0;
-  height: 1.8rem;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3.4rem;
   background:
-    radial-gradient(circle at 1rem -0.6rem, transparent 1rem, var(--paper) 1.05rem) 0 0 /
-      2.7rem 100% repeat-x;
+    radial-gradient(circle at 1.2rem 0.05rem, transparent 1.05rem, var(--paper) 1.09rem) 0
+      100% / 4.8rem 100% repeat-x,
+    radial-gradient(circle at 3.1rem -0.15rem, transparent 0.95rem, rgba(255, 252, 248, 0.96) 1rem)
+      0 100% / 5.4rem 100% repeat-x,
+    linear-gradient(180deg, rgba(255, 250, 244, 0) 0%, rgba(255, 250, 244, 0) 46%, var(--paper) 47%, var(--paper) 100%);
+  filter: drop-shadow(0 -0.1rem 0 rgba(72, 39, 23, 0.08));
 }
 
 .topbar {
@@ -211,12 +220,13 @@
 .hero-visual {
   position: relative;
   min-height: 32rem;
+  overflow: visible;
 }
 
 .hero-arch {
   position: absolute;
   right: 1rem;
-  bottom: 0;
+  bottom: 1.4rem;
   width: min(31rem, 100%);
   aspect-ratio: 0.85;
   border-radius: 18rem 18rem 1.5rem 1.5rem;
@@ -228,84 +238,22 @@
 .plate-shadow {
   position: absolute;
   left: 50%;
-  bottom: 0.3rem;
-  width: 82%;
-  height: 2rem;
+  bottom: -2rem;
+  width: 78%;
+  height: 2.2rem;
   border-radius: 50%;
   background: rgba(26, 13, 9, 0.28);
   transform: translateX(-50%);
-  filter: blur(18px);
+  filter: blur(16px);
 }
 
-.sandwich-stack {
+.hero-panini {
   position: absolute;
-  inset: auto 8% 3% 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.sandwich-stack span {
-  display: block;
-}
-
-.bread-top,
-.bread-bottom {
-  width: 88%;
-  background: linear-gradient(180deg, #f8c56f 0%, #ba6b12 100%);
-  box-shadow: inset 0 -8px 18px rgba(120, 55, 4, 0.18);
-}
-
-.bread-top {
-  height: 8.7rem;
-  border-radius: 8rem 8rem 4rem 4rem;
-}
-
-.bread-top::after {
-  content: '';
-  position: absolute;
-  inset: 1rem 4rem auto;
-  height: 1rem;
-  border-radius: 999px;
-  background:
-    radial-gradient(circle, rgba(255, 244, 214, 0.95) 0 36%, transparent 40%) 0 0 /
-      2rem 100% repeat-x;
-}
-
-.bread-bottom {
-  height: 3.3rem;
-  border-radius: 1.25rem 1.25rem 2.2rem 2.2rem;
-}
-
-.filling {
-  width: 82%;
-  border-radius: 999px;
-}
-
-.filling-lettuce {
-  height: 1.35rem;
-  background:
-    radial-gradient(circle at 10% 50%, #74b93b 0 28%, transparent 32%) 0 0 / 2.1rem 100%
-      repeat-x,
-    linear-gradient(180deg, #93d05d, #498d28);
-}
-
-.filling-cheese {
-  width: 70%;
-  height: 1.3rem;
-  background: linear-gradient(180deg, #ffd257, #f3a91a);
-}
-
-.filling-tomato {
-  width: 76%;
-  height: 0.9rem;
-  background: linear-gradient(180deg, #d14b31, #94281d);
-}
-
-.filling-patty {
-  height: 3.5rem;
-  background: linear-gradient(180deg, #6d3e2c, #382018);
+  left: 50%;
+  bottom: -3.8rem;
+  width: min(28rem, 90%);
+  transform: translateX(-50%);
+  filter: drop-shadow(0 1.2rem 1.5rem rgba(38, 18, 10, 0.24));
 }
 
 .floating-dot,
@@ -748,7 +696,7 @@
   }
 
   .hero-visual {
-    min-height: 26rem;
+    min-height: 29rem;
   }
 
   .hero-arch {
@@ -756,6 +704,11 @@
     left: 50%;
     width: min(26rem, 100%);
     transform: translateX(-50%);
+  }
+
+  .hero-panini {
+    width: min(23rem, 88%);
+    bottom: -3rem;
   }
 
   .menu-grid,
@@ -777,10 +730,6 @@
 }
 
 @media (max-width: 720px) {
-  .page-shell {
-    width: min(100%, calc(100% - 1rem));
-  }
-
   .hero-card,
   .section {
     border-radius: 1.5rem;
@@ -803,11 +752,17 @@
   }
 
   .hero-visual {
-    min-height: 22rem;
+    min-height: 23rem;
   }
 
   .hero-arch {
     width: min(20rem, 100%);
+    bottom: 1rem;
+  }
+
+  .hero-panini {
+    width: min(18rem, 92%);
+    bottom: -2.4rem;
   }
 
   .plated-dish {

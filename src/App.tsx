@@ -1,3 +1,4 @@
+import paniniImage from '../img/panini.png'
 import './App.css'
 
 const navItems = ['Home', 'Our Story', 'Menu', 'Gallery', 'Visit']
@@ -99,14 +100,7 @@ function App() {
           <div className="hero-visual" aria-hidden="true">
             <div className="hero-arch">
               <div className="plate-shadow"></div>
-              <div className="sandwich-stack">
-                <span className="bread-top"></span>
-                <span className="filling filling-lettuce"></span>
-                <span className="filling filling-cheese"></span>
-                <span className="filling filling-tomato"></span>
-                <span className="filling filling-patty"></span>
-                <span className="bread-bottom"></span>
-              </div>
+              <img className="hero-panini" src={paniniImage} alt="" />
             </div>
             <span className="floating-dot floating-dot-one"></span>
             <span className="floating-dot floating-dot-two"></span>
