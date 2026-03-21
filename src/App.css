@@ -233,6 +233,16 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
 }
 
+.hero-arch::before {
+  content: '';
+  position: absolute;
+  inset: -1rem;
+  border-radius: 19rem 19rem 2.25rem 2.25rem;
+  border: 2px dotted rgba(255, 255, 255, 0.78);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
 .plate-shadow {
   position: absolute;
   left: 50%;
