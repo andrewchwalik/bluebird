@@ -5,8 +5,8 @@
   --surface-strong: #fffefb;
   --ink: #2f1d17;
   --muted: #705448;
-  --accent: #5ed3a1;
-  --accent-deep: #3db786;
+  --accent: #f28c28;
+  --accent-deep: #d97212;
   --line: rgba(98, 63, 31, 0.14);
   --display: Georgia, 'Times New Roman', serif;
   --body: 'Avenir Next', 'Segoe UI', sans-serif;
@@ -93,5 +93,5 @@ ul {
 }
 
 ::selection {
-  background: rgba(94, 211, 161, 0.2);
+  background: rgba(242, 140, 40, 0.2);
 }
