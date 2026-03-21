@@ -179,6 +179,27 @@
   max-width: 12ch;
   margin-bottom: 1rem;
   color: white;
+  line-height: 0.88;
+}
+
+.hero-line {
+  display: block;
+}
+
+.hero-line-one {
+  font-family: 'Ruigslay', var(--display);
+  font-size: 1.02em;
+}
+
+.hero-line-two {
+  font-family: 'Amegrin', var(--display);
+  font-size: 0.96em;
+}
+
+.hero-line-three {
+  font-family: 'Varlo Demo', var(--display);
+  font-size: 0.9em;
+  letter-spacing: -0.01em;
 }
 
 .hero-text {

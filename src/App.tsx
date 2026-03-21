@@ -64,7 +64,11 @@ function App() {
 
         <section className="hero-grid" id="home">
           <div className="hero-copy">
-            <h1>Vibes, Views, &amp; Good Food</h1>
+            <h1>
+              <span className="hero-line hero-line-one">Vibes,</span>
+              <span className="hero-line hero-line-two">Views,</span>
+              <span className="hero-line hero-line-three">&amp; Good Food</span>
+            </h1>
             <p className="hero-text">
               Bluebird is a small sandwich shop in the Lakeside Chautauqua community,
               located right on the shores of Lake Erie. We serve handcrafted paninis,
