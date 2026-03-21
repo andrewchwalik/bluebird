@@ -219,7 +219,7 @@
 .hero-panini {
   position: absolute;
   left: 50%;
-  bottom: -5rem;
+  bottom: -3.75rem;
   width: min(47rem, 158%);
   height: 31rem;
   max-width: none;
