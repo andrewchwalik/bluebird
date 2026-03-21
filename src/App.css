@@ -186,33 +186,6 @@
   margin: 2rem 0;
 }
 
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 0;
-}
-
-.hero-stats div {
-  padding: 1rem;
-  border-radius: 1.35rem;
-  background: rgba(255, 248, 239, 0.08);
-  border: 1px solid rgba(255, 248, 239, 0.08);
-}
-
-.hero-stats dt {
-  margin-bottom: 0.5rem;
-  color: rgba(255, 235, 211, 0.7);
-  font-size: 0.85rem;
-}
-
-.hero-stats dd {
-  margin: 0;
-  color: white;
-  font-size: 1.45rem;
-  font-weight: 800;
-}
-
 .hero-visual {
   position: relative;
   min-height: 36rem;
@@ -245,10 +218,9 @@
 
 .hero-panini {
   position: absolute;
-  left: 50%;
-  bottom: -6.8rem;
-  width: min(28rem, 90%);
-  transform: translateX(-50%);
+  left: 11.375rem;
+  bottom: -9.5rem;
+  width: min(34rem, 115%);
   filter: drop-shadow(0 1.2rem 1.5rem rgba(38, 18, 10, 0.24));
   z-index: 2;
 }
@@ -734,7 +706,6 @@
   }
 
   .hero-actions,
-  .hero-stats,
   .store-buttons {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -743,10 +714,6 @@
   .button,
   .store-pill {
     width: 100%;
-  }
-
-  .hero-stats {
-    grid-template-columns: 1fr;
   }
 
   .hero-visual {

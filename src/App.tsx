@@ -3,12 +3,6 @@ import './App.css'
 
 const navItems = ['Home', 'Our Story', 'Menu', 'Gallery', 'Visit']
 
-const heroHighlights = [
-  { value: '12', label: 'signature sandwiches' },
-  { value: 'Local', label: 'bread + produce partners' },
-  { value: 'Daily', label: 'soups, specials, and sides' },
-]
-
 const featuredSandwiches = [
   {
     name: 'The Bluebird Club',
@@ -86,15 +80,6 @@ function App() {
                 Plan Your Visit
               </a>
             </div>
-
-            <dl className="hero-stats">
-              {heroHighlights.map((item) => (
-                <div key={item.label}>
-                  <dt>{item.label}</dt>
-                  <dd>{item.value}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
 
           <div className="hero-visual" aria-hidden="true">
