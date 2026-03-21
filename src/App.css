@@ -268,48 +268,6 @@
   z-index: 2;
 }
 
-.floating-dot {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(242, 140, 40, 0.95);
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.22);
-}
-
-.floating-dot-one {
-  top: 4.5rem;
-  left: 1.5rem;
-  width: 1.1rem;
-  height: 1.1rem;
-}
-
-.floating-dot-two {
-  top: 2.75rem;
-  right: 5.75rem;
-  width: 0.7rem;
-  height: 0.7rem;
-}
-
-.floating-dot-three {
-  top: 10rem;
-  left: 3.75rem;
-  width: 0.8rem;
-  height: 0.8rem;
-}
-
-.floating-dot-four {
-  top: 8.75rem;
-  right: 1.1rem;
-  width: 1rem;
-  height: 1rem;
-}
-
-.floating-dot-five {
-  bottom: 4.8rem;
-  left: 4.75rem;
-  width: 0.65rem;
-  height: 0.65rem;
-}
-
 .section {
   display: grid;
   gap: 2rem;
