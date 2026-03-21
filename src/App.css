@@ -218,12 +218,13 @@
 
 .hero-panini {
   position: absolute;
-  left: -16.125rem;
+  left: 50%;
   bottom: -5rem;
   width: min(47rem, 158%);
   height: 31rem;
   max-width: none;
   object-fit: contain;
+  transform: translateX(-50%);
   filter: drop-shadow(0 1.2rem 1.5rem rgba(38, 18, 10, 0.24));
   z-index: 2;
 }
