@@ -66,7 +66,7 @@
   color: white;
   font-family: var(--display);
   font-size: 1.5rem;
-  box-shadow: 0 10px 20px rgba(249, 133, 23, 0.25);
+  box-shadow: 0 10px 20px rgba(211, 125, 94, 0.25);
 }
 
 .brand-copy {
@@ -137,7 +137,7 @@
 .button-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-deep));
   color: white;
-  box-shadow: 0 16px 30px rgba(249, 133, 23, 0.3);
+  box-shadow: 0 16px 30px rgba(211, 125, 94, 0.3);
 }
 
 .button-secondary {
@@ -206,7 +206,7 @@
   border-radius: 18rem 18rem 1.5rem 1.5rem;
   background:
     radial-gradient(circle at 35% 20%, rgba(255, 214, 130, 0.28), transparent 26%),
-    linear-gradient(180deg, var(--accent) 0%, #f6a110 100%);
+    linear-gradient(180deg, var(--accent) 0%, var(--accent-deep) 100%);
 }
 
 .plate-shadow {
@@ -264,7 +264,7 @@
   right: 2.5rem;
   width: 4.5rem;
   height: 1rem;
-  border-top: 0.3rem solid #ffd57d;
+  border-top: 0.3rem solid #e7b39f;
   border-radius: 999px;
   transform: rotate(12deg);
 }
@@ -274,7 +274,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  border-top: 0.3rem solid #ffd57d;
+  border-top: 0.3rem solid #e7b39f;
   border-radius: 999px;
 }
 
@@ -301,7 +301,7 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at top right, rgba(249, 133, 23, 0.04), transparent 24%),
+    radial-gradient(circle at top right, rgba(211, 125, 94, 0.04), transparent 24%),
     radial-gradient(circle at bottom left, rgba(133, 179, 99, 0.03), transparent 20%);
   pointer-events: none;
 }
@@ -497,7 +497,7 @@
   padding: 2rem;
   border-radius: 2rem 2rem 1rem 1rem;
   background:
-    linear-gradient(135deg, rgba(249, 133, 23, 0.92), rgba(36, 20, 16, 0.98) 48%),
+    linear-gradient(135deg, rgba(211, 125, 94, 0.92), rgba(36, 20, 16, 0.98) 48%),
     #251511;
   color: white;
   box-shadow: 0 22px 60px rgba(55, 22, 8, 0.25);
@@ -640,7 +640,7 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid rgba(249, 133, 23, 0.35);
+  outline: 2px solid rgba(211, 125, 94, 0.35);
   border-color: var(--accent);
 }
 
