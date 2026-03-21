@@ -238,7 +238,7 @@
   position: absolute;
   inset: -1rem;
   border-radius: 19rem 19rem 2.25rem 2.25rem;
-  border: 2px dotted rgba(255, 255, 255, 0.78);
+  border: 2px dotted rgba(242, 140, 40, 0.9);
   opacity: 0.9;
   pointer-events: none;
 }
@@ -258,7 +258,7 @@
 .hero-panini {
   position: absolute;
   left: 50%;
-  bottom: -3.75rem;
+  bottom: -0.625rem;
   width: min(47rem, 158%);
   height: 31rem;
   max-width: none;
@@ -268,56 +268,46 @@
   z-index: 2;
 }
 
-.floating-dot,
-.floating-squiggle {
-  position: absolute;
-}
-
 .floating-dot {
+  position: absolute;
   border-radius: 50%;
-  background: white;
+  background: rgba(242, 140, 40, 0.95);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.22);
 }
 
 .floating-dot-one {
-  top: 5rem;
-  left: 0.5rem;
-  width: 1rem;
-  height: 1rem;
-  background: var(--accent);
+  top: 4.5rem;
+  left: 1.5rem;
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 .floating-dot-two {
-  top: 6.5rem;
-  right: 0.75rem;
+  top: 2.75rem;
+  right: 5.75rem;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.floating-dot-three {
+  top: 10rem;
+  left: 3.75rem;
   width: 0.8rem;
   height: 0.8rem;
 }
 
-.floating-squiggle {
-  top: 7rem;
-  right: 2.5rem;
-  width: 4.5rem;
+.floating-dot-four {
+  top: 8.75rem;
+  right: 1.1rem;
+  width: 1rem;
   height: 1rem;
-  border-top: 0.3rem solid #f7c083;
-  border-radius: 999px;
-  transform: rotate(12deg);
 }
 
-.floating-squiggle::before,
-.floating-squiggle::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-top: 0.3rem solid #f7c083;
-  border-radius: 999px;
-}
-
-.floating-squiggle::before {
-  transform: translateY(0.45rem);
-}
-
-.floating-squiggle::after {
-  transform: translateY(-0.45rem);
+.floating-dot-five {
+  bottom: 4.8rem;
+  left: 4.75rem;
+  width: 0.65rem;
+  height: 0.65rem;
 }
 
 .section {

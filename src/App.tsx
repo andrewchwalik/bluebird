@@ -93,7 +93,9 @@ function App() {
             </div>
             <span className="floating-dot floating-dot-one"></span>
             <span className="floating-dot floating-dot-two"></span>
-            <span className="floating-squiggle"></span>
+            <span className="floating-dot floating-dot-three"></span>
+            <span className="floating-dot floating-dot-four"></span>
+            <span className="floating-dot floating-dot-five"></span>
           </div>
         </section>
       </header>
