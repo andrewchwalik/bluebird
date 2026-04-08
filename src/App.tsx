@@ -11,6 +11,12 @@ const tickerItems = [
   'Fresh Smoothies',
 ]
 
+const popularDishes = [
+  { name: 'Lakefront Melt', price: '$10.99', imageClass: 'popular-image-one' },
+  { name: 'Harbor Club Wrap', price: '$10.99', imageClass: 'popular-image-two' },
+  { name: 'Sunrise Stack', price: '$10.99', imageClass: 'popular-image-three' },
+]
+
 const featuredSandwiches = [
   {
     name: 'The Bluebird Club',
@@ -108,28 +114,29 @@ function App() {
 
       <main>
         <section className="section intro-section" id="our-story">
-          <div className="section-art">
-            <div className="plated-dish">
-              <div className="plated-dish-inner"></div>
+          <div className="popular-header">
+            <div className="popular-title-wrap">
+              <h2>Popular Dishes</h2>
+              <div className="popular-badge">Best by the Lake</div>
             </div>
+            <a className="popular-link" href="#menu">
+              See All
+            </a>
           </div>
 
-          <div className="section-copy">
-            <p className="eyebrow">Our story</p>
-            <h2>Designed to feel handcrafted from the very first screen.</h2>
-            <p>
-              This starter gives you the bones of the site you mocked up: dramatic
-              hero contrast, soft paper textures, rounded image blocks, menu callouts,
-              and generous whitespace that keeps everything feeling premium.
-            </p>
-            <p>
-              The copy is placeholder-friendly, the layouts collapse cleanly on mobile,
-              and the palette is already tuned for a sandwich shop brand built around
-              warmth, appetite, and neighborhood personality.
-            </p>
-            <a className="button button-secondary" href="#gallery">
-              See Layout Flow
-            </a>
+          <div className="popular-grid">
+            {popularDishes.map((item) => (
+              <article className="popular-card" key={item.name}>
+                <div className={`popular-image ${item.imageClass}`}>
+                  <img src={paniniImage} alt="" />
+                </div>
+                <h3>{item.name}</h3>
+                <p>{item.price}</p>
+                <a className="popular-card-link" href="#visit">
+                  More
+                </a>
+              </article>
+            ))}
           </div>
         </section>
 
