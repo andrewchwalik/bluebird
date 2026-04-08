@@ -253,6 +253,7 @@ main {
 
 .intro-section {
   grid-template-columns: 1fr;
+  padding-top: 6rem;
   margin-top: 0;
   border-radius: 0;
   background: #fff;
