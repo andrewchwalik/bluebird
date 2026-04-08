@@ -131,7 +131,7 @@ function App() {
           </div>
 
           <div className="menu-promo-copy">
-            <h2>It's Cheaper to Order Direct</h2>
+            <h2>You Can Order Good Food Online</h2>
             <p>
               Ordering through Bluebird means better value, a smoother pickup flow,
               and no surprise third-party fees getting between you and lunch.
