@@ -17,27 +17,6 @@ const popularDishes = [
   { name: 'Sunrise Stack', price: '$10.99', imageClass: 'popular-image-three' },
 ]
 
-const featuredSandwiches = [
-  {
-    name: 'The Bluebird Club',
-    description:
-      'Turkey, bacon, tomato jam, crisp greens, and herb mayo stacked on toasted sourdough.',
-    tag: 'Best seller',
-  },
-  {
-    name: 'Golden Hour Melt',
-    description:
-      'Roast beef, caramelized onions, sharp cheddar, and house mustard on a warm potato bun.',
-    tag: 'Hot sandwich',
-  },
-  {
-    name: 'Garden Flight',
-    description:
-      'Whipped feta, cucumber ribbons, pickled onions, and basil pesto on focaccia.',
-    tag: 'Vegetarian',
-  },
-]
-
 const galleryMoments = [
   'Morning pastry case',
   'Open-faced lunch boards',
@@ -145,24 +124,25 @@ function App() {
         </section>
 
         <section className="section menu-section" id="menu">
-          <div className="section-heading">
-            <p className="eyebrow">Featured menu</p>
-            <h2>Three starter cards for your signatures.</h2>
-            <p>
-              Swap these with your real sandwiches, ingredients, prices, and photos
-              whenever you are ready.
-            </p>
+          <div className="menu-promo-visual" aria-hidden="true">
+            <div className="menu-promo-orb">
+              <img src={paniniImage} alt="" />
+            </div>
           </div>
 
-          <div className="menu-grid">
-            {featuredSandwiches.map((item, index) => (
-              <article className="menu-card" key={item.name}>
-                <div className={`menu-image menu-image-${index + 1}`} aria-hidden="true" />
-                <p className="menu-tag">{item.tag}</p>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-              </article>
-            ))}
+          <div className="menu-promo-copy">
+            <h2>It's Cheaper to Order Direct</h2>
+            <p>
+              Ordering through Bluebird means better value, a smoother pickup flow,
+              and no surprise third-party fees getting between you and lunch.
+            </p>
+            <p>
+              Skip the apps, order straight from the source, and get your favorite
+              sandwiches, salads, and smoothies exactly the way you want them.
+            </p>
+            <a className="menu-promo-link" href="#visit">
+              Order Now
+            </a>
           </div>
         </section>
 
