@@ -51,7 +51,7 @@
 
 .nav-links a {
   color: var(--ink);
-  font-family: 'Varlo Demo', var(--display);
+  font-family: 'Hit and Run', var(--display);
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -130,7 +130,7 @@
 
 .hero-line {
   display: block;
-  font-family: 'Varlo Demo', var(--display);
+  font-family: 'Hit and Run', var(--display);
   font-size: 1em;
   letter-spacing: -0.02em;
 }
@@ -192,7 +192,7 @@
   align-items: center;
   margin-right: 2.25rem;
   color: #fffdf6;
-  font-family: 'Varlo Demo', var(--display);
+  font-family: 'Hit and Run', var(--display);
   font-size: 1rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
