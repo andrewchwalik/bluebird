@@ -135,6 +135,8 @@ type InstagramPost = {
 }
 
 const instagramFeedUrl = 'https://rss.app/feeds/v1.1/UdSJuStGPGwq5Bzt.json'
+const getInstagramProxyImage = (url: string) =>
+  `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ''))}&w=1200&fit=cover`
 const fallbackInstagramPosts: InstagramPost[] = [
   {
     title: 'Golden panini',
@@ -218,7 +220,7 @@ function App() {
               .map((item, index) => ({
                 title: item.title ?? 'Bluebird post',
                 url: item.url ?? 'https://www.instagram.com/bluebird.ooo/',
-                image: item.image,
+                image: item.image ? getInstagramProxyImage(item.image) : undefined,
                 imageClass: fallbackInstagramPosts[index]?.imageClass,
               }))
           : fallbackInstagramPosts
