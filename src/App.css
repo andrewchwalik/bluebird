@@ -258,6 +258,7 @@
 }
 
 .intro-section {
+  grid-template-columns: 1fr;
   margin-top: 0;
   border-radius: 0;
   background: #fff;
