@@ -412,7 +412,7 @@ function App() {
               <span>Follow Us</span>
               <span>On Instagram</span>
             </h2>
-            <a className="instagram-handle" href="#visit">
+            <a className="instagram-handle" href="https://www.instagram.com/bluebird.ooo/">
               @bluebird.ooo
             </a>
           </div>
