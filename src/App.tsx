@@ -78,17 +78,13 @@ function App() {
 
             <div className="hero-actions">
               <a className="button button-primary" href="#menu">
-                Explore Menu
-              </a>
-              <a className="button button-secondary" href="#visit">
-                Plan Your Visit
+                Order Online
               </a>
             </div>
           </div>
 
           <div className="hero-visual" aria-hidden="true">
             <div className="hero-arch">
-              <div className="plate-shadow"></div>
               <img className="hero-panini" src={paniniImage} alt="" />
             </div>
           </div>
