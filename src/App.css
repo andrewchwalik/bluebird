@@ -288,8 +288,8 @@ main {
 
 .popular-badge {
   position: absolute;
-  top: calc(2.1rem - 98px);
-  right: calc(-0.4rem + 27px);
+  top: calc(2.1rem - 98px + 15px);
+  right: calc(-0.4rem + 27px + 10px);
   z-index: 1;
   display: inline-flex;
   flex-direction: column;
