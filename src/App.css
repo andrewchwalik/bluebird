@@ -88,6 +88,13 @@
   box-shadow: none;
 }
 
+.hero-button {
+  font-family: 'Hit and Run', var(--display);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .button-secondary {
   background: rgba(255, 248, 239, 0.15);
   color: white;

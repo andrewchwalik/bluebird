@@ -208,7 +208,7 @@ function App() {
             ))}
           </div>
 
-          <a className="button button-primary" href="#visit">
+          <a className="button button-primary hero-button" href="#visit">
             Order Online
           </a>
         </nav>
@@ -229,7 +229,7 @@ function App() {
             </p>
 
             <div className="hero-actions">
-              <a className="button button-primary" href="#menu">
+              <a className="button button-primary hero-button" href="#menu">
                 Order Online
               </a>
             </div>
