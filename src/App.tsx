@@ -69,9 +69,10 @@ function App() {
         <section className="hero-grid" id="home">
           <div className="hero-copy">
             <h1>
-              <span className="hero-line hero-line-one">Vibes,</span>
-              <span className="hero-line hero-line-two">Views,</span>
-              <span className="hero-line hero-line-three">&amp; Good Food</span>
+              <span className="hero-line hero-line-one">Vibes, Views</span>
+              <span className="hero-line hero-line-two">
+                &amp; <span className="hero-line-accent">Good Food</span>
+              </span>
             </h1>
             <p className="hero-text">
               Bluebird is a small sandwich shop in the Lakeside Chautauqua community,

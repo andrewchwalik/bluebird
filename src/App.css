@@ -122,7 +122,7 @@
 }
 
 .hero-copy h1 {
-  max-width: 9ch;
+  max-width: 11ch;
   margin-bottom: 1.25rem;
   color: #23180d;
   line-height: 0.86;
@@ -133,6 +133,10 @@
   font-family: 'Hit and Run', var(--display);
   font-size: 1em;
   letter-spacing: -0.02em;
+}
+
+.hero-line-accent {
+  color: #5eb4d3;
 }
 
 .hero-text {
@@ -173,6 +177,8 @@
   position: relative;
   overflow: hidden;
   margin-top: 1rem;
+  margin-left: calc(clamp(2rem, 4vw, 4rem) * -1);
+  width: 100vw;
   background: #5eb4d3;
   border-top: 1px solid rgba(255, 255, 255, 0.45);
   border-bottom: 1px solid rgba(33, 82, 103, 0.18);
