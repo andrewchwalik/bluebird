@@ -137,7 +137,7 @@ const footerNavItems = ['Home', 'Menu', 'About', 'Contact']
 const footerContactItems = [
   { icon: '📍', text: '100 Maple Ave, Lakeside Marblehead, OH 43440' },
   { icon: '📞', text: '419.967.6747' },
-  { icon: '✉', text: 'hello@bluebird.ooo' },
+  { icon: '📧', text: 'hello@bluebird.ooo' },
 ]
 
 function App() {
