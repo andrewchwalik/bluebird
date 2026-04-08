@@ -14,7 +14,7 @@
 }
 
 .hero-card {
-  padding: 2rem clamp(2rem, 4vw, 4rem) 0;
+  padding: 2rem clamp(2.75rem, 5vw, 5.5rem) 0;
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.35), transparent 26%),
     linear-gradient(180deg, #f8f0cf 0%, #f7efcf 100%);
@@ -232,7 +232,7 @@
 .section {
   display: grid;
   gap: 2rem;
-  padding: 5rem clamp(2rem, 4vw, 4rem);
+  padding: 5rem clamp(2.75rem, 5vw, 5.5rem);
   margin-top: 1rem;
   border-radius: 2rem;
   background: #fff;
@@ -279,8 +279,8 @@
 
 .popular-title-wrap {
   display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .popular-title-wrap h2 {
@@ -294,17 +294,18 @@
 
 .popular-badge {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 9rem;
   min-height: 9rem;
   padding: 1rem;
   margin-top: 0.35rem;
-  background: #dff073;
-  color: #23180d;
+  background: #5eb4d3;
+  color: #fffdf6;
   font-family: 'Hit and Run', var(--display);
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 0.88rem;
+  line-height: 0.95;
   text-align: center;
   text-transform: uppercase;
   clip-path: polygon(
@@ -335,20 +336,25 @@
   );
 }
 
+.popular-badge span {
+  display: block;
+}
+
 .popular-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 7rem;
+  min-width: 10.5rem;
   min-height: 2.8rem;
-  padding: 0 1.2rem;
+  padding: 0 1.35rem;
   border-radius: 999px;
   background: #efc454;
   color: #23180d;
   font-family: 'Hit and Run', var(--display);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .popular-grid {
@@ -797,6 +803,10 @@
   .popular-title-wrap {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .popular-link {
+    align-self: flex-start;
   }
 
   .popular-grid {

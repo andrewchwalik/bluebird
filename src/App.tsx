@@ -117,10 +117,14 @@ function App() {
           <div className="popular-header">
             <div className="popular-title-wrap">
               <h2>Popular Dishes</h2>
-              <div className="popular-badge">Best by the Lake</div>
+              <div className="popular-badge">
+                <span>Best</span>
+                <span>By The</span>
+                <span>Lake</span>
+              </div>
             </div>
             <a className="popular-link" href="#menu">
-              See All
+              Start Your Order
             </a>
           </div>
 
