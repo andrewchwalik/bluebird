@@ -268,73 +268,17 @@ main {
 }
 
 .popular-title-wrap {
-  position: relative;
   display: inline-flex;
   align-items: flex-start;
-  padding-right: 5.5rem;
-  isolation: isolate;
 }
 
 .popular-title-wrap h2 {
-  position: relative;
-  z-index: 2;
   margin: 0;
   color: #23180d;
   font-family: 'Hit and Run', var(--display);
   font-size: clamp(2.6rem, 5vw, 4.4rem);
   line-height: 0.88;
   text-transform: uppercase;
-}
-
-.popular-badge {
-  position: absolute;
-  top: calc(2.1rem - 98px + 15px);
-  right: calc(-0.4rem + 27px + 10px);
-  z-index: 1;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 5.75rem;
-  min-height: 5.75rem;
-  padding: 0.6rem;
-  background: #5eb4d3;
-  color: #fffdf6;
-  font-family: 'Hit and Run', var(--display);
-  font-size: 0.62rem;
-  line-height: 0.95;
-  text-align: center;
-  text-transform: uppercase;
-  clip-path: polygon(
-    50% 0%,
-    61% 12%,
-    75% 5%,
-    78% 21%,
-    94% 18%,
-    88% 34%,
-    100% 44%,
-    88% 54%,
-    95% 70%,
-    79% 68%,
-    76% 84%,
-    61% 77%,
-    50% 100%,
-    39% 77%,
-    24% 84%,
-    21% 68%,
-    5% 70%,
-    12% 54%,
-    0% 44%,
-    12% 34%,
-    6% 18%,
-    22% 21%,
-    25% 5%,
-    39% 12%
-  );
-}
-
-.popular-badge span {
-  display: block;
 }
 
 .popular-link {
