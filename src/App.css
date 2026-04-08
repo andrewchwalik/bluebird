@@ -922,6 +922,12 @@ main {
     #fff7d9;
 }
 
+.footer-ticker {
+  grid-column: 1 / -1;
+  margin-top: -3.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .footer-column h3 {
   margin: 0 0 1.6rem;
   color: #23180d;

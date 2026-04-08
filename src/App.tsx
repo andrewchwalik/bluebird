@@ -424,6 +424,16 @@ function App() {
       </main>
 
       <footer className="site-footer">
+        <div className="hero-ticker footer-ticker" aria-label="Bluebird footer highlights">
+          <div className="hero-ticker-track">
+            {[...tickerItems, ...tickerItems].map((item, index) => (
+              <span className="hero-ticker-item" key={`footer-${item}-${index}`}>
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
         <div className="footer-column">
           <h3>Navigation</h3>
           <nav className="footer-nav" aria-label="Footer">
