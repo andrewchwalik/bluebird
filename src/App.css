@@ -272,9 +272,12 @@ main {
   display: inline-flex;
   align-items: flex-start;
   padding-right: 5.5rem;
+  isolation: isolate;
 }
 
 .popular-title-wrap h2 {
+  position: relative;
+  z-index: 2;
   margin: 0;
   color: #23180d;
   font-family: 'Hit and Run', var(--display);
@@ -287,6 +290,7 @@ main {
   position: absolute;
   top: calc(2.1rem - 98px);
   right: calc(-0.4rem + 27px);
+  z-index: 1;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
