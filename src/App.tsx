@@ -135,9 +135,9 @@ const instagramPosts = [
 
 const footerNavItems = ['Home', 'Menu', 'About', 'Contact']
 const footerContactItems = [
-  { icon: '●', text: '123 Lakeshore Ave, Lakeside Marblehead, OH 43440' },
-  { icon: '◔', text: '(555) 014-2747' },
-  { icon: '✉', text: 'hello@bluebirdsandwich.com' },
+  { icon: '📍', text: '100 Maple Ave, Lakeside Marblehead, OH 43440' },
+  { icon: '📞', text: '419.967.6747' },
+  { icon: '✉', text: 'hello@bluebird.ooo' },
 ]
 
 function App() {
@@ -449,8 +449,8 @@ function App() {
 
         <div className="footer-column footer-cta">
           <h2>
-            <span>Ready To Make</span>
-            <span>An Order?</span>
+            <span>Ready To</span>
+            <span>Order?</span>
           </h2>
           <a className="footer-cta-link" href="#menu">
             Order Now
