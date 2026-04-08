@@ -897,6 +897,19 @@ main {
   aspect-ratio: 1 / 1.02;
 }
 
+.instagram-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.instagram-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .instagram-image {
   width: 100%;
   height: 100%;

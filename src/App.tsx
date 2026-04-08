@@ -127,11 +127,35 @@ const testimonials = [
   },
 ]
 
-const instagramPosts = [
-  { title: 'Golden panini', imageClass: 'instagram-image-one' },
-  { title: 'Smoothie lineup', imageClass: 'instagram-image-two' },
-  { title: 'Lunch by the lake', imageClass: 'instagram-image-three' },
-  { title: 'Fresh salads', imageClass: 'instagram-image-four' },
+type InstagramPost = {
+  title: string
+  url: string
+  image?: string
+  imageClass?: string
+}
+
+const instagramFeedUrl = 'https://rss.app/feeds/v1.1/UdSJuStGPGwq5Bzt.json'
+const fallbackInstagramPosts: InstagramPost[] = [
+  {
+    title: 'Golden panini',
+    url: 'https://www.instagram.com/bluebird.ooo/',
+    imageClass: 'instagram-image-one',
+  },
+  {
+    title: 'Smoothie lineup',
+    url: 'https://www.instagram.com/bluebird.ooo/',
+    imageClass: 'instagram-image-two',
+  },
+  {
+    title: 'Lunch by the lake',
+    url: 'https://www.instagram.com/bluebird.ooo/',
+    imageClass: 'instagram-image-three',
+  },
+  {
+    title: 'Fresh salads',
+    url: 'https://www.instagram.com/bluebird.ooo/',
+    imageClass: 'instagram-image-four',
+  },
 ]
 
 const footerNavItems = ['Home', 'Menu', 'About', 'Contact']
@@ -148,6 +172,7 @@ function App() {
   const testimonialsRef = useRef<HTMLDivElement>(null)
   const testimonialsPageCount = Math.ceil(testimonials.length / 3)
   const [activeTestimonialsPage, setActiveTestimonialsPage] = useState(0)
+  const [instagramPosts, setInstagramPosts] = useState<InstagramPost[]>(fallbackInstagramPosts)
 
   useEffect(() => {
     const node = testimonialsRef.current
@@ -170,6 +195,48 @@ function App() {
 
     return () => window.clearInterval(interval)
   }, [testimonialsPageCount])
+
+  useEffect(() => {
+    let isActive = true
+
+    const loadInstagramFeed = async () => {
+      try {
+        const response = await fetch(instagramFeedUrl)
+
+        if (!response.ok) {
+          throw new Error(`Feed request failed with ${response.status}`)
+        }
+
+        const feed = await response.json()
+        const latestPosts = Array.isArray(feed.items)
+          ? [...feed.items]
+              .sort((a, b) =>
+                new Date(b.date_published ?? 0).getTime() -
+                new Date(a.date_published ?? 0).getTime(),
+              )
+              .slice(0, 4)
+              .map((item, index) => ({
+                title: item.title ?? 'Bluebird post',
+                url: item.url ?? 'https://www.instagram.com/bluebird.ooo/',
+                image: item.image,
+                imageClass: fallbackInstagramPosts[index]?.imageClass,
+              }))
+          : fallbackInstagramPosts
+
+        if (isActive && latestPosts.length > 0) {
+          setInstagramPosts(latestPosts)
+        }
+      } catch (error) {
+        console.error('Unable to load Instagram feed', error)
+      }
+    }
+
+    void loadInstagramFeed()
+
+    return () => {
+      isActive = false
+    }
+  }, [])
 
   const handleTestimonialsScroll = () => {
     const node = testimonialsRef.current
@@ -420,7 +487,19 @@ function App() {
           <div className="instagram-grid">
             {instagramPosts.map((item) => (
               <article className="instagram-card" key={item.title}>
-                <div className={`instagram-image ${item.imageClass}`} aria-label={item.title} />
+                <a
+                  className="instagram-card-link"
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.title}
+                >
+                  {item.image ? (
+                    <img className="instagram-photo" src={item.image} alt={item.title} />
+                  ) : (
+                    <div className={`instagram-image ${item.imageClass ?? ''}`} aria-hidden="true" />
+                  )}
+                </a>
               </article>
             ))}
           </div>
