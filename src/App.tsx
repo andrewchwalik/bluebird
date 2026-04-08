@@ -373,39 +373,29 @@ function App() {
         </section>
 
         <section className="section ordering-section">
-          <div className="section-copy">
-            <p className="eyebrow">Online ordering</p>
-            <h2>A ready-made callout for delivery apps, pickup, or your own ordering flow.</h2>
-            <p>
-              Keep this as an informational section, or connect it later to Toast,
-              Square, Clover, Shopify, or a custom ordering experience.
-            </p>
-            <div className="store-buttons" aria-label="Ordering platforms">
-              <a className="store-pill" href="/">
-                Pickup
-              </a>
-              <a className="store-pill" href="/">
-                Delivery
-              </a>
+          <div className="about-visual" aria-hidden="true">
+            <div className="about-orb">
+              <img src={paniniImage} alt="" />
             </div>
           </div>
 
-          <div className="device-scene" aria-hidden="true">
-            <div className="laptop">
-              <div className="screen-grid">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <div className="phone">
-              <div className="screen-grid compact-grid">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
+          <div className="about-copy">
+            <h2>About Us</h2>
+            <p>
+              Bluebird brings together lake-day energy, fresh ingredients, and the kind
+              of menu you actually want to come back for. We keep things easygoing and
+              thoughtful, with handcrafted paninis, crisp salads, made-to-order subs,
+              smoothies, and snacks built for afternoons by the water.
+            </p>
+            <p>
+              Our space is meant to feel bright, welcoming, and a little special without
+              trying too hard. Whether you are grabbing lunch on the go or settling in
+              after a walk through Lakeside, Bluebird is here for good food, great
+              company, and a view worth lingering over.
+            </p>
+            <a className="about-link" href="#visit">
+              Read More
+            </a>
           </div>
         </section>
 
