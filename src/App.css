@@ -34,31 +34,13 @@
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
   color: var(--ink);
   text-decoration: none;
 }
 
-.brand-mark {
-  display: none;
-}
-
-.brand-copy {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
-.brand-copy strong {
-  font-family: 'Varlo Demo', var(--display);
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-.brand-copy span:last-child {
-  display: none;
+.brand-logo {
+  width: clamp(9rem, 16vw, 12rem);
+  height: auto;
 }
 
 .nav-links {

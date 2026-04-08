@@ -1,3 +1,4 @@
+import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
 import './App.css'
 
@@ -42,11 +43,7 @@ function App() {
       <header className="hero-card">
         <nav className="topbar" aria-label="Primary">
           <a className="brand" href="#home" aria-label="Bluebird home">
-            <span className="brand-mark">B</span>
-            <span className="brand-copy">
-              <strong>Bluebird</strong>
-              <span>Sandwich Shop</span>
-            </span>
+            <img className="brand-logo" src={bluebirdLogo} alt="Bluebird" />
           </a>
 
           <div className="nav-links">
