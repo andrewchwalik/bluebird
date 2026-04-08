@@ -126,10 +126,18 @@ const testimonials = [
   },
 ]
 
-const visitDetails = [
-  { label: 'Location', value: 'Bluebird Sandwich Shop, Main Street storefront' },
-  { label: 'Hours', value: 'Mon-Sat 8:00 AM - 4:00 PM' },
-  { label: 'Contact', value: '(555) 014-2747  |  hello@bluebirdsandwich.com' },
+const instagramPosts = [
+  { title: 'Golden panini', imageClass: 'instagram-image-one' },
+  { title: 'Smoothie lineup', imageClass: 'instagram-image-two' },
+  { title: 'Lunch by the lake', imageClass: 'instagram-image-three' },
+  { title: 'Fresh salads', imageClass: 'instagram-image-four' },
+]
+
+const footerNavItems = ['Home', 'Menu', 'About', 'Contact']
+const footerContactItems = [
+  { icon: '●', text: '123 Lakeshore Ave, Lakeside Marblehead, OH 43440' },
+  { icon: '◔', text: '(555) 014-2747' },
+  { icon: '✉', text: 'hello@bluebirdsandwich.com' },
 ]
 
 function App() {
@@ -395,44 +403,60 @@ function App() {
         </section>
 
         <section className="section contact-section" id="visit">
-          <div className="contact-details">
-            <p className="eyebrow">Visit Bluebird</p>
-            <h2>Contact, hours, and a map-ready area for your storefront details.</h2>
-
-            <div className="detail-list">
-              {visitDetails.map((item) => (
-                <article className="detail-card" key={item.label}>
-                  <p>{item.label}</p>
-                  <strong>{item.value}</strong>
-                </article>
-              ))}
-            </div>
+          <div className="instagram-header">
+            <h2>
+              <span>Follow Us</span>
+              <span>On Instagram</span>
+            </h2>
+            <a className="instagram-handle" href="#visit">
+              @bluebirdsandwich
+            </a>
           </div>
 
-          <form className="contact-form">
-            <h3>Start a catering inquiry</h3>
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" />
-            </label>
-            <label>
-              Event details
-              <textarea
-                name="details"
-                rows={5}
-                placeholder="Tell us what you need for lunch boxes, office spreads, or private events."
-              />
-            </label>
-            <button className="button button-primary" type="submit">
-              Send Inquiry
-            </button>
-          </form>
+          <div className="instagram-grid">
+            {instagramPosts.map((item) => (
+              <article className="instagram-card" key={item.title}>
+                <div className={`instagram-image ${item.imageClass}`} aria-label={item.title} />
+              </article>
+            ))}
+          </div>
         </section>
       </main>
+
+      <footer className="site-footer">
+        <div className="footer-column">
+          <h3>Navigation</h3>
+          <nav className="footer-nav" aria-label="Footer">
+            {footerNavItems.map((item) => (
+              <a key={item} href={`#${item.toLowerCase()}`}>
+                {item}
+              </a>
+            ))}
+          </nav>
+        </div>
+
+        <div className="footer-column">
+          <h3>Contact</h3>
+          <div className="footer-contact-list">
+            {footerContactItems.map((item) => (
+              <p key={item.text}>
+                <span aria-hidden="true">{item.icon}</span>
+                <span>{item.text}</span>
+              </p>
+            ))}
+          </div>
+        </div>
+
+        <div className="footer-column footer-cta">
+          <h2>
+            <span>Ready To Make</span>
+            <span>An Order?</span>
+          </h2>
+          <a className="footer-cta-link" href="#menu">
+            Order Now
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }

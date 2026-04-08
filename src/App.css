@@ -832,53 +832,164 @@ main {
   text-transform: uppercase;
 }
 
-.detail-list {
+.contact-section {
   grid-template-columns: 1fr;
-  margin-top: 1.5rem;
+  gap: 2rem;
 }
 
-.detail-card {
-  padding: 1.2rem 1.3rem;
+.instagram-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.detail-card p {
-  margin-bottom: 0.35rem;
-  color: var(--muted);
-  font-size: 0.88rem;
+.instagram-header h2 {
+  margin: 0;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  line-height: 0.9;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
-.contact-form {
-  position: relative;
-  z-index: 1;
+.instagram-header h2 span {
+  display: block;
+}
+
+.instagram-handle {
+  align-self: center;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.instagram-card {
+  border-radius: 1.4rem;
+  overflow: hidden;
+  background: #f7f7f4;
+  aspect-ratio: 1 / 1.02;
+}
+
+.instagram-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.instagram-image-one {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.08)),
+    linear-gradient(135deg, #d5d6d2 0%, #f2c16d 28%, #8d4b20 58%, #f9f0d7 100%);
+}
+
+.instagram-image-two {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.1)),
+    linear-gradient(135deg, #f4e3b4 0%, #f0c554 26%, #c57b2f 62%, #f7f7ef 100%);
+}
+
+.instagram-image-three {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.08)),
+    linear-gradient(135deg, #f6ebdf 0%, #d59f54 30%, #b6491d 62%, #7db782 100%);
+}
+
+.instagram-image-four {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.08)),
+    linear-gradient(135deg, #d8a46a 0%, #f4d28f 34%, #b17939 60%, #f7e7cb 100%);
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: 0.85fr 1.35fr 1fr;
+  gap: 3rem;
+  padding: 3.5rem clamp(2.75rem, 5vw, 5.5rem);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 219, 0.92), rgba(255, 250, 231, 0.98)),
+    #fff7d9;
+}
+
+.footer-column h3 {
+  margin: 0 0 1.6rem;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.footer-nav {
   display: grid;
   gap: 1rem;
-  padding: 1.5rem;
 }
 
-.contact-form label {
+.footer-nav a {
+  color: rgba(35, 24, 13, 0.78);
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.footer-contact-list {
   display: grid;
-  gap: 0.45rem;
+  gap: 1.15rem;
+}
+
+.footer-contact-list p {
+  display: flex;
+  gap: 0.85rem;
+  margin: 0;
+  color: rgba(35, 24, 13, 0.82);
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.footer-contact-list p span:first-child {
+  color: #efc454;
   font-weight: 700;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.95rem 1rem;
-  border: 1px solid rgba(197, 171, 141, 0.4);
-  border-radius: 1rem;
-  background: rgba(255, 252, 247, 0.95);
-  color: var(--ink);
-  font: inherit;
+.footer-cta {
+  justify-self: end;
+  max-width: 22rem;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid rgba(242, 140, 40, 0.35);
-  border-color: var(--accent);
+.footer-cta h2 {
+  margin: 0 0 1.6rem;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.footer-cta h2 span {
+  display: block;
+}
+
+.footer-cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9rem;
+  min-height: 2.8rem;
+  padding: 0 1.3rem;
+  border-radius: 999px;
+  background: #efc454;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1024px) {
@@ -886,7 +997,8 @@ main {
   .intro-section,
   .promo-section,
   .ordering-section,
-  .contact-section {
+  .contact-section,
+  .site-footer {
     grid-template-columns: 1fr;
   }
 
@@ -967,12 +1079,17 @@ main {
     align-items: flex-start;
   }
 
-  .device-scene {
-    min-height: 20rem;
+  .instagram-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .laptop {
-    width: min(25rem, calc(100% - 2rem));
+  .instagram-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-cta {
+    justify-self: start;
   }
 }
 
@@ -993,12 +1110,6 @@ main {
 
   .popular-title-wrap h2 {
     font-size: clamp(2.6rem, 12vw, 4rem);
-  }
-
-  .popular-badge {
-    min-width: 7.5rem;
-    min-height: 7.5rem;
-    font-size: 0.85rem;
   }
 
   .hero-visual {
@@ -1024,9 +1135,8 @@ main {
     width: min(22rem, 100%);
   }
 
-  .contact-form,
-  .detail-card,
-  .menu-showcase-card {
+  .menu-showcase-card,
+  .instagram-card {
     border-radius: 1.2rem;
   }
 
@@ -1036,5 +1146,13 @@ main {
 
   .testimonials-grid {
     grid-auto-columns: 100%;
+  }
+
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    padding: 3rem 1.5rem;
   }
 }
