@@ -337,8 +337,8 @@ function App() {
               <span>What Our</span>
               <span>Customers Say</span>
             </h2>
-            <a className="testimonials-link" href="#visit">
-              See All
+            <a className="testimonials-link" href="https://g.page/r/CbeoEoWaFiVcEBM/review">
+              Leave a Review
             </a>
           </div>
 
