@@ -539,7 +539,8 @@ main {
 .menu-showcase-grid {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(0, calc((100% - 3rem) / 4.35));
+  width: min(100%, 84rem);
+  grid-auto-columns: minmax(0, calc((100% - 3rem) / 4.05));
   gap: 1rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
