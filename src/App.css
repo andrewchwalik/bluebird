@@ -263,7 +263,7 @@
   border-radius: 0;
   background: #fff;
   box-shadow: none;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .intro-section::before {
@@ -287,7 +287,7 @@
   margin: 0;
   color: #23180d;
   font-family: 'Hit and Run', var(--display);
-  font-size: clamp(3.2rem, 6vw, 5.4rem);
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
   line-height: 0.88;
   text-transform: uppercase;
 }
