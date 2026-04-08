@@ -3,6 +3,13 @@ import paniniImage from '../img/panini.png'
 import './App.css'
 
 const navItems = ['Home', 'Our Story', 'Menu', 'Gallery', 'Visit']
+const tickerItems = [
+  'Bluebird on the Lake',
+  'Paninis',
+  'Salads',
+  'Made-to-Order Subs',
+  'Fresh Smoothies',
+]
 
 const featuredSandwiches = [
   {
@@ -86,6 +93,16 @@ function App() {
             </div>
           </div>
         </section>
+
+        <div className="hero-ticker" aria-label="Bluebird highlights">
+          <div className="hero-ticker-track">
+            {[...tickerItems, ...tickerItems].map((item, index) => (
+              <span className="hero-ticker-item" key={`${item}-${index}`}>
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
       </header>
 
       <main>

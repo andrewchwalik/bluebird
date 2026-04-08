@@ -14,7 +14,7 @@
 }
 
 .hero-card {
-  padding: 2rem clamp(2rem, 4vw, 4rem) 3.5rem;
+  padding: 2rem clamp(2rem, 4vw, 4rem) 0;
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.35), transparent 26%),
     linear-gradient(180deg, #f8f0cf 0%, #f7efcf 100%);
@@ -167,6 +167,51 @@
   max-width: 100%;
   object-fit: contain;
   filter: drop-shadow(0 1.2rem 1.8rem rgba(101, 74, 33, 0.18));
+}
+
+.hero-ticker {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  background: #5eb4d3;
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
+  border-bottom: 1px solid rgba(33, 82, 103, 0.18);
+}
+
+.hero-ticker-track {
+  display: flex;
+  width: max-content;
+  min-width: 100%;
+  padding: 0.85rem 0;
+  animation: hero-ticker-scroll 22s linear infinite;
+}
+
+.hero-ticker-item {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2.25rem;
+  color: #fffdf6;
+  font-family: 'Varlo Demo', var(--display);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-ticker-item::after {
+  content: '★';
+  margin-left: 2.25rem;
+  font-size: 0.82rem;
+}
+
+@keyframes hero-ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .section {
