@@ -561,21 +561,12 @@ main {
   text-transform: uppercase;
 }
 
-.gallery-card,
 .detail-card,
 .contact-form {
   border-radius: 1.6rem;
   background: rgba(255, 255, 255, 0.74);
   border: 1px solid rgba(197, 171, 141, 0.24);
   box-shadow: 0 14px 30px rgba(161, 108, 40, 0.08);
-}
-
-.gallery-image,
-.gallery-image {
-  width: 100%;
-  border-radius: 1.25rem;
-  background-size: cover;
-  background-position: center;
 }
 
 .poster-card h3,
@@ -587,35 +578,100 @@ main {
   grid-template-columns: 0.9fr 1.05fr 0.95fr;
 }
 
-.gallery-card {
-  padding: 0.8rem;
+.gallery-section {
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
-.gallery-card:nth-child(2) {
-  transform: translateY(-1rem);
+.menu-showcase-header h2 {
+  margin: 0;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  line-height: 0.9;
+  text-transform: uppercase;
 }
 
-.gallery-image {
-  height: 17rem;
-  margin-bottom: 0.8rem;
+.menu-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.gallery-image-1 {
-  background:
-    linear-gradient(180deg, rgba(255, 250, 244, 0.1), rgba(0, 0, 0, 0.18)),
-    linear-gradient(135deg, #d2b48f, #7d5b47 50%, #3e322c);
+.menu-showcase-card {
+  display: grid;
+  gap: 1.2rem;
+  min-height: 25rem;
+  padding: 1.2rem 1rem 1rem;
+  border-radius: 1.6rem;
+  background: #fbf4d8;
 }
 
-.gallery-image-2 {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.2)),
-    linear-gradient(135deg, #a85c32, #f3d38d 45%, #6f8f39);
+.menu-showcase-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 16.5rem;
 }
 
-.gallery-image-3 {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2)),
-    linear-gradient(135deg, #4d372f, #7f9a40 40%, #ece2c6);
+.menu-showcase-image img {
+  width: min(15rem, 100%);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1rem 1rem rgba(108, 76, 31, 0.18));
+}
+
+.menu-category-image-one img {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+.menu-category-image-two img {
+  transform: rotate(5deg) scale(1.03);
+}
+
+.menu-category-image-three img {
+  transform: rotate(10deg) scale(0.98);
+}
+
+.menu-category-image-four img {
+  transform: rotate(2deg) scale(0.94);
+}
+
+.menu-showcase-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-top: auto;
+}
+
+.menu-showcase-footer h3 {
+  margin: 0;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.menu-showcase-footer h3 span {
+  display: block;
+}
+
+.menu-showcase-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  background: #efc454;
+  color: #fffdf6;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1.35rem;
+  text-decoration: none;
+  line-height: 1;
 }
 
 .promo-poster {
@@ -832,7 +888,8 @@ main {
   }
 
   .popular-grid,
-  .gallery-grid {
+  .gallery-grid,
+  .menu-showcase-grid {
     grid-template-columns: 1fr;
   }
 
@@ -846,10 +903,6 @@ main {
 
   .menu-promo-copy {
     order: 2;
-  }
-
-  .gallery-card:nth-child(2) {
-    transform: none;
   }
 
   .device-scene {
@@ -915,7 +968,7 @@ main {
 
   .contact-form,
   .detail-card,
-  .gallery-card {
+  .menu-showcase-card {
     border-radius: 1.2rem;
   }
 }

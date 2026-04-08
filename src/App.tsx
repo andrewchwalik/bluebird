@@ -17,10 +17,27 @@ const popularDishes = [
   { name: 'Sunrise Stack', price: '$10.99', imageClass: 'popular-image-three' },
 ]
 
-const galleryMoments = [
-  'Morning pastry case',
-  'Open-faced lunch boards',
-  'The sandwich press in action',
+const menuCategories = [
+  {
+    title: 'Breakfast Sandwiches',
+    lines: ['Breakfast', 'Sandwiches'],
+    imageClass: 'menu-category-image-one',
+  },
+  {
+    title: 'Breakfast Burritos',
+    lines: ['Breakfast', 'Burritos'],
+    imageClass: 'menu-category-image-two',
+  },
+  {
+    title: 'Sides',
+    lines: ['Sides'],
+    imageClass: 'menu-category-image-three',
+  },
+  {
+    title: 'Beverages',
+    lines: ['Beverages'],
+    imageClass: 'menu-category-image-four',
+  },
 ]
 
 const visitDetails = [
@@ -147,21 +164,27 @@ function App() {
         </section>
 
         <section className="section gallery-section" id="gallery">
-          <div className="section-copy compact">
-            <p className="eyebrow">Gallery</p>
-            <h2>Room for food photography, interior shots, and behind-the-counter moments.</h2>
-            <p>
-              The image cards are placeholder panels for now, sized to mimic the lively
-              stacked gallery feel from the reference.
-            </p>
+          <div className="menu-showcase-header">
+            <h2>Our Menu</h2>
           </div>
 
-          <div className="gallery-grid">
-            {galleryMoments.map((label, index) => (
-              <figure className="gallery-card" key={label}>
-                <div className={`gallery-image gallery-image-${index + 1}`} aria-hidden="true" />
-                <figcaption>{label}</figcaption>
-              </figure>
+          <div className="menu-showcase-grid">
+            {menuCategories.map((item) => (
+              <article className="menu-showcase-card" key={item.title}>
+                <div className={`menu-showcase-image ${item.imageClass}`}>
+                  <img src={paniniImage} alt="" />
+                </div>
+                <div className="menu-showcase-footer">
+                  <h3>
+                    {item.lines.map((line) => (
+                      <span key={line}>{line}</span>
+                    ))}
+                  </h3>
+                  <a className="menu-showcase-link" href="#visit" aria-label={`Browse ${item.title}`}>
+                    <span aria-hidden="true">›</span>
+                  </a>
+                </div>
+              </article>
             ))}
           </div>
         </section>
