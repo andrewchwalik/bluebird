@@ -19,24 +19,34 @@ const popularDishes = [
 
 const menuCategories = [
   {
-    title: 'Breakfast Sandwiches',
-    lines: ['Breakfast', 'Sandwiches'],
+    title: 'Paninis',
+    lines: ['Paninis'],
     imageClass: 'menu-category-image-one',
   },
   {
-    title: 'Breakfast Burritos',
-    lines: ['Breakfast', 'Burritos'],
+    title: 'Salads',
+    lines: ['Salads'],
     imageClass: 'menu-category-image-two',
   },
   {
-    title: 'Sides',
-    lines: ['Sides'],
+    title: 'Subs',
+    lines: ['Subs'],
     imageClass: 'menu-category-image-three',
   },
   {
-    title: 'Beverages',
-    lines: ['Beverages'],
+    title: 'Smoothies',
+    lines: ['Smoothies'],
     imageClass: 'menu-category-image-four',
+  },
+  {
+    title: 'Kids',
+    lines: ['Kids'],
+    imageClass: 'menu-category-image-five',
+  },
+  {
+    title: 'Snacks',
+    lines: ['Snacks'],
+    imageClass: 'menu-category-image-six',
   },
 ]
 
