@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
 import './App.css'
@@ -75,6 +76,54 @@ const testimonials = [
     date: '21.02.2025',
     initials: 'S',
   },
+  {
+    rating: '5.0',
+    quote:
+      'The view, the sandwiches, and the quick service made this one of our favorite lunch stops in Lakeside. It feels relaxed, cheerful, and easy in the best way.',
+    name: 'Jamie L',
+    date: '25.02.2025',
+    initials: 'JL',
+  },
+  {
+    rating: '4.8',
+    quote:
+      'We ordered online before heading over and everything was ready right on time. The paninis were crisp and the salads felt way fresher than typical grab-and-go spots.',
+    name: 'Morgan T',
+    date: '26.02.2025',
+    initials: 'MT',
+  },
+  {
+    rating: '4.9',
+    quote:
+      'Bluebird has such a fun energy. Our kids loved the smoothies, and the grown-ups were already talking about which sandwiches to come back for next weekend.',
+    name: 'Ella R',
+    date: '28.02.2025',
+    initials: 'ER',
+  },
+  {
+    rating: '5.0',
+    quote:
+      'The whole place feels thoughtfully put together, from the menu to the music to the service. It is exactly the kind of lunch spot you hope to find near the lake.',
+    name: 'Noah P',
+    date: '02.03.2025',
+    initials: 'NP',
+  },
+  {
+    rating: '4.9',
+    quote:
+      'Our group tried subs, snacks, and smoothies, and every order came out looking great. It is one of those places that feels both easygoing and genuinely polished.',
+    name: 'Claire D',
+    date: '04.03.2025',
+    initials: 'CD',
+  },
+  {
+    rating: '4.8',
+    quote:
+      'I love that ordering direct is simple and fast. The food is consistently good, the portions are generous, and the staff always make the experience feel welcoming.',
+    name: 'Ben S',
+    date: '07.03.2025',
+    initials: 'BS',
+  },
 ]
 
 const visitDetails = [
@@ -84,6 +133,57 @@ const visitDetails = [
 ]
 
 function App() {
+  const testimonialsRef = useRef<HTMLDivElement>(null)
+  const testimonialsPageCount = Math.ceil(testimonials.length / 3)
+  const [activeTestimonialsPage, setActiveTestimonialsPage] = useState(0)
+
+  useEffect(() => {
+    const node = testimonialsRef.current
+
+    if (!node) {
+      return
+    }
+
+    const interval = window.setInterval(() => {
+      setActiveTestimonialsPage((currentPage) => {
+        const nextPage = (currentPage + 1) % testimonialsPageCount
+        node.scrollTo({
+          left: node.clientWidth * nextPage,
+          behavior: 'smooth',
+        })
+
+        return nextPage
+      })
+    }, 5000)
+
+    return () => window.clearInterval(interval)
+  }, [testimonialsPageCount])
+
+  const handleTestimonialsScroll = () => {
+    const node = testimonialsRef.current
+
+    if (!node) {
+      return
+    }
+
+    const nextPage = Math.round(node.scrollLeft / node.clientWidth)
+    setActiveTestimonialsPage(Math.min(testimonialsPageCount - 1, Math.max(0, nextPage)))
+  }
+
+  const jumpToTestimonialsPage = (pageIndex: number) => {
+    const node = testimonialsRef.current
+
+    if (!node) {
+      return
+    }
+
+    node.scrollTo({
+      left: node.clientWidth * pageIndex,
+      behavior: 'smooth',
+    })
+    setActiveTestimonialsPage(pageIndex)
+  }
+
   return (
     <div className="page-shell">
       <header className="hero-card">
@@ -230,14 +330,18 @@ function App() {
           <div className="testimonials-header">
             <h2>
               <span>What Our</span>
-              <span>Clients Say</span>
+              <span>Customers Say</span>
             </h2>
             <a className="testimonials-link" href="#visit">
               See All
             </a>
           </div>
 
-          <div className="testimonials-grid">
+          <div
+            className="testimonials-grid"
+            ref={testimonialsRef}
+            onScroll={handleTestimonialsScroll}
+          >
             {testimonials.map((item) => (
               <article className="testimonial-card" key={`${item.name}-${item.date}`}>
                 <p className="testimonial-rating">★ {item.rating}</p>
@@ -256,9 +360,15 @@ function App() {
           </div>
 
           <div className="testimonials-pager" aria-hidden="true">
-            <span className="is-active"></span>
-            <span></span>
-            <span></span>
+            {Array.from({ length: testimonialsPageCount }).map((_, index) => (
+              <button
+                key={index}
+                className={index === activeTestimonialsPage ? 'is-active' : undefined}
+                type="button"
+                onClick={() => jumpToTestimonialsPage(index)}
+                aria-label={`Show testimonial set ${index + 1}`}
+              />
+            ))}
           </div>
         </section>
 
