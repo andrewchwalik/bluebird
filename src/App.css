@@ -122,17 +122,22 @@
 }
 
 .hero-copy h1 {
-  max-width: 11ch;
+  max-width: 12.5ch;
   margin-bottom: 1.25rem;
   color: #23180d;
-  line-height: 0.86;
+  line-height: 0.9;
 }
 
 .hero-line {
   display: block;
   font-family: 'Hit and Run', var(--display);
-  font-size: 1em;
+  font-size: 0.88em;
   letter-spacing: -0.02em;
+}
+
+.hero-line-two {
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .hero-line-accent {
