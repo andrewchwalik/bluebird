@@ -139,6 +139,7 @@ const footerContactItems = [
   { icon: '📞', text: '419.967.6747' },
   { icon: '📧', text: 'hello@bluebird.ooo' },
 ]
+const orderLink = 'https://cash.app/order/$bluebirdlakeside'
 
 function App() {
   const testimonialsRef = useRef<HTMLDivElement>(null)
@@ -208,7 +209,7 @@ function App() {
             ))}
           </div>
 
-          <a className="button button-primary hero-button" href="#visit">
+          <a className="button button-primary hero-button" href={orderLink}>
             Order Online
           </a>
         </nav>
@@ -229,7 +230,7 @@ function App() {
             </p>
 
             <div className="hero-actions">
-              <a className="button button-primary hero-button" href="#menu">
+              <a className="button button-primary hero-button" href={orderLink}>
                 Order Online
               </a>
             </div>
@@ -259,7 +260,7 @@ function App() {
             <div className="popular-title-wrap">
               <h2>Popular Dishes</h2>
             </div>
-            <a className="popular-link" href="#menu">
+            <a className="popular-link" href={orderLink}>
               Start Your Order
             </a>
           </div>
@@ -297,7 +298,7 @@ function App() {
               Skip the apps, order straight from the source, and get your favorite
               sandwiches, salads, and smoothies exactly the way you want them.
             </p>
-            <a className="menu-promo-link" href="#visit">
+            <a className="menu-promo-link" href={orderLink}>
               Order Now
             </a>
           </div>
@@ -462,7 +463,7 @@ function App() {
             <span>Ready To</span>
             <span>Order?</span>
           </h2>
-          <a className="footer-cta-link" href="#menu">
+          <a className="footer-cta-link" href={orderLink}>
             Order Now
           </a>
         </div>
