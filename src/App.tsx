@@ -141,6 +141,8 @@ const footerContactItems = [
   { icon: '📧', text: 'hello@bluebird.ooo' },
 ]
 const orderLink = 'https://cash.app/order/$bluebirdlakeside'
+const repeatedHeroTickerItems = Array.from({ length: 6 }, () => heroTickerItems).flat()
+const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
 function App() {
   const testimonialsRef = useRef<HTMLDivElement>(null)
@@ -246,7 +248,7 @@ function App() {
 
         <div className="hero-ticker" aria-label="Bluebird highlights">
           <div className="hero-ticker-track">
-            {[...heroTickerItems, ...heroTickerItems].map((item, index) => (
+            {repeatedHeroTickerItems.map((item, index) => (
               <span className="hero-ticker-item" key={`${item}-${index}`}>
                 {item}
               </span>
@@ -428,7 +430,7 @@ function App() {
       <footer className="site-footer">
         <div className="hero-ticker footer-ticker" aria-label="Bluebird footer highlights">
           <div className="hero-ticker-track">
-            {[...tickerItems, ...tickerItems].map((item, index) => (
+            {repeatedFooterTickerItems.map((item, index) => (
               <span className="hero-ticker-item" key={`footer-${item}-${index}`}>
                 {item}
               </span>
