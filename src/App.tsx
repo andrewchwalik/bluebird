@@ -40,6 +40,33 @@ const menuCategories = [
   },
 ]
 
+const testimonials = [
+  {
+    rating: '4.9',
+    quote:
+      'We grabbed lunch after a walk by the lake and every sandwich felt fresh, filling, and made with real care. The smoothies were a hit too, and the whole place had such an easy, breezy feel.',
+    name: 'Katharina W',
+    date: '21.02.2025',
+    initials: 'KW',
+  },
+  {
+    rating: '5.0',
+    quote:
+      'Bluebird has become one of our regular stops in Lakeside. The paninis come out hot, the salads are crisp, and ordering direct is always quick and easy when we are headed to the water.',
+    name: 'Patricia',
+    date: '21.02.2025',
+    initials: 'P',
+  },
+  {
+    rating: '4.9',
+    quote:
+      'Everything we tried tasted thoughtful and house-made, and the staff made the whole visit feel warm from the moment we walked in. We will absolutely be back for another lunch run.',
+    name: 'Steven 123',
+    date: '21.02.2025',
+    initials: 'S',
+  },
+]
+
 const visitDetails = [
   { label: 'Location', value: 'Bluebird Sandwich Shop, Main Street storefront' },
   { label: 'Hours', value: 'Mon-Sat 8:00 AM - 4:00 PM' },
@@ -190,30 +217,38 @@ function App() {
         </section>
 
         <section className="section promo-section">
-          <div className="promo-poster">
-            <div className="poster-card">
-              <p className="poster-kicker">House favorite</p>
-              <h3>Bluebird Brisket Melt</h3>
-              <ul>
-                <li>slow roasted beef</li>
-                <li>smoked cheddar</li>
-                <li>crispy onions</li>
-                <li>pepper jam aioli</li>
-              </ul>
-              <strong>$15 lunch combo</strong>
-            </div>
+          <div className="testimonials-header">
+            <h2>
+              <span>What Our</span>
+              <span>Clients Say</span>
+            </h2>
+            <a className="testimonials-link" href="#visit">
+              See All
+            </a>
           </div>
 
-          <div className="section-copy">
-            <p className="eyebrow">Promotions</p>
-            <h2>Space for limited-time offers, combos, or seasonal campaigns.</h2>
-            <p>
-              This section is built to hold poster-style artwork or a bold promo card,
-              which matches the strong marketing panels in your inspiration image.
-            </p>
-            <a className="button button-primary" href="#visit">
-              Feature This Offer
-            </a>
+          <div className="testimonials-grid">
+            {testimonials.map((item) => (
+              <article className="testimonial-card" key={`${item.name}-${item.date}`}>
+                <p className="testimonial-rating">★ {item.rating}</p>
+                <p className="testimonial-quote">{item.quote}</p>
+                <div className="testimonial-meta">
+                  <div className="testimonial-avatar" aria-hidden="true">
+                    {item.initials}
+                  </div>
+                  <div>
+                    <strong>{item.name}</strong>
+                    <span>{item.date}</span>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="testimonials-pager" aria-hidden="true">
+            <span className="is-active"></span>
+            <span></span>
+            <span></span>
           </div>
         </section>
 
