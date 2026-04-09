@@ -14,9 +14,9 @@ const tickerItems = [
 ]
 
 const popularDishes = [
-  { name: 'Chicken Pesto', price: '$10.99', imageClass: 'popular-image-one' },
-  { name: 'Barnyard Salad', price: '$10.99', imageClass: 'popular-image-two' },
-  { name: 'Honey Bee Smoothie', price: '$10.99', imageClass: 'popular-image-three' },
+  { name: 'Chicken Pesto', price: '$12.00', imageClass: 'popular-image-one' },
+  { name: 'Barnyard Salad', price: '$14.00', imageClass: 'popular-image-two' },
+  { name: 'Honey Bee Smoothie', price: '$7.50', imageClass: 'popular-image-three' },
 ]
 
 const menuCategories = [
