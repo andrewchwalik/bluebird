@@ -237,15 +237,15 @@ export default function MenuPage() {
         <section className="hero-grid menu-page-intro">
           <div className="hero-copy menu-page-copy">
             <h1>
-              <span className="hero-line hero-line-one">Our</span>
+              <span className="hero-line hero-line-one">Our Delicious</span>
               <span className="hero-line hero-line-two">
                 <span className="hero-line-accent">Menu</span>
               </span>
             </h1>
             <p className="hero-text">
-              Explore every Bluebird category in one place. This page is set up
-              for your full menu, with room for real names, prices, and ingredients
-              once you are ready to drop them in.
+              Take a look at our full menu of sandwiches, salads, smoothies, and
+              more. Jot down your favorites for when you come into our shop or
+              place your order for pickup right on our website.
             </p>
 
             <div className="hero-actions">
