@@ -71,19 +71,19 @@ const menuSections: MenuSection[] = [
     items: [
       {
         name: 'Peacock',
-        price: '$13.50',
+        price: '$12.00',
         ingredients: 'Ham, pear, brie cheese, arugula, and fig spread',
         imageClass: 'popular-image-one',
       },
       {
         name: 'Hamilton',
-        price: '$12.50',
+        price: '$12.00',
         ingredients: 'Ham, gouda, apples, and honey mustard',
         imageClass: 'popular-image-two',
       },
       {
         name: 'Grilled Cheese Crunch',
-        price: '$10.50',
+        price: '$11.50',
         ingredients: 'Cheddar, gouda, and kettle chips',
         imageClass: 'popular-image-three',
       },
@@ -95,25 +95,25 @@ const menuSections: MenuSection[] = [
       },
       {
         name: 'Ciao Chow',
-        price: '$12.50',
+        price: '$12.00',
         ingredients: 'Ham, salami, mozzarella, spinach, sun dried tomatoes, and pesto',
         imageClass: 'popular-image-two',
       },
       {
         name: 'Happy Lakesider',
-        price: '$13.50',
+        price: '$12.00',
         ingredients: "Bacon, chicken breast, cheddar, lettuce, tomatoes, and mama's mayo",
         imageClass: 'popular-image-three',
       },
       {
         name: 'BLT',
-        price: '$11.00',
+        price: '$12.00',
         ingredients: "Bacon, lettuce, tomatoes, and mama's mayo",
         imageClass: 'popular-image-one',
       },
       {
         name: 'Veggie Delight',
-        price: '$11.50',
+        price: '$12.00',
         ingredients: "Basil, spinach, lettuce, tomatoes, provolone, and mama's mayo",
         imageClass: 'popular-image-two',
       },
