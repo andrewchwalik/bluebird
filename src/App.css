@@ -49,14 +49,18 @@
   gap: 2rem;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links span {
   color: var(--ink);
   font-family: 'Hit and Run', var(--display);
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.05em;
-  text-decoration: none;
   text-transform: uppercase;
+}
+
+.nav-links a {
+  text-decoration: none;
 }
 
 .button {

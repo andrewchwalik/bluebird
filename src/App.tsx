@@ -3,7 +3,12 @@ import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
 import './App.css'
 
-const navItems = ['Home', 'Our Story', 'Menu', 'Visit']
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Our Story' },
+  { label: 'Menu' },
+  { label: 'Visit' },
+]
 const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
 const tickerItems = [
   'Bluebird on the Lake',
@@ -269,15 +274,19 @@ function App() {
     <div className="page-shell">
       <header className="hero-card">
         <nav className="topbar" aria-label="Primary">
-          <a className="brand" href="#home" aria-label="Bluebird home">
+          <a className="brand" href="/" aria-label="Bluebird home">
             <img className="brand-logo" src={bluebirdLogo} alt="Bluebird" />
           </a>
 
           <div className="nav-links">
             {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>
-                {item}
-              </a>
+              item.href ? (
+                <a key={item.label} href={item.href}>
+                  {item.label}
+                </a>
+              ) : (
+                <span key={item.label}>{item.label}</span>
+              )
             ))}
           </div>
 
