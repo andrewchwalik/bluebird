@@ -873,11 +873,12 @@ main {
 
 .instagram-handle {
   display: inline-flex;
-  align-self: center;
+  align-self: flex-start;
   align-items: center;
   justify-content: center;
   min-width: 10.5rem;
   min-height: 2.8rem;
+  margin-top: 0.35rem;
   padding: 0 1.25rem;
   border-radius: 999px;
   background: #efc454;
