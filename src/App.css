@@ -974,10 +974,84 @@ main {
   gap: 1rem;
 }
 
-.footer-nav a {
+.footer-nav a,
+.footer-nav span {
   color: rgba(35, 24, 13, 0.78);
   font-size: 1.15rem;
+}
+
+.footer-nav a {
   text-decoration: none;
+}
+
+.menu-page-main {
+  background: #fff;
+}
+
+.menu-page-intro {
+  padding-bottom: 2.5rem;
+}
+
+.menu-page-copy h1 {
+  max-width: 9ch;
+}
+
+.menu-page-visual {
+  min-height: 24rem;
+}
+
+.menu-page-hero-image {
+  width: min(28rem, 100%);
+}
+
+.menu-category-section {
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+.menu-category-header {
+  max-width: 40rem;
+}
+
+.menu-category-header h2 {
+  margin: 0 0 0.5rem;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.menu-category-header p {
+  margin: 0;
+  color: rgba(35, 24, 13, 0.78);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.menu-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.menu-item-card {
+  min-height: 24rem;
+}
+
+.menu-item-price {
+  margin: 0.1rem 0 0.6rem;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.menu-item-ingredients {
+  margin: 0;
+  color: rgba(35, 24, 13, 0.74);
+  font-size: 0.98rem;
+  line-height: 1.5;
 }
 
 .footer-contact-list {
@@ -1040,7 +1114,8 @@ main {
   .promo-section,
   .ordering-section,
   .contact-section,
-  .site-footer {
+  .site-footer,
+  .menu-category-grid {
     grid-template-columns: 1fr;
   }
 

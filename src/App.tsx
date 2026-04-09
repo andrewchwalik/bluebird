@@ -6,7 +6,7 @@ import './App.css'
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Our Story' },
-  { label: 'Menu' },
+  { label: 'Menu', href: '/menu/' },
   { label: 'Visit' },
 ]
 const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
@@ -171,6 +171,7 @@ const footerContactItems = [
     icon: '📍',
     text: '100 Maple Ave, Lakeside Marblehead, OH 43440',
     href: 'https://www.google.com/maps/dir/?api=1&destination=100+Maple+Ave,+Lakeside+Marblehead,+OH+43440',
+    external: true,
   },
   {
     icon: '📞',
@@ -556,10 +557,15 @@ function App() {
         </div>
 
         <div className="footer-column">
-            <h3>Contact</h3>
+          <h3>Contact</h3>
           <div className="footer-contact-list">
             {footerContactItems.map((item) => (
-              <a key={item.text} href={item.href}>
+              <a
+                key={item.text}
+                href={item.href}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noreferrer' : undefined}
+              >
                 <span aria-hidden="true">{item.icon}</span>
                 <span>{item.text}</span>
               </a>
