@@ -181,27 +181,27 @@ const menuSections: MenuSection[] = [
     isScrollable: true,
     items: [
       {
-        name: 'Strawberry Cream Smoothie',
+        name: 'Strawberry Cream',
         price: '$7.50',
         ingredients:
           'Strawberries, bananas, greek yogurt, whole milk, apple juice, and homemade whip cream',
         imageClass: 'popular-image-one',
       },
       {
-        name: 'Peanut Butter Banana Smoothie',
+        name: 'Peanut Butter Banana',
         price: '$7.50',
         ingredients: 'Bananas, peanut butter, whole milk, and homemade whip cream',
         imageClass: 'popular-image-two',
       },
       {
-        name: 'Tropical Sun Smoothie',
+        name: 'Tropical Sun',
         price: '$7.50',
         ingredients:
           'Mangos, bananas, pineapple, apple juice, coconut milk, and homemade whip cream',
         imageClass: 'popular-image-three',
       },
       {
-        name: 'Honey Bee Smoothie',
+        name: 'Honey Bee',
         price: '$7.50',
         ingredients: 'Bananas, honey, vanilla, whole milk, homemade whip cream',
         imageClass: 'popular-image-one',
