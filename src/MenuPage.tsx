@@ -211,25 +211,20 @@ const menuSections: MenuSection[] = [
   },
   {
     title: 'Kids',
-    description: 'Simple, satisfying favorites sized for younger appetites.',
+    description:
+      'Simple, satisfying favorites sized for younger appetites. All kids meals come with your choice of GoGo Squeeze applesauce or classic, barbecue, sour cream & onion, or cheddar & sour cream chips. Also comes with your choice of a juice box or water.',
     items: [
       {
-        name: 'Mini Melt',
-        price: '$7.00',
-        ingredients: 'Turkey, cheddar, soft bread, apple slices',
+        name: "Kid's Grilled Cheese",
+        price: '$6.00',
+        ingredients: 'Cheddar cheese',
         imageClass: 'popular-image-two',
       },
       {
-        name: 'Little Picnic Box',
-        price: '$7.50',
-        ingredients: 'PB and jelly, fruit cup, pretzels',
+        name: 'PB & J Sandwich',
+        price: '$6.00',
+        ingredients: 'Creamy peanut butter, jelly',
         imageClass: 'popular-image-one',
-      },
-      {
-        name: 'Cheesy Roll-Up',
-        price: '$6.50',
-        ingredients: 'Melted cheddar, tortilla, veggie sticks',
-        imageClass: 'popular-image-three',
       },
     ],
   },
