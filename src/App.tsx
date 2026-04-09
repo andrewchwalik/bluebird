@@ -363,12 +363,15 @@ function App() {
           <div className="menu-promo-copy">
             <h2>You Can Order Good Food Online</h2>
             <p>
-              Ordering through Bluebird means better value, a smoother pickup flow,
-              and no surprise third-party fees getting between you and lunch.
+              You can place your order for pickup right on our website! Tap the
+              &quot;Order Now&quot; button and you&apos;ll be able to add all the
+              delicious Bluebird goodness to your cart that your heart desires.
             </p>
             <p>
-              Skip the apps, order straight from the source, and get your favorite
-              sandwiches, salads, and smoothies exactly the way you want them.
+              Once you checkout, your order will be sent to our kitchen and our
+              team will get working on crafting it. Once it&apos;s ready, you&apos;ll
+              be able to pick it up on the glass countertop - no need to wait in
+              line!
             </p>
             <a className="menu-promo-link" href={orderLink}>
               Order Now
