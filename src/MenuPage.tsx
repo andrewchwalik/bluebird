@@ -121,25 +121,33 @@ const menuSections: MenuSection[] = [
   },
   {
     title: 'Salads',
-    description: 'Fresh, colorful bowls made for easy lunches by the lake.',
+    description:
+      'Fresh, colorful bowls made for easy lunches by the lake. Every salad comes with your choice of balsamic vinaigrette, ranch, poppyseed, italian, greek, or olive oil & balsamic vinegar dressing.',
+    isScrollable: true,
     items: [
       {
-        name: 'Garden Club',
-        price: '$13.00',
-        ingredients: 'Romaine, cucumber, tomato, cheddar, croutons, house vinaigrette',
+        name: 'Rockin’ Robin Salad',
+        price: '$11.75',
+        ingredients: 'Romaine lettuce, tomatoes, cucumbers, carrots, and cheddar',
         imageClass: 'popular-image-two',
       },
       {
-        name: 'Berry Breeze',
-        price: '$14.00',
-        ingredients: 'Mixed greens, strawberries, feta, almonds, poppyseed dressing',
+        name: 'Ugly Duckling Salad',
+        price: '$13.50',
+        ingredients: 'Mixed greens, strawberries, grapes, cucumbers, carrots, and almond slices',
         imageClass: 'popular-image-three',
       },
       {
-        name: 'Dockside Caesar',
-        price: '$12.50',
-        ingredients: 'Romaine, parmesan, herb croutons, caesar dressing',
+        name: 'Barnyard Salad',
+        price: '$14.00',
+        ingredients: 'Baby spinach, chicken breast, strawberries, almond slices, and goat cheese',
         imageClass: 'popular-image-one',
+      },
+      {
+        name: 'Big Fat Greek Salad',
+        price: '$14.00',
+        ingredients: 'Romaine, chicken breast, cucumbers, red onion, chickpeas, and feta cheese',
+        imageClass: 'popular-image-two',
       },
     ],
   },
