@@ -178,24 +178,33 @@ const menuSections: MenuSection[] = [
   {
     title: 'Smoothies',
     description: 'Cold, bright blends for beach days and hot afternoons.',
+    isScrollable: true,
     items: [
       {
-        name: 'Honey Bee',
+        name: 'Strawberry Cream Smoothie',
         price: '$7.50',
-        ingredients: 'Banana, honey, vanilla yogurt, oat milk',
+        ingredients:
+          'Strawberries, bananas, greek yogurt, whole milk, apple juice, and homemade whip cream',
         imageClass: 'popular-image-one',
       },
       {
-        name: 'Lake Effect',
-        price: '$8.00',
-        ingredients: 'Blueberry, mango, pineapple, coconut water',
+        name: 'Peanut Butter Banana Smoothie',
+        price: '$7.50',
+        ingredients: 'Bananas, peanut butter, whole milk, and homemade whip cream',
         imageClass: 'popular-image-two',
       },
       {
-        name: 'Sunrise Splash',
-        price: '$8.00',
-        ingredients: 'Strawberry, peach, orange juice, greek yogurt',
+        name: 'Tropical Sun Smoothie',
+        price: '$7.50',
+        ingredients:
+          'Mangos, bananas, pineapple, apple juice, coconut milk, and homemade whip cream',
         imageClass: 'popular-image-three',
+      },
+      {
+        name: 'Honey Bee Smoothie',
+        price: '$7.50',
+        ingredients: 'Bananas, honey, vanilla, whole milk, homemade whip cream',
+        imageClass: 'popular-image-one',
       },
     ],
   },
