@@ -3,7 +3,7 @@ import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
 import './App.css'
 
-const navItems = ['Home', 'Our Story', 'Menu', 'Gallery', 'Visit']
+const navItems = ['Home', 'Our Story', 'Menu', 'Visit']
 const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
 const tickerItems = [
   'Bluebird on the Lake',
