@@ -167,9 +167,21 @@ const fallbackInstagramPosts: InstagramPost[] = [
 
 const footerNavItems = ['Home', 'Menu', 'About', 'Contact']
 const footerContactItems = [
-  { icon: '📍', text: '100 Maple Ave, Lakeside Marblehead, OH 43440' },
-  { icon: '📞', text: '419.967.6747' },
-  { icon: '📧', text: 'hello@bluebird.ooo' },
+  {
+    icon: '📍',
+    text: '100 Maple Ave, Lakeside Marblehead, OH 43440',
+    href: 'https://www.google.com/maps/dir/?api=1&destination=100+Maple+Ave,+Lakeside+Marblehead,+OH+43440',
+  },
+  {
+    icon: '📞',
+    text: '419.967.6747',
+    href: 'tel:+14199676747',
+  },
+  {
+    icon: '📧',
+    text: 'hello@bluebird.ooo',
+    href: 'mailto:hello@bluebird.ooo',
+  },
 ]
 const orderLink = 'https://cash.app/order/$bluebirdlakeside'
 const repeatedHeroTickerItems = Array.from({ length: 6 }, () => heroTickerItems).flat()
@@ -471,15 +483,16 @@ function App() {
             <h2>About Us</h2>
             <p>
               Bluebird brings together lake-day energy, fresh ingredients, and the kind
-              of menu you actually want to come back for. We keep things easygoing and
-              thoughtful, with handcrafted paninis, crisp salads, made-to-order subs,
+              of menu you actually want to come back for. We keep things simple and
+              delicious, with handcrafted paninis, crisp salads, made-to-order subs,
               smoothies, and snacks built for afternoons by the water.
             </p>
             <p>
-              Our space is meant to feel bright, welcoming, and a little special without
-              trying too hard. Whether you are grabbing lunch on the go or settling in
-              after a walk through Lakeside, Bluebird is here for good food, great
-              company, and a view worth lingering over.
+              We&apos;re a family-owned business, and have been since being founded in
+              2017. You&apos;ll see Andrew, Rachel, and Murphy behind the counter
+              slinging paninis on a regular basis. They&apos;ve been a Lakeside family
+              for over 15 years now. Tap the button below to read more about the
+              Bluebird story.
             </p>
             <a className="about-link" href="#visit">
               Read More
@@ -543,13 +556,13 @@ function App() {
         </div>
 
         <div className="footer-column">
-          <h3>Contact</h3>
+            <h3>Contact</h3>
           <div className="footer-contact-list">
             {footerContactItems.map((item) => (
-              <p key={item.text}>
+              <a key={item.text} href={item.href}>
                 <span aria-hidden="true">{item.icon}</span>
                 <span>{item.text}</span>
-              </p>
+              </a>
             ))}
           </div>
         </div>
