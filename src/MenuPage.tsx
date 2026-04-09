@@ -153,24 +153,25 @@ const menuSections: MenuSection[] = [
   },
   {
     title: 'Subs',
-    description: 'Made-to-order classics stacked with plenty of good stuff.',
+    description:
+      'Made-to-order classics stacked with plenty of good stuff. All subs come with your choice of classic, barbecue, sour cream & onion, or cheddar & sour cream chips.',
     items: [
       {
-        name: 'Boardwalk Italian',
-        price: '$13.50',
-        ingredients: 'Salami, ham, provolone, lettuce, tomato, oil, herbs',
+        name: 'Porker',
+        price: '$9.00',
+        ingredients: 'Ham, cheddar, lettuce, tomato, pickles, and honey mustard',
         imageClass: 'popular-image-three',
       },
       {
-        name: 'Turkey Shoreline',
-        price: '$12.50',
-        ingredients: 'Turkey, swiss, tomato, greens, mustard mayo, hoagie roll',
+        name: 'Gobbler',
+        price: '$9.00',
+        ingredients: 'Turkey, provolone, lettuce, tomato, pickles, and mayo',
         imageClass: 'popular-image-one',
       },
       {
-        name: 'Veggie Marina',
-        price: '$11.50',
-        ingredients: 'Hummus, cucumber, tomato, sprouts, avocado, roll',
+        name: 'Backpacker',
+        price: '$9.00',
+        ingredients: 'Ham, salami, mozzarella, lettuce, tomato, and italian dressing',
         imageClass: 'popular-image-two',
       },
     ],
