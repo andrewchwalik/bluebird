@@ -14,9 +14,9 @@ const tickerItems = [
 ]
 
 const popularDishes = [
-  { name: 'Lakefront Melt', price: '$10.99', imageClass: 'popular-image-one' },
-  { name: 'Harbor Club Wrap', price: '$10.99', imageClass: 'popular-image-two' },
-  { name: 'Sunrise Stack', price: '$10.99', imageClass: 'popular-image-three' },
+  { name: 'Chicken Pesto', price: '$10.99', imageClass: 'popular-image-one' },
+  { name: 'Barnyard Salad', price: '$10.99', imageClass: 'popular-image-two' },
+  { name: 'Honey Bee Smoothie', price: '$10.99', imageClass: 'popular-image-three' },
 ]
 
 const menuCategories = [
@@ -330,7 +330,7 @@ function App() {
         <section className="section intro-section" id="our-story">
           <div className="popular-header">
             <div className="popular-title-wrap">
-              <h2>Popular Dishes</h2>
+              <h2>Popular Orders</h2>
             </div>
             <a className="popular-link" href={orderLink}>
               Start Your Order
