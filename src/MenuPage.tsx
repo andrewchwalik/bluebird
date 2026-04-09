@@ -13,6 +13,7 @@ type MenuSection = {
   title: string
   description: string
   items: MenuItem[]
+  isScrollable?: boolean
 }
 
 type FooterContactItem = {
@@ -64,25 +65,57 @@ const footerContactItems: FooterContactItem[] = [
 const menuSections: MenuSection[] = [
   {
     title: 'Paninis',
-    description: 'Pressed-to-order favorites with bold flavor and crisp edges.',
+    description:
+      'Pressed-to-order favorites with bold flavor and crisp edges. All paninis come with your choice of classic, barbecue, sour cream & onion, or cheddar & sour cream chips.',
+    isScrollable: true,
     items: [
       {
-        name: 'Harbor Melt',
-        price: '$12.50',
-        ingredients: 'Turkey, provolone, tomato, basil aioli, sourdough',
+        name: 'Peacock',
+        price: '$13.50',
+        ingredients: 'Ham, pear, brie cheese, arugula, and fig spread',
         imageClass: 'popular-image-one',
       },
       {
-        name: 'Sunset Caprese',
-        price: '$11.50',
-        ingredients: 'Mozzarella, tomato, pesto, balsamic glaze, ciabatta',
+        name: 'Hamilton',
+        price: '$12.50',
+        ingredients: 'Ham, gouda, apples, and honey mustard',
         imageClass: 'popular-image-two',
       },
       {
-        name: 'Lakehouse Chicken',
-        price: '$13.00',
-        ingredients: 'Chicken, cheddar, bacon jam, arugula, multigrain',
+        name: 'Grilled Cheese Crunch',
+        price: '$10.50',
+        ingredients: 'Cheddar, gouda, and kettle chips',
         imageClass: 'popular-image-three',
+      },
+      {
+        name: 'Chicken Pesto',
+        price: '$12.00',
+        ingredients: 'Chicken breast, sun-dried tomatoes, provolone, and pesto',
+        imageClass: 'popular-image-one',
+      },
+      {
+        name: 'Ciao Chow',
+        price: '$12.50',
+        ingredients: 'Ham, salami, mozzarella, spinach, sun dried tomatoes, and pesto',
+        imageClass: 'popular-image-two',
+      },
+      {
+        name: 'Happy Lakesider',
+        price: '$13.50',
+        ingredients: "Bacon, chicken breast, cheddar, lettuce, tomatoes, and mama's mayo",
+        imageClass: 'popular-image-three',
+      },
+      {
+        name: 'BLT',
+        price: '$11.00',
+        ingredients: "Bacon, lettuce, tomatoes, and mama's mayo",
+        imageClass: 'popular-image-one',
+      },
+      {
+        name: 'Veggie Delight',
+        price: '$11.50',
+        ingredients: "Basil, spinach, lettuce, tomatoes, provolone, and mama's mayo",
+        imageClass: 'popular-image-two',
       },
     ],
   },
@@ -281,7 +314,11 @@ export default function MenuPage() {
               <p>{section.description}</p>
             </div>
 
-            <div className="menu-category-grid">
+            <div
+              className={
+                section.isScrollable ? 'menu-category-grid menu-category-grid-scroll' : 'menu-category-grid'
+              }
+            >
               {section.items.map((item) => (
                 <article className="popular-card menu-item-card" key={item.name}>
                   <div className={`popular-image ${item.imageClass}`}>

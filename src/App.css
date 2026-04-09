@@ -1036,6 +1036,17 @@ main {
   gap: 1rem;
 }
 
+.menu-category-grid-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 2rem) / 3);
+  grid-template-columns: none;
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(35, 24, 13, 0.22) transparent;
+}
+
 .menu-item-card {
   min-height: 24rem;
 }
@@ -1118,6 +1129,10 @@ main {
   .site-footer,
   .menu-category-grid {
     grid-template-columns: 1fr;
+  }
+
+  .menu-category-grid-scroll {
+    grid-auto-columns: minmax(18rem, 82vw);
   }
 
   .topbar {
