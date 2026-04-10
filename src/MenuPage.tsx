@@ -66,7 +66,7 @@ const menuSections: MenuSection[] = [
   {
     title: 'Paninis',
     description:
-      'Pressed-to-order favorites with bold flavor and crisp edges. All paninis come with your choice of classic, barbecue, sour cream & onion, or cheddar & sour cream chips.',
+      'All paninis are handcrafted and come with your choice of classic, barbecue, sour cream & onion, or cheddar & sour cream chips.',
     isScrollable: true,
     items: [
       {
@@ -122,7 +122,7 @@ const menuSections: MenuSection[] = [
   {
     title: 'Salads',
     description:
-      'Fresh, colorful bowls made for easy lunches by the lake. Every salad comes with your choice of balsamic vinaigrette, ranch, poppyseed, italian, greek, or olive oil & balsamic vinegar dressing.',
+      'Every salad is made fresh and comes with your choice of balsamic vinaigrette, ranch, poppyseed, italian, greek, or olive oil & balsamic vinegar dressing.',
     isScrollable: true,
     items: [
       {
@@ -154,7 +154,7 @@ const menuSections: MenuSection[] = [
   {
     title: 'Subs',
     description:
-      'Made-to-order classics stacked with plenty of good stuff. All subs come with your choice of classic, barbecue, sour cream & onion, or cheddar & sour cream chips.',
+      'All subs are handcrafted and come with your choice of classic, barbecue, sour cream & onion, or cheddar & sour cream chips.',
     items: [
       {
         name: 'Porker',
@@ -178,7 +178,8 @@ const menuSections: MenuSection[] = [
   },
   {
     title: 'Smoothies',
-    description: 'Cold, bright blends for beach days and hot afternoons.',
+    description:
+      'Every smoothie is made fresh, without ice, an can be made vegan with our various milk options: 2%, coconut, almond, & lactose free.',
     isScrollable: true,
     items: [
       {
@@ -212,7 +213,7 @@ const menuSections: MenuSection[] = [
   {
     title: 'Kids',
     description:
-      'Simple, satisfying favorites sized for younger appetites. All kids meals come with your choice of GoGo Squeeze applesauce or classic, barbecue, sour cream & onion, or cheddar & sour cream chips. Also comes with your choice of a juice box or water.',
+      'All kids meals come with your choice of GoGo Squeeze applesauce or classic, barbecue, sour cream & onion, or cheddar & sour cream chips. Also comes with your choice of a juice box or water.',
     items: [
       {
         name: "Kid's Grilled Cheese",
@@ -236,7 +237,8 @@ const menuSections: MenuSection[] = [
   },
   {
     title: 'Snacks',
-    description: 'Quick bites and extras to round out the perfect order.',
+    description:
+      'We have a rotating collection of snacks so be sure the check in store to see what goodies we have this week!',
     items: [
       {
         name: 'Harbor Chips',
