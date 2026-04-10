@@ -5,7 +5,7 @@ import './App.css'
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Our Story' },
+  { label: 'Our Story', href: '/our-story/' },
   { label: 'Menu', href: '/menu/' },
   { label: 'Visit' },
 ]
@@ -165,7 +165,6 @@ const fallbackInstagramPosts: InstagramPost[] = [
   },
 ]
 
-const footerNavItems = ['Home', 'Menu', 'About', 'Contact']
 const footerContactItems = [
   {
     icon: '📍',
@@ -495,7 +494,7 @@ function App() {
               for over 15 years now. Tap the button below to read more about the
               Bluebird story.
             </p>
-            <a className="about-link" href="#visit">
+            <a className="about-link" href="/our-story/">
               Read More
             </a>
           </div>
@@ -548,11 +547,10 @@ function App() {
         <div className="footer-column">
           <h3>Navigation</h3>
           <nav className="footer-nav" aria-label="Footer">
-            {footerNavItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`}>
-                {item}
-              </a>
-            ))}
+            <a href="/">Home</a>
+            <a href="/menu/">Menu</a>
+            <a href="/our-story/">Our Story</a>
+            <a href="#visit">Contact</a>
           </nav>
         </div>
 

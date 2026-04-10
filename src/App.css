@@ -989,6 +989,10 @@ main {
   background: #fff;
 }
 
+.story-page-main {
+  background: #fff;
+}
+
 .menu-page-intro {
   padding-bottom: 2.5rem;
 }
@@ -997,12 +1001,122 @@ main {
   max-width: 9ch;
 }
 
+.story-page-copy h1 {
+  max-width: 8ch;
+}
+
 .menu-page-visual {
+  min-height: 24rem;
+}
+
+.story-page-visual {
   min-height: 24rem;
 }
 
 .menu-page-hero-image {
   width: min(28rem, 100%);
+}
+
+.story-page-orb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(31rem, 100%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 34%),
+    #5eb4d3;
+}
+
+.story-feature-section,
+.story-values-section {
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  align-items: center;
+}
+
+.story-feature-copy,
+.story-values-copy {
+  max-width: 42rem;
+}
+
+.story-feature-copy h2,
+.story-values-copy h2,
+.story-section-header h2 {
+  margin: 0 0 1rem;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.story-feature-copy p,
+.story-values-copy p,
+.story-feature-card p,
+.story-quote-card p,
+.story-section-header p,
+.story-beat-body {
+  color: rgba(35, 24, 13, 0.8);
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.story-feature-card,
+.story-quote-card {
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+  background: #fbf4d8;
+}
+
+.story-feature-card h3 {
+  margin: 0 0 0.7rem;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1.6rem;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.story-timeline-section {
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+.story-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.story-beat-card {
+  min-height: 19rem;
+}
+
+.story-beat-year {
+  margin: 0 0 0.65rem;
+  color: #5eb4d3;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.story-beat-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.story-quote-card {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.story-quote-card p {
+  margin: 0;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1.45rem;
+  line-height: 1.15;
+  text-transform: uppercase;
 }
 
 .menu-category-section {
@@ -1127,7 +1241,10 @@ main {
   .ordering-section,
   .contact-section,
   .site-footer,
-  .menu-category-grid {
+  .menu-category-grid,
+  .story-feature-section,
+  .story-values-section,
+  .story-timeline-grid {
     grid-template-columns: 1fr;
   }
 

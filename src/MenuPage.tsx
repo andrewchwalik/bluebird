@@ -25,7 +25,7 @@ type FooterContactItem = {
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Our Story' },
+  { label: 'Our Story', href: '/our-story/' },
   { label: 'Menu' },
   { label: 'Visit' },
 ]
@@ -372,7 +372,7 @@ export default function MenuPage() {
           <nav className="footer-nav" aria-label="Footer">
             <a href="/">Home</a>
             <a href="/menu/">Menu</a>
-            <span>About</span>
+            <a href="/our-story/">Our Story</a>
             <span>Contact</span>
           </nav>
         </div>
