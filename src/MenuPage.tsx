@@ -226,6 +226,12 @@ const menuSections: MenuSection[] = [
         ingredients: 'Creamy peanut butter, jelly',
         imageClass: 'popular-image-one',
       },
+      {
+        name: 'Turkey & Cheese',
+        price: '$6.00',
+        ingredients: 'Turkey, cheddar cheese',
+        imageClass: 'popular-image-three',
+      },
     ],
   },
   {
