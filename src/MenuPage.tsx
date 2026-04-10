@@ -237,25 +237,24 @@ const menuSections: MenuSection[] = [
   },
   {
     title: 'Snacks',
-    description:
-      'We have a rotating collection of snacks so be sure the check in store to see what goodies we have this week!',
+    description: '',
     items: [
       {
-        name: 'Harbor Chips',
-        price: '$3.50',
-        ingredients: 'Sea salt kettle chips',
+        name: 'Fresh Strawberry Cup',
+        price: '$4.00',
+        ingredients: '',
         imageClass: 'popular-image-one',
       },
       {
-        name: 'Fruit Cup',
-        price: '$4.00',
-        ingredients: 'Seasonal fresh fruit',
+        name: 'Frozen Cookie',
+        price: '$2.50',
+        ingredients: '',
         imageClass: 'popular-image-three',
       },
       {
-        name: 'Cookie Break',
-        price: '$3.75',
-        ingredients: 'House cookie of the day',
+        name: 'Chips',
+        price: '$1.00',
+        ingredients: '',
         imageClass: 'popular-image-two',
       },
     ],
@@ -332,7 +331,7 @@ export default function MenuPage() {
           <section className="section menu-category-section" key={section.title}>
             <div className="menu-category-header">
               <h2>{section.title}</h2>
-              <p>{section.description}</p>
+              {section.description ? <p>{section.description}</p> : null}
             </div>
 
             <div
@@ -347,7 +346,9 @@ export default function MenuPage() {
                   </div>
                   <h3>{item.name}</h3>
                   <p className="menu-item-price">{item.price}</p>
-                  <p className="menu-item-ingredients">{item.ingredients}</p>
+                  {item.ingredients ? (
+                    <p className="menu-item-ingredients">{item.ingredients}</p>
+                  ) : null}
                 </article>
               ))}
             </div>
