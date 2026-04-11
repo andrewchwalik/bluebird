@@ -110,11 +110,10 @@ export default function OurStoryPage() {
               </span>
             </h1>
             <p className="hero-text">
-              Bluebird is owned and operated by a Lakeside family of more than 15
-              years, dreamed up as a little sandwich shop with simple, fresh food
-              and an easy breezy lakeside spirit. It is our way of sharing the kind
-              of place we always hoped would exist here: thoughtful, welcoming, and
-              full of good things between two slices of bread.
+              Sandwiches and salads have always been at the heart of Bluebird. Our
+              little shop is family-owned; serving the Lakeside Chautauqua community
+              since 2017. Read on to discover the full story of how Bluebird began
+              bringing all the vibes, views, and good food.
             </p>
 
             <div className="hero-actions">
@@ -143,9 +142,9 @@ export default function OurStoryPage() {
       </header>
 
       <main className="story-page-main">
-        <section className="section story-feature-section">
+        <section className="section story-opening-section">
           <div className="story-feature-copy">
-            <h2>The Bluebird Beginning</h2>
+            <h2>The Bluebird or the Egg?</h2>
             <p>
               Bluebird brings together lake-day energy, fresh ingredients, and the
               kind of menu people want to keep coming back for. From the start, the
@@ -157,15 +156,6 @@ export default function OurStoryPage() {
               beginning. Andrew, Rachel, and Murphy are still part of the everyday
               rhythm behind the counter, and that hands-on spirit shapes everything
               from the menu to the atmosphere.
-            </p>
-          </div>
-
-          <div className="story-feature-card">
-            <h3>What We Wanted Bluebird To Feel Like</h3>
-            <p>
-              Fresh food, bright afternoons, familiar faces, and the kind of
-              spot that works just as well for a quick pickup as it does for a
-              slow lunch with friends after a walk by the lake.
             </p>
           </div>
         </section>

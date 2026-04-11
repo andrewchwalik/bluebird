@@ -1035,6 +1035,11 @@ main {
   align-items: center;
 }
 
+.story-opening-section {
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
 .story-feature-copy,
 .story-values-copy {
   max-width: 42rem;
