@@ -144,18 +144,21 @@ export default function OurStoryPage() {
       <main className="story-page-main">
         <section className="section story-opening-section">
           <div className="story-feature-copy">
-            <h2>The Bluebird or the Egg?</h2>
+            <h2>Bluebird or the Egg?</h2>
             <p>
-              Bluebird brings together lake-day energy, fresh ingredients, and the
-              kind of menu people want to keep coming back for. From the start, the
-              vision was never just to serve lunch. It was to create a place that
-              feels like part of a perfect Lakeside day.
+              The Chwaliks dove into the food world when they opened up a small ice
+              cream and sandwich shop in Marion, OH. Paninis, salads, and locally
+              made ice cream were on the menu. That was were the beginnings of
+              Bluebird began. It was also where the relationship of Andrew & Rachel
+              developed into what it is today!
             </p>
             <p>
-              The shop was founded in 2017 and has stayed family-owned from the
-              beginning. Andrew, Rachel, and Murphy are still part of the everyday
-              rhythm behind the counter, and that hands-on spirit shapes everything
-              from the menu to the atmosphere.
+              After learning the tricks of the sandwich shop trade and developing
+              their own recipes, the young couple moved up to the Lakeside area.
+              When Andrew was still just the boyfriend, Rachel would bring him on
+              the family trips to Lakeside. They both loved the community; and a
+              serendipitous event lead them to taking over Bluebird and the Lakeside
+              Laundromat.
             </p>
           </div>
         </section>
