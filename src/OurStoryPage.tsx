@@ -110,10 +110,11 @@ export default function OurStoryPage() {
               </span>
             </h1>
             <p className="hero-text">
-              Bluebird grew out of a love for Lakeside, a love for feeding people,
-              and a belief that a neighborhood sandwich shop can feel both easygoing
-              and deeply cared for. This page is where we can tell the full story
-              of how it all came together.
+              Bluebird is owned and operated by a Lakeside family of more than 15
+              years, dreamed up as a little sandwich shop with simple, fresh food
+              and an easy breezy lakeside spirit. It is our way of sharing the kind
+              of place we always hoped would exist here: thoughtful, welcoming, and
+              full of good things between two slices of bread.
             </p>
 
             <div className="hero-actions">
