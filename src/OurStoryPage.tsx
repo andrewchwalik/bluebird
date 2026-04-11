@@ -104,7 +104,7 @@ export default function OurStoryPage() {
         <section className="hero-grid story-page-intro">
           <div className="hero-copy story-page-copy">
             <h1>
-              <span className="hero-line hero-line-one">Our</span>
+              <span className="hero-line hero-line-one">Our Sandwich</span>
               <span className="hero-line hero-line-two">
                 <span className="hero-line-accent">Story</span>
               </span>
