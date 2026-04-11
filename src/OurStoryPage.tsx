@@ -163,6 +163,27 @@ export default function OurStoryPage() {
           </div>
         </section>
 
+        <section className="section story-opening-section">
+          <div className="story-feature-copy">
+            <h2>Taking Flight</h2>
+            <p>
+              With a new sandwich shop just waiting to be revitalized and panini
+              recipes in tow, the Chwaliks dove in head first getting Bluebird ready
+              for the first season. All new branding, paint, wallpaper, vibes, and
+              menu gave the space a fresh look. By May 2023, Bluebird was ready for
+              the summer season.
+            </p>
+            <p>
+              Leaning on their experience from their shop in Marion, Andrew & Rachel
+              focused on simplifying the menu and building a healthy, quick eating
+              option. Lettuce for salads was sourced locally from a hydroponic farm.
+              Vegitables came from local farmers markets. And Lake Erie provided the
+              views. The first season was a wild ride, but a good foundation to build
+              around.
+            </p>
+          </div>
+        </section>
+
         <section className="section story-timeline-section">
           <div className="menu-category-header story-section-header">
             <h2>How It Unfolded</h2>
