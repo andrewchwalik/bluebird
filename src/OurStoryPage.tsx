@@ -184,6 +184,28 @@ export default function OurStoryPage() {
           </div>
         </section>
 
+        <section className="section story-opening-section">
+          <div className="story-feature-copy">
+            <h2>Building a Solid Nest</h2>
+            <p>
+              We&apos;ve been learning each season, working to improve Bluebird -
+              aiming to provide a better experience for our team and customers. Our
+              motto of vibes, views, and good food leads the chrage on how we want
+              to run our little sandwich shop. Creating a unique and cheery
+              atmosphere for everyone who walks in the door, that&apos;s the vibes.
+              The views come from Lake Erie, our shop decor, and the apetizing food.
+              We always want to serve good food, that leans on the healthy side of
+              life but still comes out quick.
+            </p>
+            <p>
+              Thank you to everyone who&apos;s helped Bluebird take flight so far.
+              We&apos;re looking forward to many more years to come of serving good
+              food in the Lakeside Chautauqua community in our little spot on the
+              shores of Lake Erie.
+            </p>
+          </div>
+        </section>
+
         <section className="section story-timeline-section">
           <div className="menu-category-header story-section-header">
             <h2>How It Unfolded</h2>
