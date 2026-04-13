@@ -37,22 +37,40 @@ const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).f
 
 const storyBeats: StoryBeat[] = [
   {
+    year: 'Today',
+    title: 'Still Growing',
+    body:
+      'Bluebird keeps evolving season by season, with each year bringing new ideas, better rhythms, and a clearer sense of what makes the shop feel special.',
+  },
+  {
+    year: '2025',
+    title: 'Finding Our Groove',
+    body:
+      'By this point, the team had a stronger feel for what customers loved most, and the shop was settling into a more confident Bluebird rhythm.',
+  },
+  {
+    year: '2024',
+    title: 'Growing Into It',
+    body:
+      'The second full season was about refining what worked, improving the day-to-day flow, and making the experience brighter for both the team and every guest who came through.',
+  },
+  {
+    year: '2023',
+    title: 'Opening Season',
+    body:
+      'After a full refresh of the space, branding, and menu, Bluebird opened for the summer and began welcoming people into its newly reimagined lakeside home.',
+  },
+  {
+    year: '2022',
+    title: 'A New Chapter',
+    body:
+      'The opportunity to take over Bluebird and the Lakeside Laundromat turned admiration for the community into a real plan for building something of their own near the lake.',
+  },
+  {
     year: '2017',
     title: 'Where It Started',
     body:
       'Bluebird began with a simple idea: create the kind of lunch spot we always wished Lakeside had. Something bright, welcoming, and full of food people genuinely looked forward to eating.',
-  },
-  {
-    year: 'Family',
-    title: 'Built Together',
-    body:
-      'What makes Bluebird feel personal is that it really is. It has always been a family-run place, shaped by the people behind the counter and the Lakeside rhythms that make summer here so special.',
-  },
-  {
-    year: 'Today',
-    title: 'What We Care About',
-    body:
-      'The goal is still the same: serve food that feels fresh, thoughtful, and easy to love, while giving people a place that fits the energy of a day by the water.',
   },
 ]
 
