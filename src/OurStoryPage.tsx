@@ -210,8 +210,8 @@ export default function OurStoryPage() {
           <div className="menu-category-header story-section-header">
             <h2>How It Unfolded</h2>
             <p>
-              A simple timeline gives us a place to tell the story in chapters now,
-              and later we can replace this placeholder copy with the real milestones.
+              Follow the timeline of major moments that helped shape Bluebird into
+              the little lakeside shop it is today.
             </p>
           </div>
 
