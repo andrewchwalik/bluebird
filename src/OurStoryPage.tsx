@@ -40,40 +40,40 @@ const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).f
 
 const storyBeats: StoryBeat[] = [
   {
-    year: 'Today',
+    year: '2026',
     title: 'Still Growing',
     body:
-      'Bluebird keeps evolving season by season, with each year bringing new ideas, better rhythms, and a clearer sense of what makes the shop feel special.',
+      'Milkshakes did not work out well for speed so those were swapped out for new grab-and-go options and a new sandwich bread. The space also got a unique new element, a giant tree to lean into the Bluebird experience.',
   },
   {
     year: '2025',
     title: 'Finding Our Groove',
     body:
-      'By this point, the team had a stronger feel for what customers loved most, and the shop was settling into a more confident Bluebird rhythm.',
+      'Running a seasonal restaurant was a new experience. More simplifications were made to speed up order processing. But new menu items were added, like the Honey Bee Smoothie and milkshakes.',
   },
   {
     year: '2024',
     title: 'Growing Into It',
     body:
-      'The second full season was about refining what worked, improving the day-to-day flow, and making the experience brighter for both the team and every guest who came through.',
+      'With one full season of learning in the books, processes and menu items were optimized - like sadly saying goodbye to the tempermental softserve machines. Order times got faster as a result.',
   },
   {
     year: '2023',
     title: 'Opening Season',
     body:
-      'After a full refresh of the space, branding, and menu, Bluebird opened for the summer and began welcoming people into its newly reimagined lakeside home.',
+      'After a full refresh of the space and shop branding, the new-look Bluebird opened for the first time. There was an updated menu, but still a number of original favorties - just with a Chwalik spin.',
   },
   {
     year: '2022',
     title: 'A New Chapter',
     body:
-      'The opportunity to take over Bluebird and the Lakeside Laundromat turned admiration for the community into a real plan for building something of their own near the lake.',
+      'The Chwaliks purchased the Bluebird Cafe and the Lakeside Laundromat, starting their Lakeside Chautaqua adventure and planting down roots on the peninsula. The dropped "Cafe" from the name, making it Bluebird.',
   },
   {
     year: '2017',
     title: 'Where It Started',
     body:
-      'Bluebird began with a simple idea: create the kind of lunch spot we always wished Lakeside had. Something bright, welcoming, and full of food people genuinely looked forward to eating.',
+      'Bluebird Cafe was started by a young family, looking to create a healthier eating option at Lakeside. The new resturant took over the space that housed Dockside, the Dock Shop, an arcade, and other countless busiensses over the decades.',
   },
 ]
 
