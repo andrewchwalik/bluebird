@@ -265,28 +265,6 @@ export default function OurStoryPage() {
           </div>
         </section>
 
-        <section className="section story-values-section">
-          <div className="story-values-copy">
-            <h2>Why Bluebird Matters</h2>
-            <p>
-              The best version of this page should feel personal. It should explain
-              why Bluebird exists, what your family loves about Lakeside, and why
-              you care so much about making food that feels fresh, fun, and worth
-              the stop.
-            </p>
-            <p>
-              For now, this section gives you a strong branded structure we can
-              swap real story details into as you write them out.
-            </p>
-          </div>
-
-          <div className="story-quote-card">
-            <p>
-              “Bluebird was built to feel like a natural part of a Lakeside day:
-              easy, cheerful, and full of food people are excited to come back for.”
-            </p>
-          </div>
-        </section>
       </main>
 
       <footer className="site-footer">
