@@ -12,6 +12,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         menu: resolve(__dirname, 'menu/index.html'),
         ourStory: resolve(__dirname, 'our-story/index.html'),
+        visit: resolve(__dirname, 'visit/index.html'),
       },
     },
   },

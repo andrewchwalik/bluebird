@@ -20,9 +20,9 @@ type FooterContactItem = {
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Our Story' },
+  { label: 'Our Story', href: '/our-story/' },
   { label: 'Menu', href: '/menu/' },
-  { label: 'Visit' },
+  { label: 'Visit', href: '/visit/' },
 ]
 
 const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
@@ -93,6 +93,12 @@ const footerContactItems: FooterContactItem[] = [
     icon: '📧',
     text: 'hello@bluebird.ooo',
     href: 'mailto:hello@bluebird.ooo',
+  },
+  {
+    icon: '📷',
+    text: '@bluebird.ooo',
+    href: 'https://www.instagram.com/bluebird.ooo/',
+    external: true,
   },
 ]
 
@@ -284,7 +290,7 @@ export default function OurStoryPage() {
             <a href="/">Home</a>
             <a href="/menu/">Menu</a>
             <a href="/our-story/">Our Story</a>
-            <span>Contact</span>
+            <a href="/visit/">Visit</a>
           </nav>
         </div>
 

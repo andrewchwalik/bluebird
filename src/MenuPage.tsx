@@ -26,8 +26,8 @@ type FooterContactItem = {
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Our Story', href: '/our-story/' },
-  { label: 'Menu' },
-  { label: 'Visit' },
+  { label: 'Menu', href: '/menu/' },
+  { label: 'Visit', href: '/visit/' },
 ]
 
 const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
@@ -59,6 +59,12 @@ const footerContactItems: FooterContactItem[] = [
     icon: '📧',
     text: 'hello@bluebird.ooo',
     href: 'mailto:hello@bluebird.ooo',
+  },
+  {
+    icon: '📷',
+    text: '@bluebird.ooo',
+    href: 'https://www.instagram.com/bluebird.ooo/',
+    external: true,
   },
 ]
 
@@ -126,25 +132,25 @@ const menuSections: MenuSection[] = [
     isScrollable: true,
     items: [
       {
-        name: 'Rockin’ Robin Salad',
+        name: 'Rockin’ Robin',
         price: '$11.75',
         ingredients: 'Romaine lettuce, tomatoes, cucumbers, carrots, and cheddar',
         imageClass: 'popular-image-two',
       },
       {
-        name: 'Ugly Duckling Salad',
+        name: 'Ugly Duckling',
         price: '$13.50',
         ingredients: 'Mixed greens, strawberries, grapes, cucumbers, carrots, and almond slices',
         imageClass: 'popular-image-three',
       },
       {
-        name: 'Barnyard Salad',
+        name: 'Barnyard',
         price: '$14.00',
         ingredients: 'Baby spinach, chicken breast, strawberries, almond slices, and goat cheese',
         imageClass: 'popular-image-one',
       },
       {
-        name: 'Big Fat Greek Salad',
+        name: 'Big Fat Greek',
         price: '$14.00',
         ingredients: 'Romaine, chicken breast, cucumbers, red onion, chickpeas, and feta cheese',
         imageClass: 'popular-image-two',
@@ -330,7 +336,12 @@ export default function MenuPage() {
         {menuSections.map((section) => (
           <section className="section menu-category-section" key={section.title}>
             <div className="menu-category-header">
-              <h2>{section.title}</h2>
+              <div className="menu-category-heading-row">
+                <h2>{section.title}</h2>
+                <a className="popular-link menu-category-link" href={orderLink}>
+                  Start Your Order
+                </a>
+              </div>
               {section.description ? <p>{section.description}</p> : null}
             </div>
 
@@ -373,7 +384,7 @@ export default function MenuPage() {
             <a href="/">Home</a>
             <a href="/menu/">Menu</a>
             <a href="/our-story/">Our Story</a>
-            <span>Contact</span>
+            <a href="/visit/">Visit</a>
           </nav>
         </div>
 
