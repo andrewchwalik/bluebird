@@ -1,5 +1,8 @@
 import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
+import andrewAndRachelImage from '../img/andrew-and-rachel-at-topped.JPG'
+import rachelInBluebirdImage from '../img/rachel-in-the-bluebird.jpg'
+import andrewOnGolfcartImage from '../img/andrew-on-the-bluebird-golfcart.jpeg'
 import './App.css'
 
 type StoryBeat = {
@@ -160,7 +163,7 @@ export default function OurStoryPage() {
       </header>
 
       <main className="story-page-main">
-        <section className="section story-opening-section">
+        <section className="section story-opening-section story-opening-section-split">
           <div className="story-feature-copy">
             <h2>Bluebird or the Egg?</h2>
             <p>
@@ -179,9 +182,15 @@ export default function OurStoryPage() {
               Laundromat.
             </p>
           </div>
+
+          <div className="story-media story-media-right">
+            <div className="story-photo-frame">
+              <img className="story-photo story-photo-top" src={andrewAndRachelImage} alt="Andrew and Rachel together" />
+            </div>
+          </div>
         </section>
 
-        <section className="section story-opening-section">
+        <section className="section story-opening-section story-opening-section-split story-opening-section-reverse">
           <div className="story-feature-copy">
             <h2>Taking Flight</h2>
             <p>
@@ -200,9 +209,15 @@ export default function OurStoryPage() {
               around.
             </p>
           </div>
+
+          <div className="story-media story-media-left">
+            <div className="story-photo-frame">
+              <img className="story-photo story-photo-left" src={rachelInBluebirdImage} alt="Rachel inside Bluebird" />
+            </div>
+          </div>
         </section>
 
-        <section className="section story-opening-section">
+        <section className="section story-opening-section story-opening-section-split">
           <div className="story-feature-copy">
             <h2>Building a Solid Nest</h2>
             <p>
@@ -221,6 +236,12 @@ export default function OurStoryPage() {
               food in the Lakeside Chautauqua community in our little spot on the
               shores of Lake Erie.
             </p>
+          </div>
+
+          <div className="story-media story-media-right">
+            <div className="story-photo-frame">
+              <img className="story-photo story-photo-right" src={andrewOnGolfcartImage} alt="Andrew on the Bluebird golf cart" />
+            </div>
           </div>
         </section>
 
