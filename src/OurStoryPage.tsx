@@ -184,7 +184,7 @@ export default function OurStoryPage() {
           </div>
 
           <div className="story-media story-media-right">
-            <div className="story-photo-frame">
+            <div className="story-photo-frame story-photo-frame-top">
               <img className="story-photo story-photo-top" src={andrewAndRachelImage} alt="Andrew and Rachel together" />
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function OurStoryPage() {
           </div>
 
           <div className="story-media story-media-left">
-            <div className="story-photo-frame">
+            <div className="story-photo-frame story-photo-frame-left">
               <img className="story-photo story-photo-left" src={rachelInBluebirdImage} alt="Rachel inside Bluebird" />
             </div>
           </div>
@@ -239,7 +239,7 @@ export default function OurStoryPage() {
           </div>
 
           <div className="story-media story-media-right">
-            <div className="story-photo-frame">
+            <div className="story-photo-frame story-photo-frame-right">
               <img className="story-photo story-photo-right" src={andrewOnGolfcartImage} alt="Andrew on the Bluebird golf cart" />
             </div>
           </div>
