@@ -19,9 +19,9 @@ const tickerItems = [
 ]
 
 const popularDishes = [
-  { name: 'Chicken Pesto', price: '$12.00', imageClass: 'popular-image-one' },
-  { name: 'Barnyard Salad', price: '$14.00', imageClass: 'popular-image-two' },
-  { name: 'Honey Bee Smoothie', price: '$7.50', imageClass: 'popular-image-three' },
+  { name: 'Chicken Pesto', price: '$12.00', imageClass: 'popular-image-one', href: '/menu/#paninis' },
+  { name: 'Barnyard Salad', price: '$14.00', imageClass: 'popular-image-two', href: '/menu/#salads' },
+  { name: 'Honey Bee Smoothie', price: '$7.50', imageClass: 'popular-image-three', href: '/menu/#smoothies' },
 ]
 
 const menuCategories = [
@@ -29,31 +29,37 @@ const menuCategories = [
     title: 'Paninis',
     lines: ['Paninis'],
     imageClass: 'menu-category-image-one',
+    href: '/menu/#peacock',
   },
   {
     title: 'Salads',
     lines: ['Salads'],
     imageClass: 'menu-category-image-two',
+    href: '/menu/#rockin-robin',
   },
   {
     title: 'Subs',
     lines: ['Subs'],
     imageClass: 'menu-category-image-three',
+    href: '/menu/#porker',
   },
   {
     title: 'Smoothies',
     lines: ['Smoothies'],
     imageClass: 'menu-category-image-four',
+    href: '/menu/#strawberry-cream',
   },
   {
     title: 'Kids',
     lines: ['Kids'],
     imageClass: 'menu-category-image-five',
+    href: '/menu/#kids-grilled-cheese',
   },
   {
     title: 'Snacks',
     lines: ['Snacks'],
     imageClass: 'menu-category-image-six',
+    href: '/menu/#fresh-strawberry-cup',
   },
 ]
 
@@ -372,7 +378,7 @@ function App() {
                 </div>
                 <h3>{item.name}</h3>
                 <p>{item.price}</p>
-                <a className="popular-card-link" href="#visit">
+                <a className="popular-card-link" href={item.href}>
                   More
                 </a>
               </article>
@@ -423,7 +429,7 @@ function App() {
                       <span key={line}>{line}</span>
                     ))}
                   </h3>
-                  <a className="menu-showcase-link" href="#visit" aria-label={`Browse ${item.title}`}>
+                  <a className="menu-showcase-link" href={item.href} aria-label={`Browse ${item.title}`}>
                     <span aria-hidden="true">›</span>
                   </a>
                 </div>

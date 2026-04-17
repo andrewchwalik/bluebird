@@ -23,6 +23,14 @@ type FooterContactItem = {
   external?: boolean
 }
 
+const createMenuItemId = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Our Story', href: '/our-story/' },
@@ -351,7 +359,11 @@ export default function MenuPage() {
               }
             >
               {section.items.map((item) => (
-                <article className="popular-card menu-item-card" key={item.name}>
+                <article
+                  className="popular-card menu-item-card"
+                  id={createMenuItemId(item.name)}
+                  key={item.name}
+                >
                   <div className={`popular-image ${item.imageClass}`}>
                     <img src={paniniImage} alt="" />
                   </div>
