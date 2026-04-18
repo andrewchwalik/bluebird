@@ -55,9 +55,9 @@ const footerContactItems: FooterContactItem[] = [
   },
 ]
 
-export default function VisitPage() {
+export default function JobsPage() {
   return (
-    <div className="page-shell visit-page-shell">
+    <div className="page-shell jobs-page-shell">
       <header className="hero-card menu-page-hero">
         <nav className="topbar" aria-label="Primary">
           <a className="brand" href="/" aria-label="Bluebird home">
@@ -80,20 +80,20 @@ export default function VisitPage() {
         <section className="hero-grid menu-page-intro">
           <div className="hero-copy menu-page-copy">
             <h1>
-              <span className="hero-line hero-line-one">Visit</span>
+              <span className="hero-line hero-line-one">Work At</span>
               <span className="hero-line hero-line-two">
                 <span className="hero-line-accent">Bluebird</span>
               </span>
             </h1>
             <p className="hero-text">
-              This page is ready for your full Lakeside visit guide. We can add shop
-              hours, what to expect, parking tips, favorite nearby spots, and anything
-              else you want guests to know before they stop by.
+              This page is ready for your future hiring details. We can add open roles,
+              what a season at Bluebird feels like, the kind of team members you are
+              looking for, and how people should apply.
             </p>
 
             <div className="hero-actions">
-              <a className="button button-primary hero-button" href={orderLink}>
-                Order Online
+              <a className="button button-primary hero-button" href="mailto:hello@bluebird.ooo?subject=Bluebird%20Jobs">
+                Reach Out
               </a>
             </div>
           </div>
@@ -119,32 +119,30 @@ export default function VisitPage() {
       <main className="story-page-main">
         <section className="section story-opening-section">
           <div className="story-feature-copy">
-            <h2>Plan Your Stop</h2>
+            <h2>Join the Team</h2>
             <p>
-              This section can become your easy visit overview: where Bluebird is,
-              the best way to find the shop, and what kind of food and atmosphere
-              guests can expect once they arrive.
+              We can use this section to describe what it is like to work a season at
+              Bluebird, what kind of hospitality and energy you value, and why the shop
+              is a fun place to spend the summer.
             </p>
             <p>
-              We can also use this area for quick details like whether people should
-              order online first, where pickup happens, or what makes Bluebird a
-              great Lakeside lunch stop.
+              When you are ready, we can turn this into a real hiring page with position
+              descriptions, schedule expectations, pay details, and a direct way to apply.
             </p>
           </div>
         </section>
 
         <section className="section story-opening-section">
           <div className="story-feature-copy">
-            <h2>What We Can Add Here</h2>
+            <h2>What We Can Add</h2>
             <p>
-              We can build this page out with hours, address details, parking tips,
-              maps, pickup notes, accessibility info, and even a short neighborhood
-              guide for first-time visitors.
+              This page can include front-of-house roles, kitchen prep roles, seasonal
+              availability notes, age requirements, and any other details you want to make
+              clear before someone reaches out.
             </p>
             <p>
-              Once you are ready, we can also add photos of the shop, the patio, the
-              counter, or the Lakeside surroundings so the page feels more like a true
-              arrival guide.
+              We can also add a simple application form later if you want to collect job
+              interest right on the site.
             </p>
           </div>
         </section>

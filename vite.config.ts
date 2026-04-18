@@ -13,6 +13,7 @@ export default defineConfig({
         menu: resolve(__dirname, 'menu/index.html'),
         ourStory: resolve(__dirname, 'our-story/index.html'),
         visit: resolve(__dirname, 'visit/index.html'),
+        jobs: resolve(__dirname, 'jobs/index.html'),
       },
     },
   },

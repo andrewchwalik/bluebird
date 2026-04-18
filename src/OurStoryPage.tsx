@@ -23,6 +23,7 @@ const navItems = [
   { label: 'Our Story', href: '/our-story/' },
   { label: 'Menu', href: '/menu/' },
   { label: 'Visit', href: '/visit/' },
+  { label: 'Jobs', href: '/jobs/' },
 ]
 
 const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
@@ -291,6 +292,7 @@ export default function OurStoryPage() {
             <a href="/menu/">Menu</a>
             <a href="/our-story/">Our Story</a>
             <a href="/visit/">Visit</a>
+            <a href="/jobs/">Jobs</a>
           </nav>
         </div>
 
