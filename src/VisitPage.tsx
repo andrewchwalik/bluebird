@@ -120,7 +120,7 @@ export default function VisitPage() {
       <main className="story-page-main">
         <section className="section story-opening-section">
           <div className="story-feature-copy">
-            <h2>Plan Your Stop</h2>
+            <h2>Get In for Free!</h2>
             <p>
               This section can become your easy visit overview: where Bluebird is,
               the best way to find the shop, and what kind of food and atmosphere
