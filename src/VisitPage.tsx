@@ -86,9 +86,10 @@ export default function VisitPage() {
               </span>
             </h1>
             <p className="hero-text">
-              This page is ready for your full Lakeside visit guide. We can add shop
-              hours, what to expect, parking tips, favorite nearby spots, and anything
-              else you want guests to know before they stop by.
+              Come visit us in Lakeside Chautauqua. Our community is gated during
+              the summer months so the following info will give you all the details
+              on how to get in for free to try our delicious sandwiches, salads,
+              and smoothies.
             </p>
 
             <div className="hero-actions">
