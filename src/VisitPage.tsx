@@ -122,14 +122,22 @@ export default function VisitPage() {
           <div className="story-feature-copy">
             <h2>Get In for Free!</h2>
             <p>
-              This section can become your easy visit overview: where Bluebird is,
-              the best way to find the shop, and what kind of food and atmosphere
-              guests can expect once they arrive.
+              Bluebird is located in the Lakeside Chautauqua community on the
+              shores of Lake Erie. During the summer season, it does cost around
+              $40 for a day pass. However, you can get in for free for two hours
+              to enjoy the shops and restaurants, like Bluebird. At the gate, just
+              let the attendant know you need the <em>free shopping and dining
+              pass</em>. Unfortunately, this pass does not include parking.
             </p>
             <p>
-              We can also use this area for quick details like whether people should
-              order online first, where pickup happens, or what makes Bluebird a
-              great Lakeside lunch stop.
+              Parking can be a bit crazy around our community. If you do want to
+              pay to get your car in, your best bet will be to find some street
+              parking around the downtown area. If you do not want to pay to get
+              your car in, you can park at the 5th Street Gate or the 8th Street
+              Gate. Leave your car there and let the gate attendant know you want
+              a golf cart shuttle to pick you up. Let the driver know you want to
+              smash some Bluebird paninis and they will take you right down to our
+              shop.
             </p>
           </div>
         </section>
