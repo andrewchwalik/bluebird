@@ -5,7 +5,7 @@ import './App.css'
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Our Story', href: '/our-story/' },
+  { label: 'Story', href: '/our-story/' },
   { label: 'Menu', href: '/menu/' },
   { label: 'Visit', href: '/visit/' },
   { label: 'Jobs', href: '/jobs/' },
