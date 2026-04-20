@@ -86,9 +86,10 @@ export default function JobsPage() {
               </span>
             </h1>
             <p className="hero-text">
-              This page is ready for your future hiring details. We can add open roles,
-              what a season at Bluebird feels like, the kind of team members you are
-              looking for, and how people should apply.
+              Want to work at the coolest sandwich shop on Lake Erie? We accept
+              applications on a rolling basis for each summer season, which runs
+              from the middle of May to the beginning of September. Join our team
+              of peeps for the summer! Apply below.
             </p>
 
             <div className="hero-actions">
