@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   margin: 0;
+  overflow-x: clip;
 }
 
 .hero-card,
@@ -22,16 +23,19 @@
 
 .topbar {
   position: relative;
+  z-index: 3;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: 'brand nav order';
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
   padding: 0 0 1rem;
   background: transparent;
 }
 
 .brand {
+  grid-area: brand;
   display: inline-flex;
   align-items: center;
   color: var(--ink);
@@ -43,9 +47,53 @@
   height: auto;
 }
 
+.nav-toggle {
+  display: none;
+  grid-area: toggle;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: inset 0 0 0 1px rgba(47, 29, 23, 0.08);
+  cursor: pointer;
+}
+
+.nav-toggle-line {
+  display: block;
+  width: 1.2rem;
+  height: 0.14rem;
+  border-radius: 999px;
+  background: var(--ink);
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.nav-toggle-line + .nav-toggle-line {
+  margin-top: 0.22rem;
+}
+
+.nav-toggle-open .nav-toggle-line:nth-child(1) {
+  transform: translateY(0.36rem) rotate(45deg);
+}
+
+.nav-toggle-open .nav-toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle-open .nav-toggle-line:nth-child(3) {
+  transform: translateY(-0.36rem) rotate(-45deg);
+}
+
 .nav-links {
+  grid-area: nav;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -61,6 +109,10 @@
 
 .nav-links a {
   text-decoration: none;
+}
+
+.topbar-order-button {
+  grid-area: order;
 }
 
 .button {
@@ -197,8 +249,8 @@
   position: relative;
   overflow: hidden;
   margin-top: 1rem;
-  margin-left: calc(clamp(2.75rem, 5vw, 5.5rem) * -1);
-  width: calc(100% + (clamp(2.75rem, 5vw, 5.5rem) * 2));
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
   background: #5eb4d3;
   border-top: 1px solid rgba(255, 255, 255, 0.45);
   border-bottom: 1px solid rgba(33, 82, 103, 0.18);
@@ -1556,15 +1608,42 @@ main {
   }
 
   .topbar {
-    flex-wrap: wrap;
-    border-radius: 1.5rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      'brand toggle'
+      'order order'
+      'nav nav';
+    align-items: center;
+    row-gap: 0.85rem;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
   }
 
   .nav-links {
-    order: 3;
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem 1.1rem 0.9rem;
+    border-radius: 1.25rem;
+    background: rgba(255, 252, 244, 0.68);
+    box-shadow: inset 0 0 0 1px rgba(47, 29, 23, 0.08);
+    backdrop-filter: blur(14px);
+  }
+
+  .nav-links-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1.15rem;
+  }
+
+  .topbar-order-button {
+    width: 100%;
   }
 
   .hero-grid {
@@ -1695,6 +1774,19 @@ main {
 
   .menu-showcase-grid {
     grid-auto-columns: minmax(14rem, 78%);
+  }
+
+  .topbar {
+    padding-bottom: 0.25rem;
+  }
+
+  .brand-logo {
+    width: 9.25rem;
+  }
+
+  .nav-toggle {
+    width: 2.85rem;
+    height: 2.85rem;
   }
 
   .testimonials-grid {

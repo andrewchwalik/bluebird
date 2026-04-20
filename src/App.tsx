@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
+import SiteNav from './SiteNav'
 import './App.css'
 
 const navItems = [
@@ -298,27 +298,7 @@ function App() {
   return (
     <div className="page-shell">
       <header className="hero-card">
-        <nav className="topbar" aria-label="Primary">
-          <a className="brand" href="/" aria-label="Bluebird home">
-            <img className="brand-logo" src={bluebirdLogo} alt="Bluebird" />
-          </a>
-
-          <div className="nav-links">
-            {navItems.map((item) => (
-              item.href ? (
-                <a key={item.label} href={item.href}>
-                  {item.label}
-                </a>
-              ) : (
-                <span key={item.label}>{item.label}</span>
-              )
-            ))}
-          </div>
-
-          <a className="button button-primary hero-button" href={orderLink}>
-            Order Online
-          </a>
-        </nav>
+        <SiteNav navItems={navItems} orderLink={orderLink} />
 
         <section className="hero-grid" id="home">
           <div className="hero-copy">

@@ -22,7 +22,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: var(--ink);
-  background: var(--surface);
+  background: #f7efcf;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -35,13 +35,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: #f7efcf;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: var(--surface);
+  overflow-x: hidden;
+  background: #f7efcf;
 }
 
 a {
@@ -61,6 +64,8 @@ img {
 
 #root {
   min-height: 100vh;
+  overflow-x: hidden;
+  background: #f7efcf;
 }
 
 h1,

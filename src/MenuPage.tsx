@@ -1,6 +1,6 @@
-import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
 import { useEffect } from 'react'
+import SiteNav from './SiteNav'
 import './App.css'
 
 type MenuItem = {
@@ -315,27 +315,7 @@ export default function MenuPage() {
   return (
     <div className="page-shell menu-page-shell">
       <header className="hero-card menu-page-hero">
-        <nav className="topbar" aria-label="Primary">
-          <a className="brand" href="/" aria-label="Bluebird home">
-            <img className="brand-logo" src={bluebirdLogo} alt="Bluebird" />
-          </a>
-
-          <div className="nav-links">
-            {navItems.map((item) =>
-              item.href ? (
-                <a key={item.label} href={item.href}>
-                  {item.label}
-                </a>
-              ) : (
-                <span key={item.label}>{item.label}</span>
-              ),
-            )}
-          </div>
-
-          <a className="button button-primary hero-button" href={orderLink}>
-            Order Online
-          </a>
-        </nav>
+        <SiteNav navItems={navItems} orderLink={orderLink} />
 
         <section className="hero-grid menu-page-intro">
           <div className="hero-copy menu-page-copy">

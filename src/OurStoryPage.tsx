@@ -1,8 +1,8 @@
-import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
 import andrewAndRachelImage from '../img/andrew-and-rachel-at-topped.JPG'
 import rachelInBluebirdImage from '../img/rachel-in-the-bluebird.jpg'
 import andrewOnGolfcartImage from '../img/andrew-on-the-bluebird-golfcart.jpeg'
+import SiteNav from './SiteNav'
 import './App.css'
 
 type StoryBeat = {
@@ -107,27 +107,7 @@ export default function OurStoryPage() {
   return (
     <div className="page-shell story-page-shell">
       <header className="hero-card story-page-hero">
-        <nav className="topbar" aria-label="Primary">
-          <a className="brand" href="/" aria-label="Bluebird home">
-            <img className="brand-logo" src={bluebirdLogo} alt="Bluebird" />
-          </a>
-
-          <div className="nav-links">
-            {navItems.map((item) =>
-              item.href ? (
-                <a key={item.label} href={item.href}>
-                  {item.label}
-                </a>
-              ) : (
-                <span key={item.label}>{item.label}</span>
-              ),
-            )}
-          </div>
-
-          <a className="button button-primary hero-button" href={orderLink}>
-            Order Online
-          </a>
-        </nav>
+        <SiteNav navItems={navItems} orderLink={orderLink} />
 
         <section className="hero-grid story-page-intro">
           <div className="hero-copy story-page-copy">
