@@ -179,13 +179,14 @@ export default function VisitPage() {
           <div className="story-feature-copy">
             <h2>Find the Shop</h2>
             <p>
-              Bluebird sits right in the Lakeside downtown area, just a short walk
-              or golf cart ride from the gates. Use the map to find our spot before
-              you head in.
+              Bluebird is located on the shoreline of Lake Erie in the Lakeside
+              Chautauqua community. Our physical address is 100 Maple Ave., Suite
+              #2, Lakeside Marblehead, OH 43440. That will take you to the Pavillion
+              complex; our sandwich shop is located in the building to the right.
             </p>
             <p>
-              Need turn-by-turn help? Tap the button below and Google Maps will open
-              directions right to Bluebird.
+              Need turn-by-turn guidance? Tap the button below and Google Maps will
+              open directions right to Bluebird so you can start showing down.
             </p>
             <a className="menu-promo-link" href={bluebirdDirectionsLink} target="_blank" rel="noreferrer">
               Get Directions
