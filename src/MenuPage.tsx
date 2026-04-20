@@ -1,5 +1,6 @@
 import bluebirdLogo from '../img/bluebird-logo.png'
 import paniniImage from '../img/panini.png'
+import { useEffect } from 'react'
 import './App.css'
 
 type MenuItem = {
@@ -277,6 +278,27 @@ const menuSections: MenuSection[] = [
 ]
 
 export default function MenuPage() {
+  useEffect(() => {
+    const scrollToHash = () => {
+      const id = window.location.hash.slice(1)
+
+      if (!id) {
+        return
+      }
+
+      const target = document.getElementById(id)
+
+      if (target) {
+        target.scrollIntoView({ block: 'start' })
+      }
+    }
+
+    window.requestAnimationFrame(scrollToHash)
+    window.addEventListener('hashchange', scrollToHash)
+
+    return () => window.removeEventListener('hashchange', scrollToHash)
+  }, [])
+
   return (
     <div className="page-shell menu-page-shell">
       <header className="hero-card menu-page-hero">
