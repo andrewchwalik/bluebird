@@ -23,7 +23,6 @@ type MenuSection = {
 }
 
 type FooterContactItem = {
-  icon: string
   text: string
   href: string
   external?: boolean
@@ -60,23 +59,19 @@ const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).f
 
 const footerContactItems: FooterContactItem[] = [
   {
-    icon: '📍',
     text: '100 Maple Ave, Lakeside Marblehead, OH 43440',
     href: 'https://www.google.com/maps/dir/?api=1&destination=100+Maple+Ave,+Lakeside+Marblehead,+OH+43440',
     external: true,
   },
   {
-    icon: '📞',
     text: '419.967.6747',
     href: 'tel:+14199676747',
   },
   {
-    icon: '🕒',
     text: 'Hours: Mon, Fri-Sun 11:30am-7pm; Wed-Thu 11:30am-2pm; Tue Closed',
     href: '/visit/',
   },
   {
-    icon: '📷',
     text: '@bluebird.ooo',
     href: 'https://www.instagram.com/bluebird.ooo/',
     external: true,
@@ -442,8 +437,7 @@ export default function MenuPage() {
                 target={item.external ? '_blank' : undefined}
                 rel={item.external ? 'noreferrer' : undefined}
               >
-                <span aria-hidden="true">{item.icon}</span>
-                <span>{item.text}</span>
+                {item.text}
               </a>
             ))}
           </div>
