@@ -27,6 +27,13 @@ const tickerItems = [
 ]
 
 const orderLink = 'https://cash.app/order/$bluebirdlakeside'
+const mapsApiKey = 'AIzaSyAwNDN63PVFeoR0OXNOL2Nc9tYzvZtx00k'
+const bluebirdAddress = '100 Maple Ave, Lakeside Marblehead, OH 43440'
+const bluebirdDirectionsLink =
+  'https://www.google.com/maps/dir/?api=1&destination=100+Maple+Ave,+Lakeside+Marblehead,+OH+43440'
+const bluebirdMapUrl = `https://www.google.com/maps/embed/v1/place?key=${mapsApiKey}&q=${encodeURIComponent(
+  `Bluebird, ${bluebirdAddress}`,
+)}`
 const repeatedHeroTickerItems = Array.from({ length: 6 }, () => heroTickerItems).flat()
 const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
@@ -142,19 +149,31 @@ export default function VisitPage() {
           </div>
         </section>
 
-        <section className="section story-opening-section">
+        <section className="section visit-map-section">
           <div className="story-feature-copy">
-            <h2>What We Can Add Here</h2>
+            <h2>Find the Shop</h2>
             <p>
-              We can build this page out with hours, address details, parking tips,
-              maps, pickup notes, accessibility info, and even a short neighborhood
-              guide for first-time visitors.
+              Bluebird sits right in the Lakeside downtown area, just a short walk
+              or golf cart ride from the gates. Use the map to find our spot before
+              you head in.
             </p>
             <p>
-              Once you are ready, we can also add photos of the shop, the patio, the
-              counter, or the Lakeside surroundings so the page feels more like a true
-              arrival guide.
+              Need turn-by-turn help? Tap the button below and Google Maps will open
+              directions right to Bluebird.
             </p>
+            <a className="menu-promo-link" href={bluebirdDirectionsLink} target="_blank" rel="noreferrer">
+              Get Directions
+            </a>
+          </div>
+
+          <div className="visit-map-card">
+            <iframe
+              title="Map showing Bluebird in Lakeside Marblehead"
+              src={bluebirdMapUrl}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </section>
       </main>
