@@ -448,6 +448,18 @@ main {
   transform: rotate(2deg) scale(0.98);
 }
 
+.popular-image-smoothie-strawberry img,
+.popular-image-smoothie-tropical img,
+.popular-image-smoothie-honey-bee img {
+  width: min(13.5rem, 88%);
+  transform: none;
+}
+
+.popular-image-smoothie-peanut-butter img {
+  width: min(14.75rem, 92%);
+  transform: scale(0.76) rotate(-2deg);
+}
+
 .section-art,
 .promo-poster,
 .device-scene {
@@ -858,22 +870,23 @@ main {
   justify-content: center;
 }
 
-.about-orb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-photo-card {
   width: min(31rem, 100%);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #f7e3bf;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #fbf3d7 0%, #f2deb2 100%);
+  box-shadow:
+    0 1.2rem 2.2rem rgba(91, 69, 33, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+  transform: rotate(1.5deg);
 }
 
-.about-orb img {
-  width: min(23rem, 100%);
-  height: auto;
-  object-fit: contain;
-  transform: rotate(-10deg) scale(1.02);
-  filter: drop-shadow(0 1.1rem 1.4rem rgba(90, 63, 20, 0.16));
+.about-photo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 1.55rem;
+  object-fit: cover;
+  box-shadow: 0 0.9rem 1.6rem rgba(90, 63, 20, 0.14);
 }
 
 .about-copy {
@@ -1763,7 +1776,7 @@ main {
     margin: 0 auto;
   }
 
-  .about-orb {
+  .about-photo-card {
     width: min(22rem, 100%);
   }
 

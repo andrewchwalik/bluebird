@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import paniniImage from '../img/panini.png'
+import bluebirdVisitorsImage from '../img/bluebird-visitors.jpg'
+import honeyBeeImage from '../img/products/honey-bee.png'
 import SiteNav from './SiteNav'
 import './App.css'
 
@@ -22,7 +24,14 @@ const tickerItems = [
 const popularDishes = [
   { name: 'Chicken Pesto', price: '$12.00', imageClass: 'popular-image-one', href: '/menu/#paninis' },
   { name: 'Barnyard Salad', price: '$14.00', imageClass: 'popular-image-two', href: '/menu/#salads' },
-  { name: 'Honey Bee Smoothie', price: '$7.50', imageClass: 'popular-image-three', href: '/menu/#smoothies' },
+  {
+    name: 'Honey Bee Smoothie',
+    price: '$7.50',
+    imageClass: 'popular-image-smoothie-honey-bee',
+    imageSrc: honeyBeeImage,
+    imageAlt: 'Honey Bee smoothie',
+    href: '/menu/#smoothies',
+  },
 ]
 
 const menuCategories = [
@@ -355,7 +364,7 @@ function App() {
             {popularDishes.map((item) => (
               <a className="popular-card popular-card-anchor" href={item.href} key={item.name}>
                 <div className={`popular-image ${item.imageClass}`}>
-                  <img src={paniniImage} alt="" />
+                  <img src={item.imageSrc ?? paniniImage} alt={item.imageAlt ?? ''} />
                 </div>
                 <h3>{item.name}</h3>
                 <p>{item.price}</p>
@@ -464,8 +473,8 @@ function App() {
 
         <section className="section ordering-section">
           <div className="about-visual" aria-hidden="true">
-            <div className="about-orb">
-              <img src={paniniImage} alt="" />
+            <div className="about-photo-card">
+              <img src={bluebirdVisitorsImage} alt="Guests visiting Bluebird" />
             </div>
           </div>
 

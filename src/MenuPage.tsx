@@ -1,4 +1,7 @@
 import paniniImage from '../img/panini.png'
+import honeyBeeImage from '../img/products/honey-bee.png'
+import strawberryCreamImage from '../img/products/strawberry-cream.png'
+import tropicalSunImage from '../img/products/tropical-sun.png'
 import { useEffect } from 'react'
 import SiteNav from './SiteNav'
 import './App.css'
@@ -8,6 +11,8 @@ type MenuItem = {
   price: string
   ingredients: string
   imageClass: string
+  imageSrc?: string
+  imageAlt?: string
 }
 
 type MenuSection = {
@@ -203,26 +208,32 @@ const menuSections: MenuSection[] = [
         price: '$7.50',
         ingredients:
           'Strawberries, bananas, greek yogurt, whole milk, apple juice, and homemade whip cream',
-        imageClass: 'popular-image-one',
+        imageClass: 'popular-image-smoothie-strawberry',
+        imageSrc: strawberryCreamImage,
+        imageAlt: 'Strawberry Cream smoothie',
       },
       {
         name: 'Peanut Butter Banana',
         price: '$7.50',
         ingredients: 'Bananas, peanut butter, whole milk, and homemade whip cream',
-        imageClass: 'popular-image-two',
+        imageClass: 'popular-image-smoothie-peanut-butter',
       },
       {
         name: 'Tropical Sun',
         price: '$7.50',
         ingredients:
           'Mangos, bananas, pineapple, apple juice, coconut milk, and homemade whip cream',
-        imageClass: 'popular-image-three',
+        imageClass: 'popular-image-smoothie-tropical',
+        imageSrc: tropicalSunImage,
+        imageAlt: 'Tropical Sun smoothie',
       },
       {
         name: 'Honey Bee',
         price: '$7.50',
         ingredients: 'Bananas, honey, vanilla, whole milk, homemade whip cream',
-        imageClass: 'popular-image-one',
+        imageClass: 'popular-image-smoothie-honey-bee',
+        imageSrc: honeyBeeImage,
+        imageAlt: 'Honey Bee smoothie',
       },
     ],
   },
@@ -385,7 +396,7 @@ export default function MenuPage() {
                   key={item.name}
                 >
                   <div className={`popular-image ${item.imageClass}`}>
-                    <img src={paniniImage} alt="" />
+                    <img src={item.imageSrc ?? paniniImage} alt={item.imageAlt ?? ''} />
                   </div>
                   <h3>{item.name}</h3>
                   <p className="menu-item-price">{item.price}</p>
