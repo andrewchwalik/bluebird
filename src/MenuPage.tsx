@@ -343,7 +343,11 @@ export default function MenuPage() {
 
       <main className="menu-page-main">
         {menuSections.map((section) => (
-          <section className="section menu-category-section" key={section.title}>
+          <section
+            className="section menu-category-section"
+            id={createMenuItemId(section.title)}
+            key={section.title}
+          >
             <div className="menu-category-header">
               <div className="menu-category-heading-row">
                 <h2>{section.title}</h2>

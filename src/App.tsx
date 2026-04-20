@@ -30,37 +30,37 @@ const menuCategories = [
     title: 'Paninis',
     lines: ['Paninis'],
     imageClass: 'menu-category-image-one',
-    href: '/menu/#peacock',
+    href: '/menu/#paninis',
   },
   {
     title: 'Salads',
     lines: ['Salads'],
     imageClass: 'menu-category-image-two',
-    href: '/menu/#rockin-robin',
+    href: '/menu/#salads',
   },
   {
     title: 'Subs',
     lines: ['Subs'],
     imageClass: 'menu-category-image-three',
-    href: '/menu/#porker',
+    href: '/menu/#subs',
   },
   {
     title: 'Smoothies',
     lines: ['Smoothies'],
     imageClass: 'menu-category-image-four',
-    href: '/menu/#strawberry-cream',
+    href: '/menu/#smoothies',
   },
   {
     title: 'Kids',
     lines: ['Kids'],
     imageClass: 'menu-category-image-five',
-    href: '/menu/#kids-grilled-cheese',
+    href: '/menu/#kids',
   },
   {
     title: 'Snacks',
     lines: ['Snacks'],
     imageClass: 'menu-category-image-six',
-    href: '/menu/#fresh-strawberry-cup',
+    href: '/menu/#snacks',
   },
 ]
 
