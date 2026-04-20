@@ -323,6 +323,21 @@ main {
   background: #fbf4d8;
 }
 
+.popular-card-anchor {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.popular-card-anchor:hover,
+.popular-card-anchor:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(101, 74, 33, 0.12);
+}
+
 .popular-card h3 {
   margin-bottom: 0.4rem;
   color: #23180d;

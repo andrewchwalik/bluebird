@@ -373,16 +373,13 @@ function App() {
 
           <div className="popular-grid">
             {popularDishes.map((item) => (
-              <article className="popular-card" key={item.name}>
+              <a className="popular-card popular-card-anchor" href={item.href} key={item.name}>
                 <div className={`popular-image ${item.imageClass}`}>
                   <img src={paniniImage} alt="" />
                 </div>
                 <h3>{item.name}</h3>
                 <p>{item.price}</p>
-                <a className="popular-card-link" href={item.href}>
-                  More
-                </a>
-              </article>
+              </a>
             ))}
           </div>
         </section>
