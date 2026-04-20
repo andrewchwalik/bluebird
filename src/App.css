@@ -1192,6 +1192,12 @@ main {
     box-shadow 180ms ease;
 }
 
+.job-application-form input::placeholder,
+.job-application-form textarea::placeholder {
+  color: rgba(35, 24, 13, 0.42);
+  font-weight: 400;
+}
+
 .job-application-form textarea {
   resize: vertical;
 }
