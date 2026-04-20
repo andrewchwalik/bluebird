@@ -1283,6 +1283,7 @@ main {
 .menu-category-section {
   grid-template-columns: 1fr;
   gap: 1.75rem;
+  scroll-margin-top: 1.5rem;
 }
 
 .menu-category-header {

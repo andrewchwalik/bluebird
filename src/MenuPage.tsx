@@ -289,14 +289,27 @@ export default function MenuPage() {
       const target = document.getElementById(id)
 
       if (target) {
-        target.scrollIntoView({ block: 'start' })
+        const targetTop = target.getBoundingClientRect().top + window.scrollY
+
+        window.scrollTo({
+          top: Math.max(0, targetTop - 24),
+          behavior: 'auto',
+        })
       }
     }
 
+    const scrollDelays = [0, 100, 350, 700]
+    const timeouts = scrollDelays.map((delay) => window.setTimeout(scrollToHash, delay))
+
     window.requestAnimationFrame(scrollToHash)
+    window.addEventListener('load', scrollToHash)
     window.addEventListener('hashchange', scrollToHash)
 
-    return () => window.removeEventListener('hashchange', scrollToHash)
+    return () => {
+      timeouts.forEach((timeout) => window.clearTimeout(timeout))
+      window.removeEventListener('load', scrollToHash)
+      window.removeEventListener('hashchange', scrollToHash)
+    }
   }, [])
 
   return (
