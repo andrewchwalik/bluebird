@@ -1228,6 +1228,10 @@ main {
   max-width: 42rem;
 }
 
+.story-feature-copy.job-wide-copy {
+  max-width: none;
+}
+
 .story-media {
   display: flex;
   align-items: center;

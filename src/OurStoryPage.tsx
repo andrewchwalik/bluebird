@@ -91,9 +91,9 @@ const footerContactItems: FooterContactItem[] = [
     href: 'tel:+14199676747',
   },
   {
-    icon: '📧',
-    text: 'hello@bluebird.ooo',
-    href: 'mailto:hello@bluebird.ooo',
+    icon: '🕒',
+    text: 'Hours: Mon, Fri-Sun 11:30am-7pm; Wed-Thu 11:30am-2pm; Tue Closed',
+    href: '/visit/',
   },
   {
     icon: '📷',
