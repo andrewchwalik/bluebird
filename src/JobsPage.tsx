@@ -158,9 +158,9 @@ export default function JobsPage() {
       </header>
 
       <main className="story-page-main">
-        <section className="section story-opening-section">
-          <div className="story-feature-copy">
-            <h2>Join the Team</h2>
+        <section className="section story-opening-section job-wide-section">
+          <div className="story-feature-copy job-wide-copy">
+            <h2>Join the Flock</h2>
             <p>
               Working at Bluebird is pretty sweet, literally - you get a free
               smoothie or food item every shift. We recommend the Honey Bee. You&apos;ll
@@ -187,7 +187,7 @@ export default function JobsPage() {
         </section>
 
         <section className="section job-application-section" id="apply">
-          <div className="story-feature-copy job-application-copy">
+          <div className="story-feature-copy job-application-copy job-wide-copy">
             <h2>Apply to be a Peep</h2>
             <p>
               Thanks for your interest in joining our Bluebird team! Fill out the

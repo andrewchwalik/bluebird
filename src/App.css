@@ -1135,14 +1135,16 @@ main {
 }
 
 .job-application-section {
-  grid-template-columns: minmax(0, 0.7fr) minmax(20rem, 1.05fr);
-  align-items: start;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .job-application-copy {
-  position: sticky;
-  top: 2rem;
+  position: static;
+}
+
+.job-wide-copy {
+  max-width: 68rem;
 }
 
 .job-application-form {
@@ -1503,10 +1505,6 @@ main {
   .visit-map-section,
   .job-application-section {
     grid-template-columns: 1fr;
-  }
-
-  .job-application-copy {
-    position: static;
   }
 
   .job-form-grid {
