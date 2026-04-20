@@ -1,0 +1,3 @@
+name = "bluebird-jobs-api"
+main = "worker/job-application.ts"
+compatibility_date = "2026-04-20"

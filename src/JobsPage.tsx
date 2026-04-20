@@ -28,6 +28,7 @@ const tickerItems = [
 ]
 
 const orderLink = 'https://cash.app/order/$bluebirdlakeside'
+const applicationEndpoint = 'https://bluebird-jobs-api.chwalik.workers.dev'
 const repeatedHeroTickerItems = Array.from({ length: 6 }, () => heroTickerItems).flat()
 const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
@@ -58,12 +59,41 @@ const footerContactItems: FooterContactItem[] = [
 
 export default function JobsPage() {
   const [applicationStatus, setApplicationStatus] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleApplicationSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleApplicationSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    setApplicationStatus(
-      'Application form is ready. Discord delivery needs a private backend endpoint before live submissions can be sent safely.',
+    setIsSubmitting(true)
+    setApplicationStatus('')
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+    const application = Object.fromEntries(
+      Array.from(formData.entries()).map(([key, value]) => [key, String(value)]),
     )
+
+    try {
+      const response = await fetch(applicationEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(application),
+      })
+
+      if (!response.ok) {
+        throw new Error('Application submission failed')
+      }
+
+      form.reset()
+      setApplicationStatus(
+        'Thanks for applying! Your application was sent to the Bluebird team.',
+      )
+    } catch {
+      setApplicationStatus(
+        'Sorry, something went wrong while submitting your application. Please try again or email hello@bluebird.ooo.',
+      )
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -227,8 +257,8 @@ export default function JobsPage() {
               </select>
             </label>
 
-            <button className="button button-primary hero-button job-submit-button" type="submit">
-              Submit Application
+            <button className="button button-primary hero-button job-submit-button" type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Submitting...' : 'Submit Application'}
             </button>
 
             {applicationStatus ? <p className="job-form-status">{applicationStatus}</p> : null}
