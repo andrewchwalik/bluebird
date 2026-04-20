@@ -1052,6 +1052,70 @@ main {
   gap: 2rem;
 }
 
+.visit-hours-section {
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.72fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.visit-hours-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1.8rem;
+  background:
+    radial-gradient(circle at 90% 12%, rgba(94, 180, 211, 0.28), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.18)),
+    #fbf4d8;
+  box-shadow: 0 18px 38px rgba(101, 74, 33, 0.1);
+}
+
+.visit-hours-kicker {
+  margin: 0 0 0.5rem;
+  color: #5eb4d3;
+  font-family: 'Hit and Run', var(--display);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.visit-hours-card h3 {
+  margin: 0 0 1.4rem;
+  color: #23180d;
+  font-family: 'Hit and Run', var(--display);
+  font-size: clamp(2.1rem, 3vw, 3.25rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.visit-hours-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.visit-hours-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px dashed rgba(35, 24, 13, 0.18);
+  color: rgba(35, 24, 13, 0.82);
+  font-size: 1rem;
+}
+
+.visit-hours-row strong {
+  color: #23180d;
+  font-weight: 800;
+  text-align: right;
+}
+
+.visit-hours-note {
+  margin: 1.2rem 0 0;
+  color: rgba(35, 24, 13, 0.66);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .visit-map-card {
   min-height: 28rem;
   padding: 1rem;
@@ -1355,6 +1419,7 @@ main {
   .story-feature-section,
   .story-values-section,
   .story-opening-section-split,
+  .visit-hours-section,
   .visit-map-section {
     grid-template-columns: 1fr;
   }

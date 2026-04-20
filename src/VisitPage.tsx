@@ -37,6 +37,16 @@ const bluebirdMapUrl = `https://www.google.com/maps/embed/v1/place?key=${mapsApi
 const repeatedHeroTickerItems = Array.from({ length: 6 }, () => heroTickerItems).flat()
 const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
+const hours = [
+  { day: 'Monday', time: '11:30am - 7pm' },
+  { day: 'Tuesday', time: 'Closed' },
+  { day: 'Wednesday', time: '11:30am - 2pm' },
+  { day: 'Thursday', time: '11:30am - 2pm' },
+  { day: 'Friday', time: '11:30am - 7pm' },
+  { day: 'Saturday', time: '11:30am - 7pm' },
+  { day: 'Sunday', time: '11:30am - 7pm' },
+]
+
 const footerContactItems: FooterContactItem[] = [
   {
     icon: '📍',
@@ -125,7 +135,7 @@ export default function VisitPage() {
       </header>
 
       <main className="story-page-main">
-        <section className="section story-opening-section">
+        <section className="section story-opening-section visit-hours-section">
           <div className="story-feature-copy">
             <h2>Get In for Free!</h2>
             <p>
@@ -147,6 +157,22 @@ export default function VisitPage() {
               shop.
             </p>
           </div>
+
+          <aside className="visit-hours-card" aria-label="Bluebird summer hours">
+            <p className="visit-hours-kicker">Opening May 17</p>
+            <h3>2026 Summer Hours</h3>
+            <div className="visit-hours-list">
+              {hours.map((item) => (
+                <div className="visit-hours-row" key={item.day}>
+                  <span>{item.day}</span>
+                  <strong>{item.time}</strong>
+                </div>
+              ))}
+            </div>
+            <p className="visit-hours-note">
+              *Hours are subject to change based on staff availability.
+            </p>
+          </aside>
         </section>
 
         <section className="section visit-map-section">
