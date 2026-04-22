@@ -1762,17 +1762,8 @@ main {
     min-height: 0;
   }
 
-  .home-hero-visual {
+  .hero-visual {
     display: none;
-  }
-
-  .hero-arch {
-    width: min(20rem, 100%);
-  }
-
-  .hero-panini {
-    width: 100%;
-    height: auto;
   }
 
   .plated-dish {
