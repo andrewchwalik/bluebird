@@ -1678,12 +1678,21 @@ main {
   }
 
   .popular-grid {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(16.5rem, 84%);
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gallery-grid {
     grid-template-columns: 1fr;
   }
 
-  .popular-grid,
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  .popular-card {
+    scroll-snap-align: start;
   }
 
   .menu-showcase-grid {
