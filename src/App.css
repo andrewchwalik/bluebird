@@ -1741,6 +1741,10 @@ main {
     border-radius: 1.5rem;
   }
 
+  .home-hero-actions {
+    display: none;
+  }
+
   .hero-actions {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -1817,8 +1821,9 @@ main {
   .instagram-grid,
   .menu-category-grid-scroll,
   .story-timeline-grid {
-    width: calc(100% + 1.5rem);
-    margin-right: -1.5rem;
+    width: calc(100vw - 1.5rem);
+    max-width: none;
+    margin-right: calc(50% - 50vw);
     padding-right: 1.5rem;
   }
 
@@ -1837,26 +1842,33 @@ main {
   }
 
   .site-footer {
+    display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas:
+      'ticker'
+      'cta'
+      'nav'
+      'contact';
     padding: 3rem 1.5rem;
   }
 
   .site-footer > .footer-ticker {
-    order: 0;
+    grid-area: ticker;
     width: 100dvw;
     margin-left: calc(50% - 50dvw);
     margin-right: calc(50% - 50dvw);
   }
 
   .site-footer > .footer-cta {
-    order: 1;
+    grid-area: cta;
+    justify-self: stretch;
   }
 
   .site-footer > .footer-column:first-of-type {
-    order: 2;
+    grid-area: nav;
   }
 
   .site-footer > .footer-column:nth-of-type(2) {
-    order: 3;
+    grid-area: contact;
   }
 }

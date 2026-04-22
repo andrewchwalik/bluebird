@@ -320,7 +320,7 @@ function App() {
               the coolest restaurant on the peninsula.
             </p>
 
-            <div className="hero-actions">
+            <div className="hero-actions home-hero-actions">
               <a className="button button-primary hero-button" href={orderLink}>
                 Order Online
               </a>
