@@ -1758,6 +1758,10 @@ main {
     min-height: 0;
   }
 
+  .home-hero-visual {
+    display: none;
+  }
+
   .hero-arch {
     width: min(20rem, 100%);
   }
@@ -1808,6 +1812,16 @@ main {
     margin-bottom: 0;
   }
 
+  .popular-grid,
+  .menu-showcase-grid,
+  .instagram-grid,
+  .menu-category-grid-scroll,
+  .story-timeline-grid {
+    width: calc(100% + 1.5rem);
+    margin-right: -1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .instagram-grid {
     grid-template-columns: none;
     grid-auto-flow: column;
@@ -1823,6 +1837,7 @@ main {
   }
 
   .site-footer {
+    grid-template-columns: 1fr;
     padding: 3rem 1.5rem;
   }
 

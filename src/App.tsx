@@ -327,7 +327,7 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-visual" aria-hidden="true">
+          <div className="hero-visual home-hero-visual" aria-hidden="true">
             <div className="hero-arch">
               <img className="hero-panini" src={paniniImage} alt="" />
             </div>
