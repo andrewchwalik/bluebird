@@ -49,7 +49,7 @@ const storyBeats: StoryBeat[] = [
     year: '2025',
     title: 'Finding Our Groove',
     body:
-      'Running a seasonal restaurant was a new experience. More simplifications were made to speed up order processing. But new menu items were added, like the Honey Bee Smoothie and milkshakes.',
+      'Running a seasonal restaurant was a new experience. More simplifications were made to speed up order processing. But new menu items were added, like the Honey Bee Smoothie and milkshakes. Oh, we also added our first kiddo, Murphy, to the team.',
   },
   {
     year: '2024',

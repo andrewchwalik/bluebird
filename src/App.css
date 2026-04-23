@@ -642,20 +642,33 @@ main {
 
 .menu-showcase-card-accent {
   isolation: isolate;
+  overflow: visible;
 }
 
 .menu-showcase-accent {
   position: absolute;
-  top: -4.8rem;
-  right: 0.75rem;
-  z-index: -1;
+  top: -2.6rem;
+  right: 0.85rem;
+  z-index: 0;
   width: 8.5rem;
   height: auto;
+  opacity: 0;
+  transform: translateY(2.75rem) scale(0.94);
+  transition:
+    transform 320ms ease,
+    opacity 320ms ease;
   filter: drop-shadow(0 0.7rem 1.2rem rgba(108, 76, 31, 0.14));
   pointer-events: none;
 }
 
+.menu-showcase-card-accent.is-visible .menu-showcase-accent {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 .menu-showcase-image {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -694,6 +707,8 @@ main {
 }
 
 .menu-showcase-footer {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;

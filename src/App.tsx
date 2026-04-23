@@ -210,9 +210,11 @@ const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).f
 
 function App() {
   const testimonialsRef = useRef<HTMLDivElement>(null)
+  const menuShowcaseRef = useRef<HTMLElement>(null)
   const testimonialsPageCount = Math.ceil(testimonials.length / 3)
   const [activeTestimonialsPage, setActiveTestimonialsPage] = useState(0)
   const [instagramPosts, setInstagramPosts] = useState<InstagramPost[]>(fallbackInstagramPosts)
+  const [isMenuShowcaseVisible, setIsMenuShowcaseVisible] = useState(false)
 
   useEffect(() => {
     const node = testimonialsRef.current
@@ -275,6 +277,29 @@ function App() {
 
     return () => {
       isActive = false
+    }
+  }, [])
+
+  useEffect(() => {
+    const node = menuShowcaseRef.current
+
+    if (!node) {
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsMenuShowcaseVisible(entry.isIntersecting)
+      },
+      {
+        threshold: 0.35,
+      },
+    )
+
+    observer.observe(node)
+
+    return () => {
+      observer.disconnect()
     }
   }, [])
 
@@ -398,7 +423,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section gallery-section" id="gallery">
+        <section className="section gallery-section" id="gallery" ref={menuShowcaseRef}>
           <div className="menu-showcase-header">
             <h2>Our Menu</h2>
           </div>
@@ -406,7 +431,9 @@ function App() {
           <div className="menu-showcase-grid">
             {menuCategories.map((item) => (
               <article
-                className={`menu-showcase-card${item.accentImageSrc ? ' menu-showcase-card-accent' : ''}`}
+                className={`menu-showcase-card${item.accentImageSrc ? ' menu-showcase-card-accent' : ''}${
+                  item.accentImageSrc && isMenuShowcaseVisible ? ' is-visible' : ''
+                }`}
                 key={item.title}
               >
                 {item.accentImageSrc ? (
