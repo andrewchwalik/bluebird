@@ -288,7 +288,7 @@ export default function JobsPage() {
             <span>Ready To</span>
             <span>Order?</span>
           </h2>
-          <a className="footer-cta-link" href={orderLink}>
+          <a className="footer-cta-link" href={orderLink} target="_blank" rel="noreferrer">
             Order Now
           </a>
         </div>

@@ -55,7 +55,12 @@ export default function SiteNav({ navItems, orderLink }: SiteNavProps) {
         ))}
       </div>
 
-      <a className="button button-primary hero-button topbar-order-button" href={orderLink}>
+      <a
+        className="button button-primary hero-button topbar-order-button"
+        href={orderLink}
+        target="_blank"
+        rel="noreferrer"
+      >
         Order Online
       </a>
     </nav>

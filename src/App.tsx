@@ -321,7 +321,7 @@ function App() {
             </p>
 
             <div className="hero-actions home-hero-actions">
-              <a className="button button-primary hero-button" href={orderLink}>
+              <a className="button button-primary hero-button" href={orderLink} target="_blank" rel="noreferrer">
                 Order Online
               </a>
             </div>
@@ -351,7 +351,7 @@ function App() {
             <div className="popular-title-wrap">
               <h2>Popular Orders</h2>
             </div>
-            <a className="popular-link" href={orderLink}>
+            <a className="popular-link" href={orderLink} target="_blank" rel="noreferrer">
               Start Your Order
             </a>
           </div>
@@ -389,7 +389,7 @@ function App() {
               be able to pick it up on the glass countertop - no need to wait in
               line!
             </p>
-            <a className="menu-promo-link" href={orderLink}>
+            <a className="menu-promo-link" href={orderLink} target="_blank" rel="noreferrer">
               Order Now
             </a>
           </div>
@@ -571,7 +571,7 @@ function App() {
             <span>Ready To</span>
             <span>Order?</span>
           </h2>
-          <a className="footer-cta-link" href={orderLink}>
+          <a className="footer-cta-link" href={orderLink} target="_blank" rel="noreferrer">
             Order Now
           </a>
         </div>

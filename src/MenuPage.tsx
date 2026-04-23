@@ -341,7 +341,7 @@ export default function MenuPage() {
             </p>
 
             <div className="hero-actions">
-              <a className="button button-primary hero-button" href={orderLink}>
+              <a className="button button-primary hero-button" href={orderLink} target="_blank" rel="noreferrer">
                 Order Online
               </a>
             </div>
@@ -375,7 +375,7 @@ export default function MenuPage() {
             <div className="menu-category-header">
               <div className="menu-category-heading-row">
                 <h2>{section.title}</h2>
-                <a className="popular-link menu-category-link" href={orderLink}>
+                <a className="popular-link menu-category-link" href={orderLink} target="_blank" rel="noreferrer">
                   Start Your Order
                 </a>
               </div>
@@ -451,7 +451,7 @@ export default function MenuPage() {
             <span>Ready To</span>
             <span>Order?</span>
           </h2>
-          <a className="footer-cta-link" href={orderLink}>
+          <a className="footer-cta-link" href={orderLink} target="_blank" rel="noreferrer">
             Order Now
           </a>
         </div>

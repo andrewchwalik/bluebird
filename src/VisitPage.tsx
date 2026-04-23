@@ -89,7 +89,7 @@ export default function VisitPage() {
             </p>
 
             <div className="hero-actions">
-              <a className="button button-primary hero-button" href={orderLink}>
+              <a className="button button-primary hero-button" href={orderLink} target="_blank" rel="noreferrer">
                 Order Online
               </a>
             </div>
@@ -227,7 +227,7 @@ export default function VisitPage() {
             <span>Ready To</span>
             <span>Order?</span>
           </h2>
-          <a className="footer-cta-link" href={orderLink}>
+          <a className="footer-cta-link" href={orderLink} target="_blank" rel="noreferrer">
             Order Now
           </a>
         </div>
