@@ -292,7 +292,8 @@ function App() {
         setIsMenuShowcaseVisible(entry.isIntersecting)
       },
       {
-        threshold: 0.35,
+        threshold: 0,
+        rootMargin: '-14% 0px -30% 0px',
       },
     )
 
