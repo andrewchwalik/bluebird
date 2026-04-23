@@ -171,6 +171,7 @@ const menuSections: MenuSection[] = [
     title: 'Subs',
     description:
       'All subs are handcrafted and come with your choice of classic, barbecue, sour cream & onion, or cheddar & sour cream chips.',
+    isScrollable: true,
     items: [
       {
         name: 'Porker',
@@ -236,6 +237,7 @@ const menuSections: MenuSection[] = [
     title: 'Kids',
     description:
       'All kids meals come with your choice of GoGo Squeeze applesauce or classic, barbecue, sour cream & onion, or cheddar & sour cream chips. Also comes with your choice of a juice box or water.',
+    isScrollable: true,
     items: [
       {
         name: "Kid's Grilled Cheese",
@@ -260,6 +262,7 @@ const menuSections: MenuSection[] = [
   {
     title: 'Snacks',
     description: '',
+    isScrollable: true,
     items: [
       {
         name: 'Fresh Strawberry Cup',
