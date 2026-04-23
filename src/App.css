@@ -1741,6 +1741,18 @@ main {
     border-radius: 1.5rem;
   }
 
+  .hero-copy h1 {
+    max-width: 100%;
+    font-size: clamp(2.8rem, 12.5vw, 4.25rem);
+  }
+
+  .menu-page-copy .hero-line-one,
+  .menu-page-copy .hero-line-two,
+  .story-page-copy .hero-line-one,
+  .story-page-copy .hero-line-two {
+    white-space: normal;
+  }
+
   .home-hero-actions {
     display: none;
   }
