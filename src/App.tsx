@@ -287,20 +287,30 @@ function App() {
       return
     }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsMenuShowcaseVisible(entry.isIntersecting)
-      },
-      {
-        threshold: 0,
-        rootMargin: '-14% 0px -30% 0px',
-      },
-    )
+    let frameId = 0
 
-    observer.observe(node)
+    const updateMenuAccentVisibility = () => {
+      const rect = node.getBoundingClientRect()
+      const viewportHeight = window.innerHeight
+      const shouldShow =
+        rect.top < viewportHeight * 0.72 && rect.top > -120 && rect.bottom > viewportHeight * 0.2
+
+      setIsMenuShowcaseVisible(shouldShow)
+    }
+
+    const handleViewportChange = () => {
+      window.cancelAnimationFrame(frameId)
+      frameId = window.requestAnimationFrame(updateMenuAccentVisibility)
+    }
+
+    updateMenuAccentVisibility()
+    window.addEventListener('scroll', handleViewportChange, { passive: true })
+    window.addEventListener('resize', handleViewportChange)
 
     return () => {
-      observer.disconnect()
+      window.cancelAnimationFrame(frameId)
+      window.removeEventListener('scroll', handleViewportChange)
+      window.removeEventListener('resize', handleViewportChange)
     }
   }, [])
 

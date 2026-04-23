@@ -667,8 +667,8 @@ main {
   opacity: 0;
   transform: translateY(5.15rem) scale(0.94);
   transition:
-    transform 760ms cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 620ms ease;
+    transform 900ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 720ms ease-in-out;
   filter: drop-shadow(0 0.7rem 1.2rem rgba(108, 76, 31, 0.14));
   pointer-events: none;
 }
