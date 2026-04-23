@@ -1794,7 +1794,7 @@ main {
   }
 
   .menu-showcase-grid {
-    grid-auto-columns: minmax(14rem, 78%);
+    grid-auto-columns: minmax(15.5rem, 84%);
   }
 
   .topbar {
