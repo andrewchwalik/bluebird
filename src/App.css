@@ -643,6 +643,16 @@ main {
 .menu-showcase-card-accent {
   isolation: isolate;
   overflow: visible;
+  background: transparent;
+}
+
+.menu-showcase-card-accent::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: #fbf4d8;
+  z-index: 1;
 }
 
 .menu-showcase-accent {
@@ -668,7 +678,7 @@ main {
 
 .menu-showcase-image {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -708,7 +718,7 @@ main {
 
 .menu-showcase-footer {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
