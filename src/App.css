@@ -605,6 +605,7 @@ main {
 .gallery-section {
   grid-template-columns: 1fr;
   gap: 2rem;
+  overflow: visible;
 }
 
 .menu-showcase-header h2 {
@@ -630,12 +631,28 @@ main {
 }
 
 .menu-showcase-card {
+  position: relative;
   display: grid;
   gap: 1.2rem;
   min-height: 25rem;
   padding: 1.2rem 1rem 1rem;
   border-radius: 1.6rem;
   background: #fbf4d8;
+}
+
+.menu-showcase-card-accent {
+  isolation: isolate;
+}
+
+.menu-showcase-accent {
+  position: absolute;
+  top: -4.8rem;
+  right: 0.75rem;
+  z-index: -1;
+  width: 8.5rem;
+  height: auto;
+  filter: drop-shadow(0 0.7rem 1.2rem rgba(108, 76, 31, 0.14));
+  pointer-events: none;
 }
 
 .menu-showcase-image {
@@ -1791,6 +1808,10 @@ main {
   .menu-showcase-card,
   .instagram-card {
     border-radius: 1.2rem;
+  }
+
+  .menu-showcase-accent {
+    display: none;
   }
 
   .menu-showcase-grid {

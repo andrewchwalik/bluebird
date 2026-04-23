@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import paniniImage from '../img/panini.png'
 import bluebirdVisitorsImage from '../img/bluebird-visitors.jpg'
+import dontForgetYourChipsImage from '../img/dont-forget-your-chips.png'
 import honeyBeeImage from '../img/products/honey-bee.png'
 import SiteNav from './SiteNav'
 import './App.css'
@@ -58,6 +59,8 @@ const menuCategories = [
     lines: ['Smoothies'],
     imageClass: 'menu-category-image-four',
     href: '/menu/#smoothies',
+    accentImageSrc: dontForgetYourChipsImage,
+    accentImageAlt: "Don't forget your chips",
   },
   {
     title: 'Kids',
@@ -402,7 +405,18 @@ function App() {
 
           <div className="menu-showcase-grid">
             {menuCategories.map((item) => (
-              <article className="menu-showcase-card" key={item.title}>
+              <article
+                className={`menu-showcase-card${item.accentImageSrc ? ' menu-showcase-card-accent' : ''}`}
+                key={item.title}
+              >
+                {item.accentImageSrc ? (
+                  <img
+                    className="menu-showcase-accent"
+                    src={item.accentImageSrc}
+                    alt={item.accentImageAlt ?? ''}
+                    aria-hidden="true"
+                  />
+                ) : null}
                 <div className={`menu-showcase-image ${item.imageClass}`}>
                   <img src={paniniImage} alt="" />
                 </div>

@@ -1,7 +1,7 @@
 import paniniImage from '../img/panini.png'
 import andrewAndRachelImage from '../img/andrew-and-rachel-at-topped.JPG'
+import andrewAndMurphyImage from '../img/andrew-and-murphy.JPG'
 import rachelInBluebirdImage from '../img/rachel-in-the-bluebird.jpg'
-import andrewOnGolfcartImage from '../img/andrew-on-the-bluebird-golfcart.jpeg'
 import SiteNav from './SiteNav'
 import './App.css'
 
@@ -222,7 +222,7 @@ export default function OurStoryPage() {
 
           <div className="story-media story-media-right">
             <div className="story-photo-frame story-photo-frame-right">
-              <img className="story-photo story-photo-right" src={andrewOnGolfcartImage} alt="Andrew on the Bluebird golf cart" />
+              <img className="story-photo story-photo-right" src={andrewAndMurphyImage} alt="Andrew and Murphy at Bluebird" />
             </div>
           </div>
         </section>
