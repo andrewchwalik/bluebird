@@ -625,9 +625,9 @@ main {
   justify-content: start;
   gap: 1rem;
   overflow-x: auto;
-  padding-top: 3.2rem;
+  padding-top: 8.75rem;
   padding-bottom: 0.5rem;
-  margin-top: -1.2rem;
+  margin-top: -5.5rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(35, 24, 13, 0.25) transparent;
 }
@@ -659,13 +659,13 @@ main {
 
 .menu-showcase-accent {
   position: absolute;
-  top: 0.25rem;
+  top: 0.75rem;
   right: 0.85rem;
   z-index: 0;
   width: 8.5rem;
   height: auto;
   opacity: 0;
-  transform: translateY(2.25rem) scale(0.94);
+  transform: translateY(5.15rem) scale(0.94);
   transition:
     transform 320ms ease,
     opacity 320ms ease;
@@ -675,7 +675,7 @@ main {
 
 .menu-showcase-card-accent.is-visible .menu-showcase-accent {
   opacity: 1;
-  transform: translateY(-2.6rem) scale(1);
+  transform: translateY(-8.65rem) scale(1);
 }
 
 .menu-showcase-image {
