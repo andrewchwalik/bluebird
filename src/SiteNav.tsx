@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import bluebirdLogo from '../img/bluebird-logo.png'
+import dontForgetYourChipsImage from '../img/dont-forget-your-chips.png'
 
 type NavItem = {
   label: string
@@ -53,6 +54,12 @@ export default function SiteNav({ navItems, orderLink }: SiteNavProps) {
             {item.label}
           </a>
         ))}
+        <img
+          className="nav-menu-accent"
+          src={dontForgetYourChipsImage}
+          alt=""
+          aria-hidden="true"
+        />
       </div>
 
       <a
