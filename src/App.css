@@ -1842,6 +1842,7 @@ main {
   }
 
   .menu-showcase-grid {
+    margin-top: 0;
     padding-top: 0.5rem;
     grid-auto-columns: minmax(15.5rem, 84%);
   }
