@@ -1,5 +1,6 @@
 import { type FormEvent, useState } from 'react'
 import paniniImage from '../img/panini.png'
+import workingAtBluebirdImage from '../img/working-at-bluebird.jpeg'
 import SiteNav from './SiteNav'
 import './App.css'
 
@@ -137,7 +138,7 @@ export default function JobsPage() {
       </header>
 
       <main className="story-page-main">
-        <section className="section story-opening-section job-wide-section">
+        <section className="section story-opening-section-split job-wide-section">
           <div className="story-feature-copy job-wide-copy">
             <h2>Join the Flock</h2>
             <p>
@@ -162,6 +163,16 @@ export default function JobsPage() {
               reading in. If you&apos;re interested in becoming one of the Peeps, submit
               your information below.
             </p>
+          </div>
+
+          <div className="story-media">
+            <div className="story-photo-frame story-photo-frame-right">
+              <img
+                className="story-photo story-photo-right"
+                src={workingAtBluebirdImage}
+                alt="Bluebird team members working in the shop"
+              />
+            </div>
           </div>
         </section>
 
