@@ -25,7 +25,7 @@ const navItems = [
   { label: 'Jobs', href: '/jobs/' },
 ]
 
-const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
+const heroTickerItems = ['Bluebird will Open May 22 for the 2026 Season']
 const tickerItems = [
   'Bluebird on the Lake',
   'Paninis',

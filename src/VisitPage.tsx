@@ -16,7 +16,7 @@ const navItems = [
   { label: 'Jobs', href: '/jobs/' },
 ]
 
-const heroTickerItems = ['Bluebird will Open May 17 for the 2026 Season']
+const heroTickerItems = ['Bluebird will Open May 22 for the 2026 Season']
 const tickerItems = [
   'Bluebird on the Lake',
   'Paninis',
@@ -138,7 +138,7 @@ export default function VisitPage() {
           </div>
 
           <aside className="visit-hours-card" aria-label="Bluebird summer hours">
-            <p className="visit-hours-kicker">Opening May 17</p>
+            <p className="visit-hours-kicker">Opening May 22</p>
             <h3>2026 Summer Hours</h3>
             <div className="visit-hours-list">
               {hours.map((item) => (
