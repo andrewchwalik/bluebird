@@ -37,13 +37,13 @@ const repeatedHeroTickerItems = Array.from({ length: 6 }, () => heroTickerItems)
 const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
 const hours = [
-  { day: 'Monday', time: '11:30am - 7pm' },
+  { day: 'Monday', time: '11:30am - 2pm' },
   { day: 'Tuesday', time: 'Closed' },
   { day: 'Wednesday', time: '11:30am - 2pm' },
   { day: 'Thursday', time: '11:30am - 2pm' },
-  { day: 'Friday', time: '11:30am - 7pm' },
-  { day: 'Saturday', time: '11:30am - 7pm' },
-  { day: 'Sunday', time: '11:30am - 7pm' },
+  { day: 'Friday', time: '11:30am - 2pm' },
+  { day: 'Saturday', time: '11:30am - 2pm' },
+  { day: 'Sunday', time: '11:30am - 2pm' },
 ]
 
 const footerContactItems: FooterContactItem[] = [
@@ -53,7 +53,7 @@ const footerContactItems: FooterContactItem[] = [
     external: true,
   },
   {
-    text: 'Hours: Mon, Fri-Sun 11:30am-7pm; Wed-Thu 11:30am-2pm; Tue Closed',
+    text: 'Hours: Mon, Wed-Sun 11:30am-2pm; Tue Closed',
     href: '/visit/',
   },
   {
