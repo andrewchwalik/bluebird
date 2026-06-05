@@ -87,49 +87,49 @@ const menuSections: MenuSection[] = [
     items: [
       {
         name: 'Peacock',
-        price: '$12.00',
+        price: '$11.75',
         ingredients: 'Ham, pear, brie cheese, arugula, and fig spread',
         imageClass: 'popular-image-one',
       },
       {
         name: 'Hamilton',
-        price: '$12.00',
+        price: '$11.75',
         ingredients: 'Ham, gouda, apples, and honey mustard',
         imageClass: 'popular-image-two',
       },
       {
         name: 'Grilled Cheese Crunch',
-        price: '$11.50',
+        price: '$10.75',
         ingredients: 'Cheddar, gouda, and kettle chips',
         imageClass: 'popular-image-three',
       },
       {
         name: 'Chicken Pesto',
-        price: '$12.00',
+        price: '$11.75',
         ingredients: 'Chicken breast, sun-dried tomatoes, provolone, and pesto',
         imageClass: 'popular-image-one',
       },
       {
         name: 'Ciao Chow',
-        price: '$12.00',
+        price: '$11.75',
         ingredients: 'Ham, salami, mozzarella, spinach, sun dried tomatoes, and pesto',
         imageClass: 'popular-image-two',
       },
       {
         name: 'Happy Lakesider',
-        price: '$12.00',
+        price: '$11.75',
         ingredients: "Bacon, chicken breast, cheddar, lettuce, tomatoes, and mama's mayo",
         imageClass: 'popular-image-three',
       },
       {
         name: 'BLT',
-        price: '$12.00',
+        price: '$11.75',
         ingredients: "Bacon, lettuce, tomatoes, and mama's mayo",
         imageClass: 'popular-image-one',
       },
       {
         name: 'Veggie Delight',
-        price: '$12.00',
+        price: '$11.75',
         ingredients: "Basil, spinach, lettuce, tomatoes, provolone, and mama's mayo",
         imageClass: 'popular-image-two',
       },
@@ -143,25 +143,25 @@ const menuSections: MenuSection[] = [
     items: [
       {
         name: 'Rockin’ Robin',
-        price: '$11.75',
+        price: '$12.75',
         ingredients: 'Romaine lettuce, tomatoes, cucumbers, carrots, and cheddar',
         imageClass: 'popular-image-two',
       },
       {
         name: 'Ugly Duckling',
-        price: '$13.50',
+        price: '$14.50',
         ingredients: 'Mixed greens, strawberries, grapes, cucumbers, carrots, and almond slices',
         imageClass: 'popular-image-three',
       },
       {
         name: 'Barnyard',
-        price: '$14.00',
+        price: '$14.50',
         ingredients: 'Baby spinach, chicken breast, strawberries, almond slices, and goat cheese',
         imageClass: 'popular-image-one',
       },
       {
         name: 'Big Fat Greek',
-        price: '$14.00',
+        price: '$14.50',
         ingredients: 'Romaine, chicken breast, cucumbers, red onion, chickpeas, and feta cheese',
         imageClass: 'popular-image-two',
       },
@@ -175,19 +175,19 @@ const menuSections: MenuSection[] = [
     items: [
       {
         name: 'Porker',
-        price: '$9.00',
+        price: '$9.75',
         ingredients: 'Ham, cheddar, lettuce, tomato, pickles, and honey mustard',
         imageClass: 'popular-image-three',
       },
       {
         name: 'Gobbler',
-        price: '$9.00',
+        price: '$9.75',
         ingredients: 'Turkey, provolone, lettuce, tomato, pickles, and mayo',
         imageClass: 'popular-image-one',
       },
       {
         name: 'Backpacker',
-        price: '$9.00',
+        price: '$9.75',
         ingredients: 'Ham, salami, mozzarella, lettuce, tomato, and italian dressing',
         imageClass: 'popular-image-two',
       },
@@ -266,7 +266,7 @@ const menuSections: MenuSection[] = [
     items: [
       {
         name: 'Fresh Strawberry Cup',
-        price: '$4.00',
+        price: '$4.50',
         ingredients: '',
         imageClass: 'popular-image-one',
       },
