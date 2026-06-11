@@ -2,6 +2,7 @@ import paniniImage from '../img/panini.png'
 import honeyBeeImage from '../img/products/honey-bee.png'
 import strawberryCreamImage from '../img/products/strawberry-cream.png'
 import tropicalSunImage from '../img/products/tropical-sun.png'
+import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
 import { useEffect } from 'react'
 import SiteNav from './SiteNav'
 import './App.css'
@@ -120,6 +121,8 @@ const menuSections: MenuSection[] = [
         price: '$11.75',
         ingredients: "Bacon, chicken breast, cheddar, lettuce, tomatoes, and mama's mayo",
         imageClass: 'popular-image-three',
+        imageSrc: headerSandwichImage,
+        imageAlt: 'Happy Lakesider sandwich',
       },
       {
         name: 'BLT',
@@ -349,7 +352,7 @@ export default function MenuPage() {
 
           <div className="hero-visual menu-page-visual" aria-hidden="true">
             <div className="hero-arch menu-page-hero-image">
-              <img className="hero-panini" src={paniniImage} alt="" />
+              <img className="hero-panini" src={headerSandwichImage} alt="" />
             </div>
           </div>
         </section>
