@@ -1,4 +1,4 @@
-import paniniImage from '../img/panini.png'
+import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
 import SiteNav from './SiteNav'
 import './App.css'
 
@@ -97,7 +97,7 @@ export default function VisitPage() {
 
           <div className="hero-visual menu-page-visual" aria-hidden="true">
             <div className="hero-arch menu-page-hero-image">
-              <img className="hero-panini" src={paniniImage} alt="" />
+              <img className="hero-panini" src={headerSandwichImage} alt="" />
             </div>
           </div>
         </section>

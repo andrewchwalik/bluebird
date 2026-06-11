@@ -1,4 +1,4 @@
-import paniniImage from '../img/panini.png'
+import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
 import andrewAndRachelImage from '../img/andrew-and-rachel-at-topped.JPG'
 import andrewAndMurphyImage from '../img/andrew-and-murphy.JPG'
 import rachelInBluebirdImage from '../img/rachel-in-the-bluebird.jpg'
@@ -128,7 +128,7 @@ export default function OurStoryPage() {
 
           <div className="hero-visual story-page-visual" aria-hidden="true">
             <div className="story-page-orb">
-              <img className="hero-panini" src={paniniImage} alt="" />
+              <img className="hero-panini" src={headerSandwichImage} alt="" />
             </div>
           </div>
         </section>

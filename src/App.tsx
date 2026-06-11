@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import paniniImage from '../img/panini.png'
+import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
 import bluebirdVisitorsImage from '../img/bluebird-visitors.jpg'
 import dontForgetYourChipsImage from '../img/dont-forget-your-chips.png'
 import honeyBeeImage from '../img/products/honey-bee.png'
@@ -368,7 +369,7 @@ function App() {
 
           <div className="hero-visual home-hero-visual" aria-hidden="true">
             <div className="hero-arch">
-              <img className="hero-panini" src={paniniImage} alt="" />
+              <img className="hero-panini" src={headerSandwichImage} alt="" />
             </div>
           </div>
         </section>
