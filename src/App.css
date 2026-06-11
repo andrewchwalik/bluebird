@@ -1136,7 +1136,7 @@ main {
 }
 
 .menu-page-hero-image {
-  width: min(28rem, 100%);
+  width: min(34rem, 112%);
 }
 
 .story-page-orb {
@@ -1746,6 +1746,10 @@ main {
 
   .hero-arch {
     width: min(26rem, 100%);
+  }
+
+  .menu-page-hero-image {
+    width: min(32rem, 100%);
   }
 
   .hero-panini {
