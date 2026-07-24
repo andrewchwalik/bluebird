@@ -252,9 +252,15 @@
 .hero-ticker-track {
   display: flex;
   width: max-content;
-  min-width: 100%;
   padding: 0.85rem 0;
-  animation: hero-ticker-scroll 22s linear infinite;
+  animation: hero-ticker-scroll 26s linear infinite;
+  will-change: transform;
+}
+
+.hero-ticker-group {
+  display: flex;
+  flex: 0 0 auto;
+  min-width: max-content;
 }
 
 .hero-ticker-item {
@@ -625,7 +631,7 @@ main {
   display: grid;
   grid-auto-flow: column;
   width: 100%;
-  grid-auto-columns: 18rem;
+  grid-auto-columns: clamp(18rem, calc((100vw - (2 * clamp(2.75rem, 5vw, 5.5rem)) - 4rem) / 4.35), 24rem);
   justify-content: start;
   gap: 1rem;
   overflow-x: auto;

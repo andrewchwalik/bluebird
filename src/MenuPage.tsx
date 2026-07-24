@@ -45,7 +45,6 @@ const navItems = [
   { label: 'Jobs', href: '/jobs/' },
 ]
 
-const heroTickerItems = ['Bluebird will Open May 22 for the 2026 Season']
 const tickerItems = [
   'Bluebird on the Lake',
   'Paninis',
@@ -55,8 +54,7 @@ const tickerItems = [
 ]
 
 const orderLink = 'https://cash.app/order/$bluebirdlakeside'
-const repeatedHeroTickerItems = Array.from({ length: 6 }, () => heroTickerItems).flat()
-const repeatedFooterTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
+const repeatedTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
 const footerContactItems: FooterContactItem[] = [
   {
@@ -359,10 +357,14 @@ export default function MenuPage() {
 
         <div className="hero-ticker" aria-label="Bluebird highlights">
           <div className="hero-ticker-track">
-            {repeatedHeroTickerItems.map((item, index) => (
-              <span className="hero-ticker-item" key={`${item}-${index}`}>
-                {item}
-              </span>
+            {Array.from({ length: 2 }, (_, groupIndex) => (
+              <div className="hero-ticker-group" key={`hero-group-${groupIndex}`}>
+                {repeatedTickerItems.map((item, index) => (
+                  <span className="hero-ticker-item" key={`hero-${groupIndex}-${item}-${index}`}>
+                    {item}
+                  </span>
+                ))}
+              </div>
             ))}
           </div>
         </div>
@@ -414,10 +416,14 @@ export default function MenuPage() {
       <footer className="site-footer">
         <div className="hero-ticker footer-ticker" aria-label="Bluebird footer highlights">
           <div className="hero-ticker-track">
-            {repeatedFooterTickerItems.map((item, index) => (
-              <span className="hero-ticker-item" key={`footer-${item}-${index}`}>
-                {item}
-              </span>
+            {Array.from({ length: 2 }, (_, groupIndex) => (
+              <div className="hero-ticker-group" key={`footer-group-${groupIndex}`}>
+                {repeatedTickerItems.map((item, index) => (
+                  <span className="hero-ticker-item" key={`footer-${groupIndex}-${item}-${index}`}>
+                    {item}
+                  </span>
+                ))}
+              </div>
             ))}
           </div>
         </div>
