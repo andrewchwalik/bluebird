@@ -41,8 +41,8 @@ const hours = [
   { day: 'Tuesday', time: 'Closed' },
   { day: 'Wednesday', time: '11:30am - 2pm' },
   { day: 'Thursday', time: '11:30am - 2pm' },
-  { day: 'Friday', time: '11:30am - 7pm' },
-  { day: 'Saturday', time: '11:30am - 7pm' },
+  { day: 'Friday', time: '11:30am - 4pm' },
+  { day: 'Saturday', time: '11:30am - 4pm' },
   { day: 'Sunday', time: '11:30am - 2pm' },
 ]
 
@@ -53,7 +53,7 @@ const footerContactItems: FooterContactItem[] = [
     external: true,
   },
   {
-    text: 'Hours: Sun-Thur: 11:30am-2pm; Fri-Sat: 11:30am-7pm',
+    text: 'Hours: Sun-Thur: 11:30am-2pm; Fri-Sat: 11:30am-4pm',
     href: '/visit/',
   },
   {
