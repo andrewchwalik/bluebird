@@ -5,10 +5,11 @@ import bluebirdVisitorsImage from '../img/bluebird-visitors.jpg'
 import dontForgetYourChipsImage from '../img/dont-forget-your-chips.png'
 import honeyBeeImage from '../img/products/honey-bee.png'
 import chickenPestoImage from '../img/sandwiches/chicken-pesto.png'
+import bltImage from '../img/sandwiches/blt.png'
 import barnyardImage from '../img/salads/barnyard.png'
 import rockinRobinImage from '../img/salads/rockin-robin.png'
+import chipsImage from '../img/snacks/chips.png'
 import kidsGrilledCheeseImage from '../img/sandwiches/kids-grilled-cheese.png'
-import strawberryCupImage from '../img/snacks/strawberry-cup.png'
 import SiteNav from './SiteNav'
 import './App.css'
 
@@ -75,8 +76,8 @@ const menuCategories = [
     title: 'Subs',
     lines: ['Subs'],
     imageClass: 'menu-category-image-three',
-    imageSrc: headerSandwichImage,
-    imageAlt: 'Bluebird sandwich combo',
+    imageSrc: bltImage,
+    imageAlt: 'BLT sandwich',
     href: '/menu/#subs',
   },
   {
@@ -101,8 +102,8 @@ const menuCategories = [
     title: 'Snacks',
     lines: ['Snacks'],
     imageClass: 'menu-category-image-six',
-    imageSrc: strawberryCupImage,
-    imageAlt: 'Fresh strawberry cup',
+    imageSrc: chipsImage,
+    imageAlt: 'Bag of chips',
     href: '/menu/#snacks',
   },
 ]
