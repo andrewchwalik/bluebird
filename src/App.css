@@ -648,9 +648,9 @@ main {
 .menu-showcase-card {
   position: relative;
   display: grid;
-  grid-template-rows: 13.5rem 1fr;
+  grid-template-rows: 15.75rem 1fr;
   gap: 0;
-  min-height: 25rem;
+  min-height: 23.25rem;
   padding: 0 1rem 1rem;
   border-radius: 1.6rem;
   background: #fbf4d8;
@@ -696,17 +696,17 @@ main {
 .menu-showcase-image {
   position: relative;
   z-index: 2;
-  min-height: 13.5rem;
-  height: 13.5rem;
+  min-height: 15.75rem;
+  height: 15.75rem;
   margin: 0 -1rem;
   overflow: hidden;
 }
 
 .menu-showcase-image img {
   position: absolute;
-  top: var(--menu-card-top, -2rem);
+  top: var(--menu-card-top, -1rem);
   left: var(--menu-card-left, 50%);
-  width: var(--menu-card-width, 120%);
+  width: var(--menu-card-width, 112%);
   max-width: none;
   height: auto;
   object-fit: contain;
@@ -719,51 +719,51 @@ main {
 }
 
 .menu-category-image-one img {
-  --menu-card-top: -3.35rem;
+  --menu-card-top: -1.6rem;
   --menu-card-left: 50%;
-  --menu-card-width: 122%;
+  --menu-card-width: 120%;
   --menu-card-rotate: -4deg;
-  --menu-card-scale: 1.04;
+  --menu-card-scale: 1.08;
 }
 
 .menu-category-image-two img {
-  --menu-card-top: -2.15rem;
+  --menu-card-top: -1.2rem;
   --menu-card-left: 50%;
-  --menu-card-width: 118%;
+  --menu-card-width: 112%;
   --menu-card-rotate: 1deg;
-  --menu-card-scale: 1.16;
+  --menu-card-scale: 1.08;
 }
 
 .menu-category-image-three img {
-  --menu-card-top: -3rem;
+  --menu-card-top: -1.45rem;
   --menu-card-left: 51%;
-  --menu-card-width: 120%;
+  --menu-card-width: 116%;
   --menu-card-rotate: -2deg;
-  --menu-card-scale: 1.04;
+  --menu-card-scale: 1.08;
 }
 
 .menu-category-image-four img {
-  --menu-card-top: -0.15rem;
+  --menu-card-top: 1.2rem;
   --menu-card-left: 45%;
-  --menu-card-width: 72%;
+  --menu-card-width: 74%;
   --menu-card-rotate: 1deg;
-  --menu-card-scale: 1.02;
-}
-
-.menu-category-image-five img {
-  --menu-card-top: -2.2rem;
-  --menu-card-left: 51%;
-  --menu-card-width: 112%;
-  --menu-card-rotate: -1deg;
   --menu-card-scale: 1.04;
 }
 
+.menu-category-image-five img {
+  --menu-card-top: -0.55rem;
+  --menu-card-left: 51%;
+  --menu-card-width: 108%;
+  --menu-card-rotate: -1deg;
+  --menu-card-scale: 1.03;
+}
+
 .menu-category-image-six img {
-  --menu-card-top: -1.55rem;
+  --menu-card-top: 0.15rem;
   --menu-card-left: 56%;
-  --menu-card-width: 78%;
+  --menu-card-width: 72%;
   --menu-card-rotate: 8deg;
-  --menu-card-scale: 1.02;
+  --menu-card-scale: 1;
 }
 
 .menu-showcase-footer {
@@ -774,7 +774,7 @@ main {
   justify-content: space-between;
   gap: 0.9rem;
   margin-top: auto;
-  padding-top: 1.2rem;
+  padding-top: 0.5rem;
 }
 
 .menu-showcase-footer h3 {
