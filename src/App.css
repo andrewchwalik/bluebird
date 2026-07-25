@@ -647,10 +647,7 @@ main {
 
 .menu-showcase-card {
   position: relative;
-  display: grid;
-  grid-template-rows: 15.75rem 1fr;
-  gap: 0;
-  min-height: 23.25rem;
+  min-height: 20.75rem;
   padding: 0 1rem 1rem;
   border-radius: 1.6rem;
   background: #fbf4d8;
@@ -694,19 +691,18 @@ main {
 }
 
 .menu-showcase-image {
-  position: relative;
+  position: absolute;
+  inset: 0 0 auto;
   z-index: 2;
-  min-height: 15.75rem;
-  height: 15.75rem;
-  margin: 0 -1rem;
-  overflow: hidden;
+  height: 12.25rem;
+  overflow: visible;
 }
 
 .menu-showcase-image img {
   position: absolute;
-  top: var(--menu-card-top, -1rem);
+  top: var(--menu-card-top, 0rem);
   left: var(--menu-card-left, 50%);
-  width: var(--menu-card-width, 112%);
+  width: var(--menu-card-width, 108%);
   max-width: none;
   height: auto;
   object-fit: contain;
@@ -719,62 +715,61 @@ main {
 }
 
 .menu-category-image-one img {
-  --menu-card-top: -1.6rem;
+  --menu-card-top: -1.05rem;
   --menu-card-left: 50%;
-  --menu-card-width: 120%;
+  --menu-card-width: 116%;
   --menu-card-rotate: -4deg;
-  --menu-card-scale: 1.08;
+  --menu-card-scale: 1.02;
 }
 
 .menu-category-image-two img {
-  --menu-card-top: -1.2rem;
+  --menu-card-top: -0.1rem;
   --menu-card-left: 50%;
-  --menu-card-width: 112%;
+  --menu-card-width: 108%;
   --menu-card-rotate: 1deg;
-  --menu-card-scale: 1.08;
+  --menu-card-scale: 1.02;
 }
 
 .menu-category-image-three img {
-  --menu-card-top: -1.45rem;
+  --menu-card-top: -0.7rem;
   --menu-card-left: 51%;
-  --menu-card-width: 116%;
+  --menu-card-width: 112%;
   --menu-card-rotate: -2deg;
-  --menu-card-scale: 1.08;
+  --menu-card-scale: 1.02;
 }
 
 .menu-category-image-four img {
-  --menu-card-top: 1.2rem;
+  --menu-card-top: 2.15rem;
   --menu-card-left: 45%;
-  --menu-card-width: 74%;
+  --menu-card-width: 68%;
   --menu-card-rotate: 1deg;
-  --menu-card-scale: 1.04;
+  --menu-card-scale: 1;
 }
 
 .menu-category-image-five img {
-  --menu-card-top: -0.55rem;
+  --menu-card-top: 0.55rem;
   --menu-card-left: 51%;
-  --menu-card-width: 108%;
+  --menu-card-width: 102%;
   --menu-card-rotate: -1deg;
-  --menu-card-scale: 1.03;
+  --menu-card-scale: 1;
 }
 
 .menu-category-image-six img {
-  --menu-card-top: 0.15rem;
+  --menu-card-top: 0.45rem;
   --menu-card-left: 56%;
-  --menu-card-width: 72%;
+  --menu-card-width: 66%;
   --menu-card-rotate: 8deg;
   --menu-card-scale: 1;
 }
 
 .menu-showcase-footer {
-  position: relative;
+  position: absolute;
   z-index: 2;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  inset: auto 1rem 1rem;
   gap: 0.9rem;
-  margin-top: auto;
-  padding-top: 0.5rem;
 }
 
 .menu-showcase-footer h3 {
