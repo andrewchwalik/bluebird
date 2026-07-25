@@ -648,7 +648,7 @@ main {
 .menu-showcase-card {
   position: relative;
   display: grid;
-  grid-template-rows: 12rem 1fr;
+  grid-template-rows: 13.5rem 1fr;
   gap: 0;
   min-height: 25rem;
   padding: 0 1rem 1rem;
@@ -696,44 +696,74 @@ main {
 .menu-showcase-image {
   position: relative;
   z-index: 2;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 12rem;
-  height: 12rem;
+  min-height: 13.5rem;
+  height: 13.5rem;
+  margin: 0 -1rem;
   overflow: hidden;
 }
 
 .menu-showcase-image img {
-  width: min(20.5rem, 126%);
+  position: absolute;
+  top: var(--menu-card-top, -2rem);
+  left: var(--menu-card-left, 50%);
+  width: var(--menu-card-width, 120%);
+  max-width: none;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 1rem 1rem rgba(108, 76, 31, 0.18));
   transform-origin: center;
+  transform:
+    translateX(-50%)
+    rotate(var(--menu-card-rotate, 0deg))
+    scale(var(--menu-card-scale, 1));
 }
 
 .menu-category-image-one img {
-  transform: translate(-0.25rem, -4.2rem) rotate(-4deg) scale(1.34);
+  --menu-card-top: -3.35rem;
+  --menu-card-left: 50%;
+  --menu-card-width: 122%;
+  --menu-card-rotate: -4deg;
+  --menu-card-scale: 1.04;
 }
 
 .menu-category-image-two img {
-  transform: translate(0.15rem, -4rem) rotate(2deg) scale(1.38);
+  --menu-card-top: -2.15rem;
+  --menu-card-left: 50%;
+  --menu-card-width: 118%;
+  --menu-card-rotate: 1deg;
+  --menu-card-scale: 1.16;
 }
 
 .menu-category-image-three img {
-  transform: translate(0.3rem, -4rem) rotate(-2deg) scale(1.32);
+  --menu-card-top: -3rem;
+  --menu-card-left: 51%;
+  --menu-card-width: 120%;
+  --menu-card-rotate: -2deg;
+  --menu-card-scale: 1.04;
 }
 
 .menu-category-image-four img {
-  transform: translateY(-1.15rem) rotate(1deg) scale(1.12);
+  --menu-card-top: -0.15rem;
+  --menu-card-left: 45%;
+  --menu-card-width: 72%;
+  --menu-card-rotate: 1deg;
+  --menu-card-scale: 1.02;
 }
 
 .menu-category-image-five img {
-  transform: translate(0rem, -3.2rem) rotate(-1deg) scale(1.28);
+  --menu-card-top: -2.2rem;
+  --menu-card-left: 51%;
+  --menu-card-width: 112%;
+  --menu-card-rotate: -1deg;
+  --menu-card-scale: 1.04;
 }
 
 .menu-category-image-six img {
-  transform: translate(0.55rem, -3.15rem) rotate(8deg) scale(1.24);
+  --menu-card-top: -1.55rem;
+  --menu-card-left: 56%;
+  --menu-card-width: 78%;
+  --menu-card-rotate: 8deg;
+  --menu-card-scale: 1.02;
 }
 
 .menu-showcase-footer {
@@ -744,7 +774,7 @@ main {
   justify-content: space-between;
   gap: 0.9rem;
   margin-top: auto;
-  padding-top: 0.85rem;
+  padding-top: 1.2rem;
 }
 
 .menu-showcase-footer h3 {
