@@ -648,11 +648,13 @@ main {
 .menu-showcase-card {
   position: relative;
   display: grid;
-  gap: 1.2rem;
+  grid-template-rows: 12rem 1fr;
+  gap: 0;
   min-height: 25rem;
-  padding: 1.2rem 1rem 1rem;
+  padding: 0 1rem 1rem;
   border-radius: 1.6rem;
   background: #fbf4d8;
+  overflow: hidden;
 }
 
 .menu-showcase-card-accent {
@@ -697,12 +699,13 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  min-height: 14.75rem;
+  min-height: 12rem;
+  height: 12rem;
   overflow: hidden;
 }
 
 .menu-showcase-image img {
-  width: min(18.5rem, 112%);
+  width: min(20.5rem, 126%);
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 1rem 1rem rgba(108, 76, 31, 0.18));
@@ -710,27 +713,27 @@ main {
 }
 
 .menu-category-image-one img {
-  transform: translate(-0.35rem, -3rem) rotate(-4deg) scale(1.26);
+  transform: translate(-0.25rem, -4.2rem) rotate(-4deg) scale(1.34);
 }
 
 .menu-category-image-two img {
-  transform: translate(0.25rem, -2.8rem) rotate(2deg) scale(1.28);
+  transform: translate(0.15rem, -4rem) rotate(2deg) scale(1.38);
 }
 
 .menu-category-image-three img {
-  transform: translate(0.4rem, -2.7rem) rotate(-2deg) scale(1.23);
+  transform: translate(0.3rem, -4rem) rotate(-2deg) scale(1.32);
 }
 
 .menu-category-image-four img {
-  transform: translateY(-0.55rem) rotate(1deg) scale(1.08);
+  transform: translateY(-1.15rem) rotate(1deg) scale(1.12);
 }
 
 .menu-category-image-five img {
-  transform: translate(-0.1rem, -2.1rem) rotate(-1deg) scale(1.2);
+  transform: translate(0rem, -3.2rem) rotate(-1deg) scale(1.28);
 }
 
 .menu-category-image-six img {
-  transform: translate(0.65rem, -2rem) rotate(8deg) scale(1.16);
+  transform: translate(0.55rem, -3.15rem) rotate(8deg) scale(1.24);
 }
 
 .menu-showcase-footer {
@@ -741,6 +744,7 @@ main {
   justify-content: space-between;
   gap: 0.9rem;
   margin-top: auto;
+  padding-top: 0.85rem;
 }
 
 .menu-showcase-footer h3 {
