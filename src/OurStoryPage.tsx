@@ -1,4 +1,4 @@
-import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
+import headerSandwichImage from '../img/header-image.png'
 import andrewAndRachelImage from '../img/andrew-and-rachel-at-topped.JPG'
 import andrewAndMurphyImage from '../img/andrew-and-murphy.JPG'
 import rachelInBluebirdImage from '../img/rachel-in-the-bluebird.jpg'

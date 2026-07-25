@@ -1,9 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 import paniniImage from '../img/panini.png'
-import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
+import headerSandwichImage from '../img/header-image.png'
 import bluebirdVisitorsImage from '../img/bluebird-visitors.jpg'
 import dontForgetYourChipsImage from '../img/dont-forget-your-chips.png'
 import honeyBeeImage from '../img/products/honey-bee.png'
+import chickenPestoImage from '../img/sandwiches/chicken-pesto.png'
+import barnyardImage from '../img/salads/barnyard.png'
+import rockinRobinImage from '../img/salads/rockin-robin.png'
+import kidsGrilledCheeseImage from '../img/sandwiches/kids-grilled-cheese.png'
+import strawberryCupImage from '../img/snacks/strawberry-cup.png'
 import SiteNav from './SiteNav'
 import './App.css'
 
@@ -23,8 +28,22 @@ const tickerItems = [
 ]
 
 const popularDishes = [
-  { name: 'Chicken Pesto', price: '$11.75', imageClass: 'popular-image-one', href: '/menu/#paninis' },
-  { name: 'Barnyard Salad', price: '$14.50', imageClass: 'popular-image-two', href: '/menu/#salads' },
+  {
+    name: 'Chicken Pesto',
+    price: '$11.75',
+    imageClass: 'popular-image-one',
+    imageSrc: chickenPestoImage,
+    imageAlt: 'Chicken Pesto panini',
+    href: '/menu/#paninis',
+  },
+  {
+    name: 'Barnyard Salad',
+    price: '$14.50',
+    imageClass: 'popular-image-two',
+    imageSrc: barnyardImage,
+    imageAlt: 'Barnyard salad',
+    href: '/menu/#salads',
+  },
   {
     name: 'Honey Bee Smoothie',
     price: '$7.50',
@@ -40,24 +59,32 @@ const menuCategories = [
     title: 'Paninis',
     lines: ['Paninis'],
     imageClass: 'menu-category-image-one',
+    imageSrc: chickenPestoImage,
+    imageAlt: 'Chicken Pesto panini',
     href: '/menu/#paninis',
   },
   {
     title: 'Salads',
     lines: ['Salads'],
     imageClass: 'menu-category-image-two',
+    imageSrc: rockinRobinImage,
+    imageAlt: 'Rockin Robin salad',
     href: '/menu/#salads',
   },
   {
     title: 'Subs',
     lines: ['Subs'],
     imageClass: 'menu-category-image-three',
+    imageSrc: headerSandwichImage,
+    imageAlt: 'Bluebird sandwich combo',
     href: '/menu/#subs',
   },
   {
     title: 'Smoothies',
     lines: ['Smoothies'],
     imageClass: 'menu-category-image-four',
+    imageSrc: honeyBeeImage,
+    imageAlt: 'Honey Bee smoothie',
     href: '/menu/#smoothies',
     accentImageSrc: dontForgetYourChipsImage,
     accentImageAlt: "Don't forget your chips",
@@ -66,12 +93,16 @@ const menuCategories = [
     title: 'Kids',
     lines: ['Kids'],
     imageClass: 'menu-category-image-five',
+    imageSrc: kidsGrilledCheeseImage,
+    imageAlt: "Kid's grilled cheese",
     href: '/menu/#kids',
   },
   {
     title: 'Snacks',
     lines: ['Snacks'],
     imageClass: 'menu-category-image-six',
+    imageSrc: strawberryCupImage,
+    imageAlt: 'Fresh strawberry cup',
     href: '/menu/#snacks',
   },
 ]
@@ -459,7 +490,7 @@ function App() {
                   />
                 ) : null}
                 <div className={`menu-showcase-image ${item.imageClass}`}>
-                  <img src={paniniImage} alt="" />
+                  <img src={item.imageSrc ?? paniniImage} alt={item.imageAlt ?? ''} />
                 </div>
                 <div className="menu-showcase-footer">
                   <h3>

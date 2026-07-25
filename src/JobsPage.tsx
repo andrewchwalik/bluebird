@@ -1,5 +1,5 @@
 import { type FormEvent, useState } from 'react'
-import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
+import headerSandwichImage from '../img/header-image.png'
 import workingAtBluebirdImage from '../img/working-at-bluebird.jpeg'
 import SiteNav from './SiteNav'
 import './App.css'

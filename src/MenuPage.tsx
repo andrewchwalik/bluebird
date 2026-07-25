@@ -2,7 +2,22 @@ import paniniImage from '../img/panini.png'
 import honeyBeeImage from '../img/products/honey-bee.png'
 import strawberryCreamImage from '../img/products/strawberry-cream.png'
 import tropicalSunImage from '../img/products/tropical-sun.png'
-import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
+import headerSandwichImage from '../img/header-image.png'
+import barnyardImage from '../img/salads/barnyard.png'
+import bigFatGreekImage from '../img/salads/big-fat-greek.png'
+import rockinRobinImage from '../img/salads/rockin-robin.png'
+import uglyDucklingImage from '../img/salads/ugly-duckling.png'
+import bltImage from '../img/sandwiches/blt.png'
+import chickenPestoImage from '../img/sandwiches/chicken-pesto.png'
+import ciaoChowImage from '../img/sandwiches/ciao-chow.png'
+import grilledCheeseCrunchImage from '../img/sandwiches/grilled-cheese-crunch.png'
+import hamiltonImage from '../img/sandwiches/hamilton.png'
+import happyLakesiderImage from '../img/sandwiches/happy-lakesider.png'
+import kidsGrilledCheeseImage from '../img/sandwiches/kids-grilled-cheese.png'
+import peacockImage from '../img/sandwiches/peacock.png'
+import veggieDelightImage from '../img/sandwiches/veggie-delight.png'
+import chipsImage from '../img/snacks/chips.png'
+import strawberryCupImage from '../img/snacks/strawberry-cup.png'
 import { useEffect } from 'react'
 import SiteNav from './SiteNav'
 import './App.css'
@@ -89,37 +104,47 @@ const menuSections: MenuSection[] = [
         price: '$11.75',
         ingredients: 'Ham, pear, brie cheese, arugula, and fig spread',
         imageClass: 'popular-image-one',
+        imageSrc: peacockImage,
+        imageAlt: 'Peacock panini',
       },
       {
         name: 'Hamilton',
         price: '$11.75',
         ingredients: 'Ham, gouda, apples, and honey mustard',
         imageClass: 'popular-image-two',
+        imageSrc: hamiltonImage,
+        imageAlt: 'Hamilton panini',
       },
       {
         name: 'Grilled Cheese Crunch',
         price: '$10.75',
         ingredients: 'Cheddar, gouda, and kettle chips',
         imageClass: 'popular-image-three',
+        imageSrc: grilledCheeseCrunchImage,
+        imageAlt: 'Grilled Cheese Crunch panini',
       },
       {
         name: 'Chicken Pesto',
         price: '$11.75',
         ingredients: 'Chicken breast, sun-dried tomatoes, provolone, and pesto',
         imageClass: 'popular-image-one',
+        imageSrc: chickenPestoImage,
+        imageAlt: 'Chicken Pesto panini',
       },
       {
         name: 'Ciao Chow',
         price: '$11.75',
         ingredients: 'Ham, salami, mozzarella, spinach, sun dried tomatoes, and pesto',
         imageClass: 'popular-image-two',
+        imageSrc: ciaoChowImage,
+        imageAlt: 'Ciao Chow panini',
       },
       {
         name: 'Happy Lakesider',
         price: '$11.75',
         ingredients: "Bacon, chicken breast, cheddar, lettuce, tomatoes, and mama's mayo",
         imageClass: 'popular-image-three',
-        imageSrc: headerSandwichImage,
+        imageSrc: happyLakesiderImage,
         imageAlt: 'Happy Lakesider sandwich',
       },
       {
@@ -127,12 +152,16 @@ const menuSections: MenuSection[] = [
         price: '$11.75',
         ingredients: "Bacon, lettuce, tomatoes, and mama's mayo",
         imageClass: 'popular-image-one',
+        imageSrc: bltImage,
+        imageAlt: 'BLT sandwich',
       },
       {
         name: 'Veggie Delight',
         price: '$11.75',
         ingredients: "Basil, spinach, lettuce, tomatoes, provolone, and mama's mayo",
         imageClass: 'popular-image-two',
+        imageSrc: veggieDelightImage,
+        imageAlt: 'Veggie Delight panini',
       },
     ],
   },
@@ -147,24 +176,32 @@ const menuSections: MenuSection[] = [
         price: '$12.75',
         ingredients: 'Romaine lettuce, tomatoes, cucumbers, carrots, and cheddar',
         imageClass: 'popular-image-two',
+        imageSrc: rockinRobinImage,
+        imageAlt: 'Rockin Robin salad',
       },
       {
         name: 'Ugly Duckling',
         price: '$14.50',
         ingredients: 'Mixed greens, strawberries, grapes, cucumbers, carrots, and almond slices',
         imageClass: 'popular-image-three',
+        imageSrc: uglyDucklingImage,
+        imageAlt: 'Ugly Duckling salad',
       },
       {
         name: 'Barnyard',
         price: '$14.50',
         ingredients: 'Baby spinach, chicken breast, strawberries, almond slices, and goat cheese',
         imageClass: 'popular-image-one',
+        imageSrc: barnyardImage,
+        imageAlt: 'Barnyard salad',
       },
       {
         name: 'Big Fat Greek',
         price: '$14.50',
         ingredients: 'Romaine, chicken breast, cucumbers, red onion, chickpeas, and feta cheese',
         imageClass: 'popular-image-two',
+        imageSrc: bigFatGreekImage,
+        imageAlt: 'Big Fat Greek salad',
       },
     ],
   },
@@ -179,18 +216,24 @@ const menuSections: MenuSection[] = [
         price: '$9.75',
         ingredients: 'Ham, cheddar, lettuce, tomato, pickles, and honey mustard',
         imageClass: 'popular-image-three',
+        imageSrc: headerSandwichImage,
+        imageAlt: 'Bluebird sandwich combo',
       },
       {
         name: 'Gobbler',
         price: '$9.75',
         ingredients: 'Turkey, provolone, lettuce, tomato, pickles, and mayo',
         imageClass: 'popular-image-one',
+        imageSrc: headerSandwichImage,
+        imageAlt: 'Bluebird sandwich combo',
       },
       {
         name: 'Backpacker',
         price: '$9.75',
         ingredients: 'Ham, salami, mozzarella, lettuce, tomato, and italian dressing',
         imageClass: 'popular-image-two',
+        imageSrc: headerSandwichImage,
+        imageAlt: 'Bluebird sandwich combo',
       },
     ],
   },
@@ -245,6 +288,8 @@ const menuSections: MenuSection[] = [
         price: '$6.00',
         ingredients: 'Cheddar cheese',
         imageClass: 'popular-image-two',
+        imageSrc: kidsGrilledCheeseImage,
+        imageAlt: "Kid's grilled cheese",
       },
       {
         name: 'PB & J Sandwich',
@@ -270,6 +315,8 @@ const menuSections: MenuSection[] = [
         price: '$4.50',
         ingredients: '',
         imageClass: 'popular-image-one',
+        imageSrc: strawberryCupImage,
+        imageAlt: 'Fresh strawberry cup',
       },
       {
         name: 'Frozen Cookie',
@@ -282,6 +329,8 @@ const menuSections: MenuSection[] = [
         price: '$1.00',
         ingredients: '',
         imageClass: 'popular-image-two',
+        imageSrc: chipsImage,
+        imageAlt: 'Bag of chips',
       },
     ],
   },

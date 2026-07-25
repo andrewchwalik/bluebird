@@ -1,4 +1,4 @@
-import headerSandwichImage from '../img/sandwiches/header-sandwich.png'
+import headerSandwichImage from '../img/header-image.png'
 import SiteNav from './SiteNav'
 import './App.css'
 
