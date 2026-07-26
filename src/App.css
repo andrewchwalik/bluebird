@@ -1628,16 +1628,16 @@ main {
 }
 
 .menu-item-card {
-  min-height: 25rem;
-  padding-top: 15.4rem;
+  min-height: 26.75rem;
+  padding-top: 18.1rem;
 }
 
 .menu-item-card .popular-image {
-  height: 14.75rem;
+  height: 15.35rem;
 }
 
 .menu-item-card .popular-image img {
-  top: var(--menu-item-card-top, -0.1rem);
+  top: var(--menu-item-card-top, -0.5rem);
   left: var(--menu-item-card-left, 50%);
   width: var(--menu-item-card-width, 104%);
   transform:
@@ -1646,8 +1646,12 @@ main {
     scale(var(--menu-item-card-scale, 1));
 }
 
+.menu-item-card h3 {
+  margin-top: 0.25rem;
+}
+
 .menu-item-card .popular-image-one img {
-  --menu-item-card-top: -0.65rem;
+  --menu-item-card-top: -1rem;
   --menu-item-card-left: 50%;
   --menu-item-card-width: 108%;
   --menu-item-card-rotate: -2deg;
@@ -1655,7 +1659,7 @@ main {
 }
 
 .menu-item-card .popular-image-two img {
-  --menu-item-card-top: -0.1rem;
+  --menu-item-card-top: -0.45rem;
   --menu-item-card-left: 50%;
   --menu-item-card-width: 104%;
   --menu-item-card-rotate: 1deg;
@@ -1663,7 +1667,7 @@ main {
 }
 
 .menu-item-card .popular-image-three img {
-  --menu-item-card-top: -0.35rem;
+  --menu-item-card-top: -0.7rem;
   --menu-item-card-left: 50%;
   --menu-item-card-width: 106%;
   --menu-item-card-rotate: 0deg;
