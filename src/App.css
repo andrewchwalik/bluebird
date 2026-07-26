@@ -700,9 +700,9 @@ main {
 
 .menu-showcase-image img {
   position: absolute;
-  top: var(--menu-card-top, 0rem);
+  top: calc(var(--menu-card-top, 0rem) + 40px);
   left: var(--menu-card-left, 50%);
-  width: var(--menu-card-width, 108%);
+  width: var(--menu-card-width, 114%);
   max-width: none;
   height: auto;
   object-fit: contain;
