@@ -1629,6 +1629,63 @@ main {
 
 .menu-item-card {
   min-height: 25rem;
+  padding-top: 15.4rem;
+}
+
+.menu-item-card .popular-image {
+  height: 14.75rem;
+}
+
+.menu-item-card .popular-image img {
+  top: var(--menu-item-card-top, -0.1rem);
+  left: var(--menu-item-card-left, 50%);
+  width: var(--menu-item-card-width, 104%);
+  transform:
+    translateX(calc(-50% + var(--menu-item-card-shift-x, 0px)))
+    rotate(var(--menu-item-card-rotate, 0deg))
+    scale(var(--menu-item-card-scale, 1));
+}
+
+.menu-item-card .popular-image-one img {
+  --menu-item-card-top: -0.65rem;
+  --menu-item-card-left: 50%;
+  --menu-item-card-width: 108%;
+  --menu-item-card-rotate: -2deg;
+  --menu-item-card-scale: 1.02;
+}
+
+.menu-item-card .popular-image-two img {
+  --menu-item-card-top: -0.1rem;
+  --menu-item-card-left: 50%;
+  --menu-item-card-width: 104%;
+  --menu-item-card-rotate: 1deg;
+  --menu-item-card-scale: 1.01;
+}
+
+.menu-item-card .popular-image-three img {
+  --menu-item-card-top: -0.35rem;
+  --menu-item-card-left: 50%;
+  --menu-item-card-width: 106%;
+  --menu-item-card-rotate: 0deg;
+  --menu-item-card-scale: 1.02;
+}
+
+.menu-item-card .popular-image-smoothie-strawberry img,
+.menu-item-card .popular-image-smoothie-tropical img,
+.menu-item-card .popular-image-smoothie-honey-bee img {
+  --menu-item-card-top: 1.4rem;
+  --menu-item-card-left: 47%;
+  --menu-item-card-width: 66%;
+  --menu-item-card-rotate: 0deg;
+  --menu-item-card-scale: 1;
+}
+
+.menu-item-card .popular-image-smoothie-peanut-butter img {
+  --menu-item-card-top: 1.3rem;
+  --menu-item-card-left: 47%;
+  --menu-item-card-width: 68%;
+  --menu-item-card-rotate: -2deg;
+  --menu-item-card-scale: 0.82;
 }
 
 .menu-item-price {
