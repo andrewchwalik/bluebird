@@ -709,7 +709,7 @@ main {
   filter: drop-shadow(0 1rem 1rem rgba(108, 76, 31, 0.18));
   transform-origin: center;
   transform:
-    translateX(-50%)
+    translateX(calc(-50% + var(--menu-card-shift-x, 80px)))
     rotate(var(--menu-card-rotate, 0deg))
     scale(var(--menu-card-scale, 1));
 }
