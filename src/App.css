@@ -725,9 +725,9 @@ main {
 .menu-category-image-two img {
   --menu-card-top: -0.1rem;
   --menu-card-left: 50%;
-  --menu-card-width: 108%;
+  --menu-card-width: 116%;
   --menu-card-rotate: 1deg;
-  --menu-card-scale: 1.02;
+  --menu-card-scale: 1.05;
 }
 
 .menu-category-image-three img {
@@ -748,18 +748,18 @@ main {
 
 .menu-category-image-five img {
   --menu-card-top: 0.55rem;
-  --menu-card-left: 51%;
-  --menu-card-width: 102%;
+  --menu-card-left: calc(51% - 10px);
+  --menu-card-width: 108%;
   --menu-card-rotate: -1deg;
-  --menu-card-scale: 1;
+  --menu-card-scale: 1.04;
 }
 
 .menu-category-image-six img {
   --menu-card-top: 0.45rem;
-  --menu-card-left: 56%;
-  --menu-card-width: 66%;
-  --menu-card-rotate: 8deg;
-  --menu-card-scale: 1;
+  --menu-card-left: 50%;
+  --menu-card-width: 78%;
+  --menu-card-rotate: 0deg;
+  --menu-card-scale: 1.04;
 }
 
 .menu-showcase-footer {
