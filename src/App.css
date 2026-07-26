@@ -369,7 +369,9 @@ main {
 }
 
 .popular-card {
-  padding: 1.25rem;
+  position: relative;
+  min-height: 21.5rem;
+  padding: 12rem 1.25rem 1.25rem;
   border-radius: 1.6rem;
   background: #fbf4d8;
   overflow: hidden;
@@ -391,6 +393,8 @@ main {
 }
 
 .popular-card h3 {
+  position: relative;
+  z-index: 2;
   margin-bottom: 0.4rem;
   color: #23180d;
   font-family: 'Hit and Run', var(--display);
@@ -400,6 +404,8 @@ main {
 }
 
 .popular-card p {
+  position: relative;
+  z-index: 2;
   color: #23180d;
   font-size: 1.05rem;
 }
@@ -422,44 +428,74 @@ main {
 }
 
 .popular-image {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  height: 17.5rem;
-  margin-bottom: 1rem;
+  position: absolute;
+  inset: 0 0 auto;
+  height: 12rem;
+  margin: 0;
   overflow: visible;
 }
 
 .popular-image img {
-  width: min(19.5rem, 100%);
+  position: absolute;
+  top: var(--popular-card-top, 0.1rem);
+  left: var(--popular-card-left, 50%);
+  width: var(--popular-card-width, 108%);
+  max-width: none;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 0.9rem 1rem rgba(108, 76, 31, 0.18));
   transform-origin: center;
+  transform:
+    translateX(calc(-50% + var(--popular-card-shift-x, 0px)))
+    rotate(var(--popular-card-rotate, 0deg))
+    scale(var(--popular-card-scale, 1));
 }
 
 .popular-image-one img {
-  transform: translate(-0.35rem, -1.5rem) rotate(-3deg) scale(1.02);
+  --popular-card-top: -1.2rem;
+  --popular-card-left: 50%;
+  --popular-card-width: 116%;
+  --popular-card-shift-x: 0px;
+  --popular-card-rotate: -3deg;
+  --popular-card-scale: 1.04;
 }
 
 .popular-image-two img {
-  transform: translate(0.5rem, -1.75rem) scale(0.98) rotate(5deg);
+  --popular-card-top: -0.4rem;
+  --popular-card-left: 50%;
+  --popular-card-width: 112%;
+  --popular-card-shift-x: 0px;
+  --popular-card-rotate: 3deg;
+  --popular-card-scale: 1.04;
 }
 
 .popular-image-three img {
-  transform: translate(0.7rem, -1.35rem) rotate(2deg) scale(1.04);
+  --popular-card-top: -0.85rem;
+  --popular-card-left: 51%;
+  --popular-card-width: 114%;
+  --popular-card-shift-x: 0px;
+  --popular-card-rotate: 1deg;
+  --popular-card-scale: 1.05;
 }
 
 .popular-image-smoothie-strawberry img,
 .popular-image-smoothie-tropical img,
 .popular-image-smoothie-honey-bee img {
-  width: min(15.5rem, 92%);
-  transform: translateY(0.15rem);
+  --popular-card-top: 1.55rem;
+  --popular-card-left: 47%;
+  --popular-card-width: 72%;
+  --popular-card-shift-x: 0px;
+  --popular-card-rotate: 0deg;
+  --popular-card-scale: 1;
 }
 
 .popular-image-smoothie-peanut-butter img {
-  width: min(16rem, 94%);
-  transform: translateY(0.2rem) scale(0.82) rotate(-2deg);
+  --popular-card-top: 1.45rem;
+  --popular-card-left: 47%;
+  --popular-card-width: 74%;
+  --popular-card-shift-x: 0px;
+  --popular-card-rotate: -2deg;
+  --popular-card-scale: 0.82;
 }
 
 .section-art,
@@ -709,7 +745,7 @@ main {
   filter: drop-shadow(0 1rem 1rem rgba(108, 76, 31, 0.18));
   transform-origin: center;
   transform:
-    translateX(calc(-50% + var(--menu-card-shift-x, 80px)))
+    translateX(calc(-50% + var(--menu-card-shift-x, 75px)))
     rotate(var(--menu-card-rotate, 0deg))
     scale(var(--menu-card-scale, 1));
 }
@@ -757,9 +793,10 @@ main {
 .menu-category-image-six img {
   --menu-card-top: 0.45rem;
   --menu-card-left: 50%;
-  --menu-card-width: 78%;
+  --menu-card-width: 92%;
+  --menu-card-shift-x: 0px;
   --menu-card-rotate: 0deg;
-  --menu-card-scale: 1.04;
+  --menu-card-scale: 1.08;
 }
 
 .menu-showcase-footer {
@@ -1591,10 +1628,12 @@ main {
 }
 
 .menu-item-card {
-  min-height: 24rem;
+  min-height: 25rem;
 }
 
 .menu-item-price {
+  position: relative;
+  z-index: 2;
   margin: 0.1rem 0 0.6rem;
   color: #23180d;
   font-family: 'Hit and Run', var(--display);
@@ -1603,6 +1642,8 @@ main {
 }
 
 .menu-item-ingredients {
+  position: relative;
+  z-index: 2;
   margin: 0;
   color: rgba(35, 24, 13, 0.74);
   font-size: 0.98rem;
