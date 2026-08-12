@@ -37,7 +37,7 @@ const footerContactItems: FooterContactItem[] = [
     external: true,
   },
   {
-    text: 'Hours: Sun-Thur: 11:30am-2pm; Fri-Sat: 11:30am-4pm',
+    text: 'Hours: Sun-Mon, Wed-Sat: 11:30am-2pm; Tue Closed',
     href: '/visit/',
   },
   {
