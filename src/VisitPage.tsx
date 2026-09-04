@@ -35,7 +35,7 @@ const bluebirdMapUrl = `https://www.google.com/maps/embed/v1/place?key=${mapsApi
 const repeatedTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
 const hours = [
-  { day: 'Monday', time: 'Closed' },
+  { day: 'Monday', time: '11:30am - 2pm' },
   { day: 'Tuesday', time: 'Closed' },
   { day: 'Wednesday', time: 'Closed' },
   { day: 'Thursday', time: 'Closed' },
@@ -51,7 +51,7 @@ const footerContactItems: FooterContactItem[] = [
     external: true,
   },
   {
-    text: 'Hours: Fri-Sun: 11:30am-2pm; Mon-Thu Closed',
+    text: 'Hours: Mon, Fri-Sun: 11:30am-2pm; Tue-Thu Closed',
     href: '/visit/',
   },
   {
