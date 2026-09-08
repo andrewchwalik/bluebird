@@ -82,7 +82,7 @@ const footerContactItems: FooterContactItem[] = [
     external: true,
   },
   {
-    text: 'Hours: Mon, Fri-Sun: 11:30am-2pm; Tue-Thu Closed',
+    text: 'Closed for winter. Reopening May 2027.',
     href: '/visit/',
   },
   {

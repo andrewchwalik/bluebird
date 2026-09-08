@@ -35,13 +35,8 @@ const bluebirdMapUrl = `https://www.google.com/maps/embed/v1/place?key=${mapsApi
 const repeatedTickerItems = Array.from({ length: 4 }, () => tickerItems).flat()
 
 const hours = [
-  { day: 'Monday', time: '11:30am - 2pm' },
-  { day: 'Tuesday', time: 'Closed' },
-  { day: 'Wednesday', time: 'Closed' },
-  { day: 'Thursday', time: 'Closed' },
-  { day: 'Friday', time: '11:30am - 2pm' },
-  { day: 'Saturday', time: '11:30am - 2pm' },
-  { day: 'Sunday', time: '11:30am - 2pm' },
+  { day: 'Winter Season', time: 'Closed' },
+  { day: 'Reopening', time: 'May 2027' },
 ]
 
 const footerContactItems: FooterContactItem[] = [
@@ -51,7 +46,7 @@ const footerContactItems: FooterContactItem[] = [
     external: true,
   },
   {
-    text: 'Hours: Mon, Fri-Sun: 11:30am-2pm; Tue-Thu Closed',
+    text: 'Closed for winter. Reopening May 2027.',
     href: '/visit/',
   },
   {
@@ -139,9 +134,9 @@ export default function VisitPage() {
             </p>
           </div>
 
-          <aside className="visit-hours-card" aria-label="Bluebird summer hours">
-            <p className="visit-hours-kicker">Opening May 22</p>
-            <h3>2026 Summer Hours</h3>
+          <aside className="visit-hours-card" aria-label="Bluebird winter hours">
+            <p className="visit-hours-kicker">See You Soon</p>
+            <h3>Closed for Winter</h3>
             <div className="visit-hours-list">
               {hours.map((item) => (
                 <div className="visit-hours-row" key={item.day}>
@@ -151,7 +146,7 @@ export default function VisitPage() {
               ))}
             </div>
             <p className="visit-hours-note">
-              *Hours are subject to change based on staff availability.
+              We cannot wait to welcome you back in May 2027.
             </p>
           </aside>
         </section>
